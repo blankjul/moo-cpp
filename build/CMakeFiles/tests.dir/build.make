@@ -98,28 +98,28 @@ CMakeFiles/tests.dir/test/KursaweTest.cpp.o.provides: CMakeFiles/tests.dir/test/
 
 CMakeFiles/tests.dir/test/KursaweTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/KursaweTest.cpp.o
 
-CMakeFiles/tests.dir/test/MutationTest.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/test/MutationTest.cpp.o: ../test/MutationTest.cpp
+CMakeFiles/tests.dir/test/NSGAIITest.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/test/NSGAIITest.cpp.o: ../test/NSGAIITest.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/MutationTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/MutationTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/MutationTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/NSGAIITest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/NSGAIITest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/NSGAIITest.cpp
 
-CMakeFiles/tests.dir/test/MutationTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/MutationTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/MutationTest.cpp > CMakeFiles/tests.dir/test/MutationTest.cpp.i
+CMakeFiles/tests.dir/test/NSGAIITest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/NSGAIITest.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/NSGAIITest.cpp > CMakeFiles/tests.dir/test/NSGAIITest.cpp.i
 
-CMakeFiles/tests.dir/test/MutationTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/MutationTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/MutationTest.cpp -o CMakeFiles/tests.dir/test/MutationTest.cpp.s
+CMakeFiles/tests.dir/test/NSGAIITest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/NSGAIITest.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/NSGAIITest.cpp -o CMakeFiles/tests.dir/test/NSGAIITest.cpp.s
 
-CMakeFiles/tests.dir/test/MutationTest.cpp.o.requires:
-.PHONY : CMakeFiles/tests.dir/test/MutationTest.cpp.o.requires
+CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.requires:
+.PHONY : CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.requires
 
-CMakeFiles/tests.dir/test/MutationTest.cpp.o.provides: CMakeFiles/tests.dir/test/MutationTest.cpp.o.requires
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/MutationTest.cpp.o.provides.build
-.PHONY : CMakeFiles/tests.dir/test/MutationTest.cpp.o.provides
+CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.provides: CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.provides.build
+.PHONY : CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.provides
 
-CMakeFiles/tests.dir/test/MutationTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/MutationTest.cpp.o
+CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.provides.build: CMakeFiles/tests.dir/test/NSGAIITest.cpp.o
 
 CMakeFiles/tests.dir/test/Main.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/Main.cpp.o: ../test/Main.cpp
@@ -167,9 +167,32 @@ CMakeFiles/tests.dir/test/NonDominatedRankTest.cpp.o.provides: CMakeFiles/tests.
 
 CMakeFiles/tests.dir/test/NonDominatedRankTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/NonDominatedRankTest.cpp.o
 
+CMakeFiles/tests.dir/test/RecombinationTest.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/test/RecombinationTest.cpp.o: ../test/RecombinationTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/RecombinationTest.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/RecombinationTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/RecombinationTest.cpp
+
+CMakeFiles/tests.dir/test/RecombinationTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/RecombinationTest.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/RecombinationTest.cpp > CMakeFiles/tests.dir/test/RecombinationTest.cpp.i
+
+CMakeFiles/tests.dir/test/RecombinationTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/RecombinationTest.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/RecombinationTest.cpp -o CMakeFiles/tests.dir/test/RecombinationTest.cpp.s
+
+CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.requires:
+.PHONY : CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.requires
+
+CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.provides: CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.provides.build
+.PHONY : CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.provides
+
+CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/RecombinationTest.cpp.o
+
 CMakeFiles/tests.dir/test/RealTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/RealTest.cpp.o: ../test/RealTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/RealTest.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/RealTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/RealTest.cpp
 
@@ -192,7 +215,7 @@ CMakeFiles/tests.dir/test/RealTest.cpp.o.provides.build: CMakeFiles/tests.dir/te
 
 CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o: ../test/CrowdingDistanceTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/CrowdingDistanceTest.cpp
 
@@ -215,7 +238,7 @@ CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/tests.dir/test/IndividualTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/IndividualTest.cpp.o: ../test/IndividualTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/IndividualTest.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/IndividualTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/IndividualTest.cpp
 
@@ -240,9 +263,10 @@ CMakeFiles/tests.dir/test/IndividualTest.cpp.o.provides.build: CMakeFiles/tests.
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/test/BinaryTournemantSelectionTest.cpp.o" \
 "CMakeFiles/tests.dir/test/KursaweTest.cpp.o" \
-"CMakeFiles/tests.dir/test/MutationTest.cpp.o" \
+"CMakeFiles/tests.dir/test/NSGAIITest.cpp.o" \
 "CMakeFiles/tests.dir/test/Main.cpp.o" \
 "CMakeFiles/tests.dir/test/NonDominatedRankTest.cpp.o" \
+"CMakeFiles/tests.dir/test/RecombinationTest.cpp.o" \
 "CMakeFiles/tests.dir/test/RealTest.cpp.o" \
 "CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o" \
 "CMakeFiles/tests.dir/test/IndividualTest.cpp.o"
@@ -252,9 +276,10 @@ tests_EXTERNAL_OBJECTS =
 
 tests: CMakeFiles/tests.dir/test/BinaryTournemantSelectionTest.cpp.o
 tests: CMakeFiles/tests.dir/test/KursaweTest.cpp.o
-tests: CMakeFiles/tests.dir/test/MutationTest.cpp.o
+tests: CMakeFiles/tests.dir/test/NSGAIITest.cpp.o
 tests: CMakeFiles/tests.dir/test/Main.cpp.o
 tests: CMakeFiles/tests.dir/test/NonDominatedRankTest.cpp.o
+tests: CMakeFiles/tests.dir/test/RecombinationTest.cpp.o
 tests: CMakeFiles/tests.dir/test/RealTest.cpp.o
 tests: CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o
 tests: CMakeFiles/tests.dir/test/IndividualTest.cpp.o
@@ -272,9 +297,10 @@ CMakeFiles/tests.dir/build: tests
 
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/BinaryTournemantSelectionTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/KursaweTest.cpp.o.requires
-CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/MutationTest.cpp.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/NSGAIITest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/Main.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/NonDominatedRankTest.cpp.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/RecombinationTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/RealTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/IndividualTest.cpp.o.requires

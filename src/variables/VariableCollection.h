@@ -14,8 +14,8 @@ namespace moo {
 
     public:
 
-        std::vector<Type> getRandom() const{
-            std::vector<Type> result;
+        VariableCollection getRandom() const{
+            VariableCollection result;
             for(auto value : *this) {
                 result.push_back(value.getRandom());
             }

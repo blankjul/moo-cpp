@@ -19,8 +19,6 @@ namespace moo {
         BoundedVariable(Type lower, Type upper) : lowerBound(lower), upperBound(upper) {};
         BoundedVariable(Type value, Type lower, Type upper) : Variable<Type>(value), lowerBound(lower), upperBound(upper)  {};
 
-        virtual Type getRandom() = 0;
-
         void setValue(Type value) {
             if (value < lowerBound || value > upperBound) throw std::runtime_error("Boundary Exception.");
             setValue(value);

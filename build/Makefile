@@ -323,29 +323,29 @@ test/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/Main.cpp.s
 .PHONY : test/Main.cpp.s
 
-test/MutationTest.o: test/MutationTest.cpp.o
-.PHONY : test/MutationTest.o
+test/NSGAIITest.o: test/NSGAIITest.cpp.o
+.PHONY : test/NSGAIITest.o
 
 # target to build an object file
-test/MutationTest.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/MutationTest.cpp.o
-.PHONY : test/MutationTest.cpp.o
+test/NSGAIITest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/NSGAIITest.cpp.o
+.PHONY : test/NSGAIITest.cpp.o
 
-test/MutationTest.i: test/MutationTest.cpp.i
-.PHONY : test/MutationTest.i
+test/NSGAIITest.i: test/NSGAIITest.cpp.i
+.PHONY : test/NSGAIITest.i
 
 # target to preprocess a source file
-test/MutationTest.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/MutationTest.cpp.i
-.PHONY : test/MutationTest.cpp.i
+test/NSGAIITest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/NSGAIITest.cpp.i
+.PHONY : test/NSGAIITest.cpp.i
 
-test/MutationTest.s: test/MutationTest.cpp.s
-.PHONY : test/MutationTest.s
+test/NSGAIITest.s: test/NSGAIITest.cpp.s
+.PHONY : test/NSGAIITest.s
 
 # target to generate assembly for a file
-test/MutationTest.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/MutationTest.cpp.s
-.PHONY : test/MutationTest.cpp.s
+test/NSGAIITest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/NSGAIITest.cpp.s
+.PHONY : test/NSGAIITest.cpp.s
 
 test/NonDominatedRankTest.o: test/NonDominatedRankTest.cpp.o
 .PHONY : test/NonDominatedRankTest.o
@@ -395,6 +395,30 @@ test/RealTest.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/RealTest.cpp.s
 .PHONY : test/RealTest.cpp.s
 
+test/RecombinationTest.o: test/RecombinationTest.cpp.o
+.PHONY : test/RecombinationTest.o
+
+# target to build an object file
+test/RecombinationTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/RecombinationTest.cpp.o
+.PHONY : test/RecombinationTest.cpp.o
+
+test/RecombinationTest.i: test/RecombinationTest.cpp.i
+.PHONY : test/RecombinationTest.i
+
+# target to preprocess a source file
+test/RecombinationTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/RecombinationTest.cpp.i
+.PHONY : test/RecombinationTest.cpp.i
+
+test/RecombinationTest.s: test/RecombinationTest.cpp.s
+.PHONY : test/RecombinationTest.s
+
+# target to generate assembly for a file
+test/RecombinationTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/RecombinationTest.cpp.s
+.PHONY : test/RecombinationTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -427,15 +451,18 @@ help:
 	@echo "... test/Main.o"
 	@echo "... test/Main.i"
 	@echo "... test/Main.s"
-	@echo "... test/MutationTest.o"
-	@echo "... test/MutationTest.i"
-	@echo "... test/MutationTest.s"
+	@echo "... test/NSGAIITest.o"
+	@echo "... test/NSGAIITest.i"
+	@echo "... test/NSGAIITest.s"
 	@echo "... test/NonDominatedRankTest.o"
 	@echo "... test/NonDominatedRankTest.i"
 	@echo "... test/NonDominatedRankTest.s"
 	@echo "... test/RealTest.o"
 	@echo "... test/RealTest.i"
 	@echo "... test/RealTest.s"
+	@echo "... test/RecombinationTest.o"
+	@echo "... test/RecombinationTest.i"
+	@echo "... test/RecombinationTest.s"
 .PHONY : help
 
 

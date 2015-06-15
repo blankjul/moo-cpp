@@ -10,17 +10,34 @@
 #include "model/Population.h"
 #include "model/Individual.h"
 #include "problems/Identity.h"
+#include "variables/VariableCollection.h"
+#include "variables/Real.h"
 
 using namespace ::testing;
+
+
 
 
 class AbstractTest : public ::testing::Test {
 public:
 
+
+
     typedef std::vector<double> input;
-    moo::Population<input> createPopulationFromVector(std::vector<std::vector<double>>& data,  moo::ProblemPtr<input> identity = std::make_shared<moo::Identity>()) {
+
+
+    moo::Population<input> createPopulationFromVector(std::vector<std::vector<double>>& data) {
+        moo::Identity i;
+        return createPopulationFromVector(data,i);
+    }
+
+    moo::Population<input> createPopulationFromVector(std::vector<std::vector<double>>& data,  moo::Problem<input>& p) {
         moo::Population<input> result;
-        for (auto v : data) result.push_back(std::make_shared<moo::Individual<input>>(identity, v));
+        for (auto v : data) {
+            auto ind = std::make_shared<moo::Individual<input>>(v);
+            p.evaluate(ind);
+            result.push_back(ind);
+        }
         return result;
     }
 
@@ -31,6 +48,12 @@ public:
         data.push_back(std::vector<double> {0.79, 3.97});
         data.push_back(std::vector<double> {0.27, 6.93});
         return createPopulationFromVector(data);
+    }
+
+    template <typename Input> moo::IndividualPtr<Input> createIndAndEvaluate(Input i, moo::Problem<Input>& p) {
+        moo::IndividualPtr<Input> ind = moo::createIndividual(i);
+        p.evaluate(ind);
+        return ind;
     }
 
 };

@@ -5,13 +5,17 @@
 
 namespace moo {
 
-    template <typename T>
+
+    /**
+     * All mutation operator should inherit from this class just to make clear
+     * it is used as a mutation operator. The function is the template for the subclasses
+     * that has to be implement, although template functions are not allowed to be virtual.
+     */
     class Mutation {
 
     public:
 
-        virtual void mutate(IndividualPtr<T> & ind) = 0;
-
+        template <typename T> void mutate(IndividualPtr<T> & ind);
 
     };
 

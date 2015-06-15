@@ -5,27 +5,20 @@
 
 namespace moo {
 
-    template <typename T>
+
     class Selection {
-
-    protected:
-
-        const Population<T> & population;
 
     public:
 
 
-        Selection(const Population<T> &population) : population(population) {}
+        template <typename T> IndividualPtr<T> select(const Population<T> &population) ;
 
-        virtual IndividualPtr<T> select() = 0;
-
-
-        Population<T> select(int n) {
-            Population<T> pop;
+        template <typename T> Population<T> select(const Population<T> &population, int n) {
+            Population<T> result;
             for (int i = 0; i < n; ++i) {
-                pop.push_back(select());
+                result.push_back(select(population));
             }
-            return pop;
+            return result;
         }
 
 

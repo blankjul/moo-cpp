@@ -11,12 +11,12 @@
 
 namespace moo {
 
-    template <typename T>
-    class NonDominatedRank : public Indicator<T, int> {
+
+    class NonDominatedRank : public Indicator<int> {
 
     public:
 
-        std::unordered_map<IndividualPtr<T>, int> calculate(Population<T> pop) {
+        template <typename T> std::unordered_map<IndividualPtr<T>, int> calculate(Population<T> pop) {
 
             std::unordered_map<IndividualPtr<T>, int> m;
             int counter = 0;
@@ -31,7 +31,7 @@ namespace moo {
         }
 
 
-        Population<T> getParetoFront(Population<T> & population, bool removeFromPopulation = false)  {
+        template <typename T> Population<T> getParetoFront(Population<T> & population, bool removeFromPopulation = false)  {
 
             Population<T> front;
 

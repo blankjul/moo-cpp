@@ -3,13 +3,21 @@
 
 #include <utility>
 #include "model/Problem.h"
+#include "variables/VariableCollection.h"
+#include "variables/Real.h"
+#include <cmath>
 
 namespace moo {
 
-    class Kursawe : public Problem<std::vector<double>> {
+
+    class Kursawe : public Problem<VariableCollection<Real>, std::vector<double>> {
 
     public:
-        std::vector<double> evaluate(const std::vector<double> & x) {
+
+        virtual std::vector<double> evaluate_(const VariableCollection<Real> & input) {
+
+            std::vector<double> x;
+            for(auto entry : input) x.push_back(entry.getValue());
 
             std::vector<double> fx(2,0);
             int numberOfVariables_ = x.size();
@@ -29,6 +37,20 @@ namespace moo {
 
             return fx;
         }
+
+
+        virtual VariableCollection<Real> getInput() {
+            VariableCollection<Real> i;
+            for (int j = 0; j < 3; ++j) i.push_back(moo::Real(-5,5));
+            return i;
+        }
+
+
+        virtual std::vector<double> getOutput() {
+            return std::vector<double>(3);
+        }
+
+
 
     };
 

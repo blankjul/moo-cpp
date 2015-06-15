@@ -12,12 +12,10 @@ public:
     moo::Population<std::vector<double>> population = getExamplePopulation();
     moo::Population<input> originial = population;
 
-    moo::CrowdedDistance<input> crowded;
+    moo::CrowdedDistance crowded;
 
     std::vector<double> min {0.1,0};
     std::vector<double> max {1,60};
-
-
 
 };
 

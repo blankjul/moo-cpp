@@ -6,13 +6,22 @@
 
 namespace moo {
 
-    class Identity : public Problem<std::vector<double>> {
+    class Identity : public Problem<std::vector<double>,std::vector<double>> {
 
     public:
-        std::vector<double> evaluate(const std::vector<double> & x) {
+
+        virtual std::vector<double> evaluate_(const std::vector<double> & x) {
             std::vector<double> result = x;
             return result;
         }
+
+        virtual std::vector<double> getInput() {
+            return std::vector<double>();
+        };
+
+        virtual std::vector<double> getOutput() {
+            return std::vector<double>();
+        };
 
     };
 

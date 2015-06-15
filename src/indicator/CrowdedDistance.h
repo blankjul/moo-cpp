@@ -15,8 +15,8 @@
 namespace moo {
 
 
-    template <typename T>
-    class CrowdedDistance : public Indicator<T, double> {
+
+    class CrowdedDistance : public Indicator<double> {
 
     private:
 
@@ -26,14 +26,14 @@ namespace moo {
     public:
 
 
-        std::unordered_map<IndividualPtr<T>, double> calculate(Population<T> pop, std::vector<double>* min, std::vector<double>* max ) {
+        template <typename T> std::unordered_map<IndividualPtr<T>, double> calculate(Population<T> pop, std::vector<double>* min, std::vector<double>* max ) {
 
             typedef typename Population<T>::iterator Iterator;
             std::unordered_map<IndividualPtr<T>, double> m;
 
             for (Iterator it = pop.begin(); it != pop.end(); ++it) m[*it] = 0;
 
-            int numOfObjectives = pop[0]->evaluate().size();
+            int numOfObjectives = pop[0]->getOutput().size();
             if (min->size() != numOfObjectives || max->size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
 
             for (int i = 0; i < numOfObjectives; ++i) {

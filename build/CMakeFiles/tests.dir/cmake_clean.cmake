@@ -1,9 +1,10 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/tests.dir/test/BinaryTournemantSelectionTest.cpp.o"
   "CMakeFiles/tests.dir/test/KursaweTest.cpp.o"
-  "CMakeFiles/tests.dir/test/MutationTest.cpp.o"
+  "CMakeFiles/tests.dir/test/NSGAIITest.cpp.o"
   "CMakeFiles/tests.dir/test/Main.cpp.o"
   "CMakeFiles/tests.dir/test/NonDominatedRankTest.cpp.o"
+  "CMakeFiles/tests.dir/test/RecombinationTest.cpp.o"
   "CMakeFiles/tests.dir/test/RealTest.cpp.o"
   "CMakeFiles/tests.dir/test/CrowdingDistanceTest.cpp.o"
   "CMakeFiles/tests.dir/test/IndividualTest.cpp.o"

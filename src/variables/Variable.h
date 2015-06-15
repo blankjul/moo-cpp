@@ -2,6 +2,8 @@
 #ifndef MOO_VARIABLE_H
 #define MOO_VARIABLE_H
 
+
+#include <memory>
 #include <vector>
 
 namespace moo {
@@ -33,8 +35,6 @@ namespace moo {
             if (v.empty()) v.push_back(value);
             else v[0] = value;
         }
-
-        virtual Type getRandom() = 0;
 
 
 

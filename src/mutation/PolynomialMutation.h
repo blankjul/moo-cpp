@@ -1,5 +1,5 @@
-#ifndef MOO_MUTATION_H
-#define MOO_MUTATION_H
+#ifndef MOO_POLYNOMIALMUTATION_H
+#define MOO_POLYNOMIALMUTATION_H
 
 #include <algorithm>
 #include "model/Population.h"
@@ -7,31 +7,24 @@
 
 namespace moo {
 
-    template <typename T>
     class PolynomialMutation {
 
     public:
 
-        void mutate(IndividualPtr<T> & ind) {
+        template <typename T> void mutate(IndividualPtr<T> & ind) {
 
-            std::vector<T> variables;
-            std::copy(ind->getInput().begin(),ind->getInput().end(), std::back_inserter(variables) );
+            T v = ind->getInput();
+            double prob = 1 / v.size();
 
-            double prob = 1 / variables.size();
-
-
-            for (int i = 0; i < variables.size(); ++i) {
-                if (rndDouble() < prob) variables[i] = variables[i].getRandom();
+            for (int i = 0; i < v.size(); ++i) {
+                if (rndDouble() < prob) v[i] = v[i].getRandom();
             }
-
-            ind->setInput(variables);
-
+            ind->setInput(v);
         }
-
 
     };
 
 }
 
 
-#endif //MOO_MUTATION_H
+#endif //MOO_POLYNOMIALMUTATION_H

@@ -8,7 +8,7 @@ struct cmp
     template<typename T>
     bool operator()(moo::IndividualPtr<T> a, moo::IndividualPtr<T> b)
     {
-        return a->evaluate()[0] < b->evaluate()[0];
+        return a->getOutput()[0] < b->getOutput()[0];
     }
 };
 
@@ -22,8 +22,7 @@ public:
 TEST_F(BinaryTournamentSelectionTest, CreateOneElementRandom) {
     moo::Population<input> pop = getExamplePopulation();
     cmp comp;
-    moo::BinaryTournamentSelection<input,cmp> selector(pop, comp);
-
-    selector.select();
+    moo::BinaryTournamentSelection<cmp> selector(comp);
+    selector.select(pop, 5);
 
 }

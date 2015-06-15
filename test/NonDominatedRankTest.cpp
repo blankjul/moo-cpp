@@ -15,7 +15,7 @@ public:
         data.push_back(std::vector<double> {2.42, 1.13});
         return createPopulationFromVector(data);
     }
-    moo::NonDominatedRank<input> sort;
+    moo::NonDominatedRank sort;
     moo::Population<std::vector<double>> population = getPopulation();
 };
 

@@ -2,21 +2,21 @@
 #ifndef MOO_NONDOMINATEDRANK_H
 #define MOO_NONDOMINATEDRANK_H
 
-#include "model/Individual.h"
-#include "model/Population.h"
+
 #include "Indicator.h"
 #include <vector>
-#include <iostream>
+
 
 
 namespace moo {
 
 
-    class NonDominatedRank : public Indicator<int> {
+    class NonDominatedRank : public Indicator<NonDominatedRank, int> {
 
     public:
 
-        template <typename T> std::unordered_map<IndividualPtr<T>, int> calculate(Population<T> pop) {
+        template <typename T>
+        static std::unordered_map<IndividualPtr<T>, int> calculate_(Population<T> pop) {
 
             std::unordered_map<IndividualPtr<T>, int> m;
             int counter = 0;
@@ -31,9 +31,10 @@ namespace moo {
         }
 
 
-        template <typename T> Population<T> getParetoFront(Population<T> & population, bool removeFromPopulation = false)  {
+        template <typename T>
+        static Population<T> getParetoFront(Population<T> & population, bool removeFromPopulation = false)  {
 
-            Population<T> front;
+            std::vector<IndividualPtr<T>> front;
 
             for (int i = 0; i < population.size(); ++i) {
                 IndividualPtr<T> ind = population[i];
@@ -47,7 +48,7 @@ namespace moo {
                 }
             }
 
-            return front;
+            return Population<T>(front);
         }
     };
 

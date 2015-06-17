@@ -2,7 +2,6 @@
 #define MOO_KURSAWE_H
 
 #include <utility>
-#include "model/Problem.h"
 #include "variables/VariableCollection.h"
 #include "variables/Real.h"
 #include <cmath>
@@ -10,11 +9,16 @@
 namespace moo {
 
 
-    class Kursawe : public Problem<VariableCollection<Real>, std::vector<double>> {
+    class Kursawe {
 
     public:
 
-        virtual std::vector<double> evaluate_(const VariableCollection<Real> & input) {
+
+        typedef VariableCollection<Real> InputType;
+        typedef std::vector<double> OutputType;
+
+
+        static OutputType evaluate(const InputType& input) {
 
             std::vector<double> x;
             for(auto entry : input) x.push_back(entry.getValue());
@@ -38,18 +42,15 @@ namespace moo {
             return fx;
         }
 
-
-        virtual VariableCollection<Real> getInput() {
-            VariableCollection<Real> i;
-            for (int j = 0; j < 3; ++j) i.push_back(moo::Real(-5,5));
+        static InputType getInput() {
+            InputType i;
+            for (int j = 0; j < 3; ++j) i.push_back(Real(-5,5));
             return i;
         }
 
-
-        virtual std::vector<double> getOutput() {
-            return std::vector<double>(3);
+        static OutputType getOutput() {
+            return std::vector<double>(2);
         }
-
 
 
     };

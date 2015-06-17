@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/moo.dir/src/Main.cpp.o"
+  "CMakeFiles/moo.dir/src/util/Random.cpp.o"
   "libmoo.pdb"
   "libmoo.a"
 )

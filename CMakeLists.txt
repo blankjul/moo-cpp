@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(MOO)
+project(MOO CXX)
 
 # General
 ###############################################################################
@@ -17,26 +17,21 @@ include_directories(vendor/gmock-1.7.0/gtest/include)
 
 # Main program library
 ###############################################################################
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB_RECURSE SOURCES "src/*.cpp")
 add_library(moo ${SOURCES})
 
 # Set link libraries
-# target_link_libraries($EXECUTABLE_NAME ...)
+#target_link_libraries($EXECUTABLE_NAME ...)
 
 
 
 # Tests executable
 ###############################################################################
 set(TEST_EXECUTABLE_NAME "tests")
+file(GLOB_RECURSE TEST_FILES "test/*.cpp")
 
-# Test files
-file(GLOB TEST_FILES "test/*.cpp")
 
-# Don't include Main.cpp from src
-file(GLOB MAIN_SRC "src/Main.cpp")
-list(REMOVE_ITEM SOURCES ${MAIN_SRC})
-
-add_executable("${TEST_EXECUTABLE_NAME}" ${TEST_FILES} ${SOURCES})
+add_executable("${TEST_EXECUTABLE_NAME}" ${TEST_FILES})
 
 # Set link libraries (order matters)
 target_link_libraries("${TEST_EXECUTABLE_NAME}" gmock gtest pthread moo)

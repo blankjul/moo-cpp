@@ -1,2 +1,2 @@
-/usr/bin/ar cr libmoo.a  CMakeFiles/moo.dir/src/Main.cpp.o
+/usr/bin/ar cr libmoo.a  CMakeFiles/moo.dir/src/util/Random.cpp.o
 /usr/bin/ranlib libmoo.a

@@ -1,4 +1,4 @@
-# Install script for directory: /home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+# Install script for directory: /home/julesy/Workspace/moo-cpp_2/vendor/gmock-1.7.0/gtest
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

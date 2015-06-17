@@ -1,31 +1,57 @@
 #ifndef MOO_IDENTITY_H
 #define MOO_IDENTITY_H
 
-#include <utility>
-#include "model/Problem.h"
+#include <vector>
+#include "util/Random.h"
 
 namespace moo {
 
-    class Identity : public Problem<std::vector<double>,std::vector<double>> {
+    struct Mock : public std::vector<double>  {
+
+        Mock() {}
+
+        Mock (const std::vector<double>& v) {
+            for (unsigned int i = 0; i < v.size(); ++i) {
+                push_back(v[i]);
+            }
+        }
+
+        Mock random() const {
+            std::vector<double> v;
+            for (unsigned int i = 0; i < size(); ++i) {
+                v.push_back(rndDouble());
+            }
+            return Mock(v);
+        }
+    };
+
+
+class Identity
+{
 
     public:
 
-        virtual std::vector<double> evaluate_(const std::vector<double> & x) {
-            std::vector<double> result = x;
-            return result;
+        typedef Mock InputType;
+        typedef std::vector<double> OutputType;
+
+
+        static OutputType evaluate(const InputType& in) {
+            return in;
         }
 
-        virtual std::vector<double> getInput() {
-            return std::vector<double>();
-        };
+        static InputType getInput() {
+            return Mock(std::vector<double>(2));
+        }
 
-        virtual std::vector<double> getOutput() {
-            return std::vector<double>();
-        };
+        static OutputType getOutput() {
+            return std::vector<double>(2);
+        }
 
-    };
+
+};
+
+
 
 }
 
 #endif //MOO_IDENTITY_H
-

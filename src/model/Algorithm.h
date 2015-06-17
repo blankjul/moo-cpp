@@ -1,15 +1,21 @@
 #ifndef MOO_ALGORITHM_H
 #define MOO_ALGORITHM_H
 
+
 namespace moo {
 
-    template <typename Problem, typename Result>
+    template <typename Trait>
     class Algorithm {
+
     public:
-        virtual Result solve(Problem&) = 0;
+
+        typename Trait::OutputType solve(const Trait&  p);
+
     };
 
 }
+
+
 
 
 #endif //MOO_ALGORITHM_H

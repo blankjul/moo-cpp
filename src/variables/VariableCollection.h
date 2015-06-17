@@ -14,10 +14,14 @@ namespace moo {
 
     public:
 
-        VariableCollection getRandom() const{
+
+        VariableCollection() : std::vector<Type>() { }
+        VariableCollection(int n, const Type& val) : std::vector<Type>(n, val) { }
+
+        VariableCollection random() const {
             VariableCollection result;
             for(auto value : *this) {
-                result.push_back(value.getRandom());
+                result.push_back(value.random());
             }
             return result;
         }

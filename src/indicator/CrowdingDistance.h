@@ -41,40 +41,32 @@ namespace moo {
         }
 
 
-
-
         template <typename T>
         static Map<T> calculate_(const Population<T> & pop, std::vector<double>& min, std::vector<double>& max ) {
 
             typedef typename std::vector<IndividualPtr<T>>::iterator Iterator;
+
             Map<T> m;
-
-            Population<T> sorted = pop;
-
             for (auto it = pop.begin(); it != pop.end(); ++it) m[*it] = 0;
 
-            int numOfObjectives = pop[0]->getOutput().size();
+            auto sorted = pop;
+            int numOfObjectives = sorted[0]->getOutput().size();
             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
 
             for (int i = 0; i < numOfObjectives; ++i) {
 
-                IndividualComparator<T> func = [&i]( const IndividualPtr<T>& lhs, const IndividualPtr<T>& rhs )
-                {
-                    return lhs->getOutput()[i] > rhs->getOutput()[i];
-                };
-                std::sort(sorted.begin(), sorted.end(), func);
-
+                sortByObjectiveInplace(sorted,i);
 
                 double denominator = max[i] - min[i];
                 if (denominator < 0) throw std::runtime_error("Error min and max values couldn't be correct!");
 
 
                 m[sorted[0]] = std::numeric_limits<double>::infinity();
-                m[sorted[sorted.size()-1]] = std::numeric_limits<double>::infinity();
+                m[sorted[sorted.size() - 1]] = std::numeric_limits<double>::infinity();
 
                 for (int j = 1; j < sorted.size() - 1; ++j) {
                     if (std::isinf(m[sorted[j]])) continue;
-                    m[sorted[j]] += (getValue(sorted, j-1, i) - getValue(sorted, j+1, i)) / denominator;
+                    m[sorted[j]] += (sorted[j-1]->getOutput()[i] - sorted[j+1]->getOutput()[i]) / denominator;
                 }
             }
 

@@ -600,14 +600,19 @@ CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o: ../vendor/gmock-1.7.0/incl
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o: ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o: ../test/problems/KursaweTest.cpp
 
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/indicator/Util.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/model/Individual.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/model/Population.h
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/problems/Identity.h
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/problems/Kursawe.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/util/Random.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/util/paretoFrontCalculator/KungParetoFront.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/util/paretoFrontCalculator/NaiveParetoFront.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/util/paretoFrontCalculator/ParetoFront.h
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/variables/BoundedVariable.h
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/variables/Real.h
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/variables/Variable.h
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../src/variables/VariableCollection.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../test/AbstractTest.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-death-test.h
 CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-message.h

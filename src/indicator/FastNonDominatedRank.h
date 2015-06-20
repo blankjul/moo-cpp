@@ -31,15 +31,22 @@ namespace moo {
             std::vector<int> front;
 
             for (int i = 0; i < pop.size(); ++i) {
-                for (int j = 0; j < pop.size(); ++j) {
-                    if (i == j) continue;
-                    else if (pop[i]->isDominating(*pop[j])) mDominates[i].push_back(j);
-                    else if (pop[i]->isDominatedBy(*pop[j])) mIsDominatedBy[i] += 1;
+                for (int j = i + 1; j < pop.size(); ++j) {
+                    if (pop[i]->isDominating(*pop[j])) {
+                        mDominates[i].push_back(j);
+                        mIsDominatedBy[j] += 1;
+                    }
+                    else if (pop[i]->isDominatedBy(*pop[j])) {
+                        mDominates[j].push_back(i);
+                        mIsDominatedBy[i] += 1;
+                    }
                 }
+
                 if (mIsDominatedBy[i] == 0) {
                     front.push_back(i);
                     m[pop[i]] = 0;
                 }
+
             }
             numOfObservedInds += front.size();
 

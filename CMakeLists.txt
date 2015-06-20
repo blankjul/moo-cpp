@@ -49,9 +49,9 @@ target_link_libraries(tests gmock gtest pthread benchmark moo)
 ###############################################################################
 # Benchmark executable
 ###############################################################################
-#file(GLOB_RECURSE BENCHMARK_FILES "benchmark/*.cpp")
-#add_executable(benchmark_ ${BENCHMARK_FILES})
-#target_link_libraries(benchmark_ benchmark moo)
+file(GLOB_RECURSE BENCHMARK_FILES "benchmark/*.cpp")
+add_executable(benchmark_ ${BENCHMARK_FILES})
+target_link_libraries(benchmark_ benchmark moo)
 
 
 

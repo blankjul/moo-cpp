@@ -24,11 +24,11 @@ namespace moo {
         }
 
 
+
         template <typename Trait>
         static Population<Trait> getParetoFront(const Population<Trait> & pop)
         {
             Population<Trait> front;
-
             Population<Trait> copy = pop;
             sortByObjectiveInplaceReverse(copy,0);
 

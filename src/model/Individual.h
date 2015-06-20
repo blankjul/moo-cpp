@@ -19,7 +19,7 @@ namespace moo {
 
     private:
 
-        const typename Trait::InputType input;
+        typename Trait::InputType input;
         typename Trait::OutputType output;
 
     public:
@@ -71,9 +71,10 @@ namespace moo {
         }
 
 
+
+
+
     };
-
-
 
 
 }

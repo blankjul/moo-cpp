@@ -1,7 +1,7 @@
 #include "AbstractTest.h"
-#include "indicator/Util.h"
 #include "problems/Identity.h"
 #include <limits>
+#include <model/Population.h>
 
 
 class IndicatorTest : public AbstractTest {

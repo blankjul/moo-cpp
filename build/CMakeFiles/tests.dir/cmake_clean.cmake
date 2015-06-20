@@ -6,7 +6,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o"
   "CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o"
   "CMakeFiles/tests.dir/test/Main.cpp.o"
-  "CMakeFiles/tests.dir/test/indicator/IndicatorTest.cpp.o"
   "CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o"
   "CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o"
   "CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o"

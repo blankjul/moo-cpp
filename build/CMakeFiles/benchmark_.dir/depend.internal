@@ -4,7 +4,6 @@
 CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
  ../src/indicator/CrowdingDistance.h
  ../src/indicator/Indicator.h
- ../src/indicator/Util.h
  ../src/model/Individual.h
  ../src/model/Population.h
  ../src/problems/Kursawe.h

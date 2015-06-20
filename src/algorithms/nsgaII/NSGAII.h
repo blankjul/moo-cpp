@@ -7,7 +7,6 @@
 #include "indicator/NonDominatedRank.h"
 #include "indicator/FastNonDominatedRank.h"
 #include "indicator/CrowdingDistance.h"
-#include "indicator/Util.h"
 #include "util/Random.h"
 #include <iostream>
 
@@ -100,8 +99,9 @@ namespace moo {
 
                 // Only save the best population with the best ranks (save time by ignoring worse fronts!)
                 indRank = NonDominatedRank::calculate_(population, populationSize);
-                sortByIndicatorInplaceReverse(population, indRank);
+                population = population.sortByMap(indRank);
                 truncate(population, populationSize);
+
 
                 // now for the last front use the crowding distance to ensure that the best individuals remains
                 indCrowding = CrowdingDistance::calculate(population);

@@ -3,7 +3,6 @@
 #define MOO_CROWDEDDISTANCE_H
 
 #include "Indicator.h"
-#include "Util.h"
 #include <vector>
 #include <map>
 #include <limits>
@@ -34,7 +33,7 @@ namespace moo {
         template <typename T>
         static void bounds_(const Population<T> & pop, std::vector<double>& min, std::vector<double>& max ) {
             for (int j = 0; j < T::getOutput().size(); ++j) {
-                auto v = getObjective(pop,j);
+                auto v = pop.getObjective(j);
                 min.push_back(*std::min_element(v.begin(), v.end()));
                 max.push_back(*std::max_element(v.begin(), v.end()));
             }
@@ -55,7 +54,7 @@ namespace moo {
 
             for (int i = 0; i < numOfObjectives; ++i) {
 
-                sortByObjectiveInplace(sorted,i);
+                sorted = sorted.sortByObjective(i);
 
                 double denominator = max[i] - min[i];
                 if (denominator < 0) throw std::runtime_error("Error min and max values couldn't be correct!");
@@ -66,7 +65,7 @@ namespace moo {
 
                 for (int j = 1; j < sorted.size() - 1; ++j) {
                     if (std::isinf(m[sorted[j]])) continue;
-                    m[sorted[j]] += (sorted[j-1]->getOutput()[i] - sorted[j+1]->getOutput()[i]) / denominator;
+                    m[sorted[j]] += (sorted[j+1]->getOutput()[i] - sorted[j-1]->getOutput()[i]) / denominator;
                 }
             }
 

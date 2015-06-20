@@ -59,8 +59,8 @@ CMAKE_BINARY_DIR = /home/julesy/Workspace/moo-cpp_2/build
 # Target rules for target CMakeFiles/benchmark_.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark_.dir/all: CMakeFiles/moo.dir/all
 CMakeFiles/benchmark_.dir/all: vendor/benchmark/src/CMakeFiles/benchmark.dir/all
+CMakeFiles/benchmark_.dir/all: CMakeFiles/moo.dir/all
 	$(MAKE) -f CMakeFiles/benchmark_.dir/build.make CMakeFiles/benchmark_.dir/depend
 	$(MAKE) -f CMakeFiles/benchmark_.dir/build.make CMakeFiles/benchmark_.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles  15 16 17 18 19
@@ -130,13 +130,13 @@ clean: CMakeFiles/moo.dir/clean
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/moo.dir/all
 CMakeFiles/tests.dir/all: vendor/gmock-1.7.0/CMakeFiles/gmock.dir/all
 CMakeFiles/tests.dir/all: vendor/gmock-1.7.0/gtest/CMakeFiles/gtest.dir/all
 CMakeFiles/tests.dir/all: vendor/benchmark/src/CMakeFiles/benchmark.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/moo.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
 	@echo "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
@@ -146,7 +146,7 @@ all: CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule

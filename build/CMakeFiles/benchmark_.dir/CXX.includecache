@@ -9,8 +9,6 @@
 ../src/indicator/CrowdingDistance.h
 Indicator.h
 ../src/indicator/Indicator.h
-Util.h
-../src/indicator/Util.h
 vector
 -
 map
@@ -23,16 +21,6 @@ algorithm
 -
 
 ../src/indicator/Indicator.h
-algorithm
--
-unordered_map
--
-model/Individual.h
-../src/indicator/model/Individual.h
-model/Population.h
-../src/indicator/model/Population.h
-
-../src/indicator/Util.h
 algorithm
 -
 unordered_map
@@ -60,6 +48,8 @@ stack
 iostream
 -
 algorithm
+-
+unordered_map
 -
 
 ../src/problems/Kursawe.h

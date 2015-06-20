@@ -73,19 +73,6 @@ namespace moo {
     }
 
 
-        template <typename T>
-        double getValue(const Population<T>& population, int index, int objective) {
-            return population[index]->getOutput()[objective];
-        }
-
-        template <typename T>
-        std::vector<double> getObjective(const Population<T>& pop, int objective) {
-            typename T::OutputType result;
-            for (int j = 0; j < pop.size(); ++j) {
-                result.push_back(getValue(pop, j, objective));
-            }
-            return result;
-        }
 
 
 

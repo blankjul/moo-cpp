@@ -1,4 +1,4 @@
-#include <indicator/Util.h>
+
 #include "AbstractTest.h"
 #include "model/Population.h"
 #include "util/paretoFrontCalculator/ContUpdatedParetoFront.h"

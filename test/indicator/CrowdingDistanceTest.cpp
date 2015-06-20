@@ -20,7 +20,7 @@ TEST_F(CrowdingDistanceTest, ExecuteNoErrorThrown) {
 }
 
 
-TEST_F(CrowdingDistanceTest, CrowdedDistance) {
+TEST_F(CrowdingDistanceTest, CrowdedDistanceSmallExample) {
     MapType m = moo::CrowdingDistance::calculate_(population, min, max);
     EXPECT_NEAR(0.63, m[population[0]], 0.1);
     EXPECT_EQ(inf, m[population[1]]);
@@ -29,9 +29,9 @@ TEST_F(CrowdingDistanceTest, CrowdedDistance) {
 }
 
 
-TEST_F(CrowdingDistanceTest, CrowdedDistanceAndSort) {
+TEST_F(CrowdingDistanceTest, CrowdedDistanceSmallAndSort) {
     MapType m = moo::CrowdingDistance::calculate_(population, min, max);
-    auto result = sortByIndicator(population, m);
+    auto result = population.sortByMap(m, true);
     ASSERT_THAT(result, ElementsAre(population[1],population[2],population[0],population[3]));
 }
 
@@ -54,11 +54,11 @@ TEST_F(CrowdingDistanceTest, CorrectBoundsMaxLargerMin) {
 
 
 TEST_F(CrowdingDistanceTest, GetObjectiveUtilFunctionCorrectValuesFirst) {
-    auto res = moo::getObjective(population, 0);
+    auto res = population.getObjective(0);
     ASSERT_THAT(res, ElementsAre(0.31, 0.22, 0.79, 0.27));
 }
 TEST_F(CrowdingDistanceTest, GetObjectiveUtilFunctionCorrectValuesSecond) {
-    auto res = moo::getObjective(population, 1);
+    auto res = population.getObjective(1);
     ASSERT_THAT(res, ElementsAre(6.10, 7.09, 3.97, 6.93));
 }
 

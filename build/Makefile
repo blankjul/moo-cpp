@@ -588,30 +588,6 @@ test/indicator/FastNonDominatedRankTest.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.s
 .PHONY : test/indicator/FastNonDominatedRankTest.cpp.s
 
-test/indicator/IndicatorTest.o: test/indicator/IndicatorTest.cpp.o
-.PHONY : test/indicator/IndicatorTest.o
-
-# target to build an object file
-test/indicator/IndicatorTest.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/IndicatorTest.cpp.o
-.PHONY : test/indicator/IndicatorTest.cpp.o
-
-test/indicator/IndicatorTest.i: test/indicator/IndicatorTest.cpp.i
-.PHONY : test/indicator/IndicatorTest.i
-
-# target to preprocess a source file
-test/indicator/IndicatorTest.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/IndicatorTest.cpp.i
-.PHONY : test/indicator/IndicatorTest.cpp.i
-
-test/indicator/IndicatorTest.s: test/indicator/IndicatorTest.cpp.s
-.PHONY : test/indicator/IndicatorTest.s
-
-# target to generate assembly for a file
-test/indicator/IndicatorTest.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/IndicatorTest.cpp.s
-.PHONY : test/indicator/IndicatorTest.cpp.s
-
 test/indicator/NonDominatedRankTest.o: test/indicator/NonDominatedRankTest.cpp.o
 .PHONY : test/indicator/NonDominatedRankTest.o
 
@@ -911,9 +887,6 @@ help:
 	@echo "... test/indicator/FastNonDominatedRankTest.o"
 	@echo "... test/indicator/FastNonDominatedRankTest.i"
 	@echo "... test/indicator/FastNonDominatedRankTest.s"
-	@echo "... test/indicator/IndicatorTest.o"
-	@echo "... test/indicator/IndicatorTest.i"
-	@echo "... test/indicator/IndicatorTest.s"
 	@echo "... test/indicator/NonDominatedRankTest.o"
 	@echo "... test/indicator/NonDominatedRankTest.i"
 	@echo "... test/indicator/NonDominatedRankTest.s"

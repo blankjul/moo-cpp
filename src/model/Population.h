@@ -71,31 +71,36 @@ namespace moo {
 
 
         template<typename T>
-        Population<Trait> sortByVector(const std::vector<T> & v, bool isDescending = false) {
-            std::vector<int> index;
-            for (int i = 0; i < this->size(); ++i) index.push_back(i);
-            auto asc = [&v]( const int & lhs, const int & rhs ) { return v[lhs] < v[rhs];};
-            auto desc = [&v]( const int & lhs, const int & rhs ) { return v[lhs] > v[rhs];};
-            if (isDescending) std::sort(index.begin(), index.end(), desc);
-            else std::sort(index.begin(), index.end(), asc);
-            Population<Trait> result(v.size());
-            for (int j = 0; j < index.size(); ++j) result[j] = (*this)[index[j]];
-            return result;
+        void sortByVector(const std::vector<T> & v, bool isDescending = false) {
+            std::unordered_map<IndividualPtr<Trait>, T> m;
+            for (int i = 0; i < this->size(); ++i) m[(*this)[i]] = v[i];
+            sortByMap(m, isDescending);
         }
 
+        template <typename T>
+        std::vector<int> sortedIndexByVector(const std::vector<T> & v) const{
+            std::vector<int> index;
+            for (int k = 0; k < this->size(); ++k) index.push_back(k);
+            auto  func = [&v](const int & lhs, const int & rhs) {
+                return v[lhs] < v[rhs];
+            };
+            std::sort(index.begin(), index.end(), func);
+            return index;
+        }
 
 
         template <typename T>
-        Population<Trait> sortByMap(std::unordered_map<IndividualPtr<Trait>, T> & m, bool isDescending = false) {
-            std::vector<T> v;
-            for (int i = 0; i < this->size(); ++i) v.push_back(m[(*this)[i]]);
-            return sortByVector(v, isDescending);
+        void sortByMap(std::unordered_map<IndividualPtr<Trait>, T> & m, bool isDescending = false) {
+            if (isDescending) {
+                std::sort(this->begin(), this->end(),[&m]( const IndividualPtr<Trait> & lhs, const IndividualPtr<Trait> & rhs )
+                {return m[lhs] > m[rhs];});
+            } else std::sort(this->begin(), this->end(),[&m]( const IndividualPtr<Trait> & lhs, const IndividualPtr<Trait> & rhs )
+                {return m[lhs] < m[rhs];});
         }
 
 
-
-        Population<Trait> sortByObjective(int objective, bool isDescending = false) {
-            return sortByVector(getObjective(objective), isDescending);
+        void sortByObjective(int objective, bool isDescending = false) {
+            sortByVector(getObjective(objective), isDescending);
         }
 
 

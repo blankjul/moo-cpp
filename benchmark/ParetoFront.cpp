@@ -2,7 +2,6 @@
 #include "util/paretoFrontCalculator/ContUpdatedParetoFront.h"
 #include "util/paretoFrontCalculator/NaiveParetoFront.h"
 #include "util/paretoFrontCalculator/KungParetoFront.h"
-#include "indicator/Util.h"
 
 
 class ParetoFront : public AbstractBenchmark {

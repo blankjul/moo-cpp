@@ -1,6 +1,6 @@
 #include "AbstractBenchmark.h"
 #include "model/Population.h"
-#include "indicator/Util.h"
+
 
 
 class Population : public AbstractBenchmark {
@@ -14,7 +14,11 @@ public:
 
 
 BENCHMARK_F(Population, BM_SortByPointer)(benchmark::State& state) {
-    while (state.KeepRunning())  moo::sortByObjectiveInplace(population, 0);
+    auto func = []( const moo::IndividualPtr<moo::Kursawe> & lhs, const moo::IndividualPtr<moo::Kursawe> & rhs )
+    {
+        return lhs->getOutput()[0] > rhs->getOutput()[0];
+    };
+    while (state.KeepRunning())  std::sort(population.begin(), population.end(), func);
 }
 
 BENCHMARK_F(Population, BM_CopyPopulationByPointer)(benchmark::State& state) {

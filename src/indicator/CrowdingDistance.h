@@ -48,24 +48,24 @@ namespace moo {
             Map<T> m;
             for (auto it = pop.begin(); it != pop.end(); ++it) m[*it] = 0;
 
-            auto sorted = pop;
-            int numOfObjectives = sorted[0]->getOutput().size();
+            int numOfObjectives = pop[0]->getOutput().size();
             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
 
             for (int i = 0; i < numOfObjectives; ++i) {
 
-                sorted = sorted.sortByObjective(i);
+                auto obj = pop.getObjective(i);
+                auto index = pop.sortedIndexByVector(obj);
 
                 double denominator = max[i] - min[i];
                 if (denominator < 0) throw std::runtime_error("Error min and max values couldn't be correct!");
 
 
-                m[sorted[0]] = std::numeric_limits<double>::infinity();
-                m[sorted[sorted.size() - 1]] = std::numeric_limits<double>::infinity();
+                m[pop[index[0]]] = std::numeric_limits<double>::infinity();
+                m[pop[index[index.size()-1]]] = std::numeric_limits<double>::infinity();
 
-                for (int j = 1; j < sorted.size() - 1; ++j) {
-                    if (std::isinf(m[sorted[j]])) continue;
-                    m[sorted[j]] += (sorted[j+1]->getOutput()[i] - sorted[j-1]->getOutput()[i]) / denominator;
+                for (int j = 1; j < pop.size() - 1; ++j) {
+                    if (std::isinf(m[pop[index[j]]])) continue;
+                    m[pop[index[j]]] += (pop[index[j+1]]->getOutput()[i] - pop[index[j-1]]->getOutput()[i]) / denominator;
                 }
             }
 

@@ -49,27 +49,31 @@ TEST_F(PopulationTest, CreateRandomPopulation) {
 
 TEST_F(PopulationTest, SortByVectorAscending) {
     moo::Population<moo::Kursawe> pop {4};
+    auto before = pop;
     std::vector<int> v {1,3,2,4};
-    auto res = pop.sortByVector(v);
-    ASSERT_THAT(res, ElementsAre(pop[0], pop[2],pop[1],pop[3]));
+    pop.sortByVector(v);
+    ASSERT_THAT(pop, ElementsAre(before[0], before[2],before[1],before[3]));
 }
 
 TEST_F(PopulationTest, SortByVectorDescending) {
     moo::Population<moo::Kursawe> pop {4};
     std::vector<int> v {1,3,2,4};
-    auto res = pop.sortByVector(v, true);
-    ASSERT_THAT(res, ElementsAre(pop[3], pop[1],pop[2],pop[0]));
+    auto before = pop;
+    pop.sortByVector(v, true);
+    ASSERT_THAT(pop, ElementsAre(before[3], before[1],before[2],before[0]));
 }
 
 TEST_F(PopulationTest, SortByObjectiveOne) {
-    auto res = other.sortByObjective(0, true);
-    ASSERT_THAT(res, ElementsAre(other[2],other[0],other[3],other[1]));
+    auto before = other;
+    other.sortByObjective(0, true);
+    ASSERT_THAT(other, ElementsAre(before[2],before[0],before[3],before[1]));
 }
 
 
 TEST_F(PopulationTest, SortByObjectiveTwo) {
-    auto res = other.sortByObjective(1, true);
-    ASSERT_THAT(res, ElementsAre(other[1],other[3],other[0],other[2]));
+    auto before = other;
+    other.sortByObjective(1, true);
+    ASSERT_THAT(other, ElementsAre(before[1],before[3],before[0],before[2]));
 }
 
 
@@ -78,7 +82,10 @@ TEST_F(PopulationTest, SortByMap) {
     for (unsigned int i = 0; i < other.size(); ++i) {
         m[other[i]] = other[i]->getOutput()[0];
     }
-    EXPECT_EQ(other.sortByObjective(0), other.sortByMap(m));
+    auto before = other;
+    other.sortByObjective(0);
+    before.sortByMap(m);
+    EXPECT_EQ(before, other);
 }
 
 

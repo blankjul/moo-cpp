@@ -99,7 +99,7 @@ namespace moo {
 
                 // Only save the best population with the best ranks (save time by ignoring worse fronts!)
                 indRank = NonDominatedRank::calculate_(population, populationSize);
-                population = population.sortByMap(indRank);
+                population.sortByMap(indRank);
                 truncate(population, populationSize);
 
 
@@ -110,7 +110,6 @@ namespace moo {
                 truncate(population, populationSize);
 
             }
-
 
             if (verbose) print(population, true, true);
             if (verbose) print(population);

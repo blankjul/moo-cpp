@@ -31,8 +31,9 @@ TEST_F(CrowdingDistanceTest, CrowdedDistanceSmallExample) {
 
 TEST_F(CrowdingDistanceTest, CrowdedDistanceSmallAndSort) {
     MapType m = moo::CrowdingDistance::calculate_(population, min, max);
-    auto result = population.sortByMap(m, true);
-    ASSERT_THAT(result, ElementsAre(population[1],population[2],population[0],population[3]));
+    auto before = population;
+    population.sortByMap(m, true);
+    ASSERT_THAT(population, ElementsAre(before[1],before[2],before[0],before[3]));
 }
 
 

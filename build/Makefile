@@ -60,6 +60,47 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+.PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -178,6 +219,97 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) -f vendor/gmock-1.7.0/gtest/CMakeFiles/gtest_main.dir/build.make vendor/gmock-1.7.0/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named benchmark
+
+# Build rule for target.
+benchmark: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 benchmark
+.PHONY : benchmark
+
+# fast build rule for target.
+benchmark/fast:
+	$(MAKE) -f vendor/benchmark/src/CMakeFiles/benchmark.dir/build.make vendor/benchmark/src/CMakeFiles/benchmark.dir/build
+.PHONY : benchmark/fast
+
+#=============================================================================
+# Target rules for targets named basic_test
+
+# Build rule for target.
+basic_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 basic_test
+.PHONY : basic_test
+
+# fast build rule for target.
+basic_test/fast:
+	$(MAKE) -f vendor/benchmark/test/CMakeFiles/basic_test.dir/build.make vendor/benchmark/test/CMakeFiles/basic_test.dir/build
+.PHONY : basic_test/fast
+
+#=============================================================================
+# Target rules for targets named benchmark_test
+
+# Build rule for target.
+benchmark_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 benchmark_test
+.PHONY : benchmark_test
+
+# fast build rule for target.
+benchmark_test/fast:
+	$(MAKE) -f vendor/benchmark/test/CMakeFiles/benchmark_test.dir/build.make vendor/benchmark/test/CMakeFiles/benchmark_test.dir/build
+.PHONY : benchmark_test/fast
+
+#=============================================================================
+# Target rules for targets named cxx03_test
+
+# Build rule for target.
+cxx03_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cxx03_test
+.PHONY : cxx03_test
+
+# fast build rule for target.
+cxx03_test/fast:
+	$(MAKE) -f vendor/benchmark/test/CMakeFiles/cxx03_test.dir/build.make vendor/benchmark/test/CMakeFiles/cxx03_test.dir/build
+.PHONY : cxx03_test/fast
+
+#=============================================================================
+# Target rules for targets named filter_test
+
+# Build rule for target.
+filter_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 filter_test
+.PHONY : filter_test
+
+# fast build rule for target.
+filter_test/fast:
+	$(MAKE) -f vendor/benchmark/test/CMakeFiles/filter_test.dir/build.make vendor/benchmark/test/CMakeFiles/filter_test.dir/build
+.PHONY : filter_test/fast
+
+#=============================================================================
+# Target rules for targets named fixture_test
+
+# Build rule for target.
+fixture_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fixture_test
+.PHONY : fixture_test
+
+# fast build rule for target.
+fixture_test/fast:
+	$(MAKE) -f vendor/benchmark/test/CMakeFiles/fixture_test.dir/build.make vendor/benchmark/test/CMakeFiles/fixture_test.dir/build
+.PHONY : fixture_test/fast
+
+#=============================================================================
+# Target rules for targets named options_test
+
+# Build rule for target.
+options_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 options_test
+.PHONY : options_test
+
+# fast build rule for target.
+options_test/fast:
+	$(MAKE) -f vendor/benchmark/test/CMakeFiles/options_test.dir/build.make vendor/benchmark/test/CMakeFiles/options_test.dir/build
+.PHONY : options_test/fast
 
 src/util/Random.o: src/util/Random.cpp.o
 .PHONY : src/util/Random.o
@@ -299,6 +431,30 @@ test/indicator/CrowdingDistanceTest.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.s
 .PHONY : test/indicator/CrowdingDistanceTest.cpp.s
 
+test/indicator/FastNonDominatedRankTest.o: test/indicator/FastNonDominatedRankTest.cpp.o
+.PHONY : test/indicator/FastNonDominatedRankTest.o
+
+# target to build an object file
+test/indicator/FastNonDominatedRankTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
+.PHONY : test/indicator/FastNonDominatedRankTest.cpp.o
+
+test/indicator/FastNonDominatedRankTest.i: test/indicator/FastNonDominatedRankTest.cpp.i
+.PHONY : test/indicator/FastNonDominatedRankTest.i
+
+# target to preprocess a source file
+test/indicator/FastNonDominatedRankTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.i
+.PHONY : test/indicator/FastNonDominatedRankTest.cpp.i
+
+test/indicator/FastNonDominatedRankTest.s: test/indicator/FastNonDominatedRankTest.cpp.s
+.PHONY : test/indicator/FastNonDominatedRankTest.s
+
+# target to generate assembly for a file
+test/indicator/FastNonDominatedRankTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.s
+.PHONY : test/indicator/FastNonDominatedRankTest.cpp.s
+
 test/indicator/IndicatorTest.o: test/indicator/IndicatorTest.cpp.o
 .PHONY : test/indicator/IndicatorTest.o
 
@@ -394,30 +550,6 @@ test/model/PopulationTest.s: test/model/PopulationTest.cpp.s
 test/model/PopulationTest.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/PopulationTest.cpp.s
 .PHONY : test/model/PopulationTest.cpp.s
-
-test/model/ProblemTest.o: test/model/ProblemTest.cpp.o
-.PHONY : test/model/ProblemTest.o
-
-# target to build an object file
-test/model/ProblemTest.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/ProblemTest.cpp.o
-.PHONY : test/model/ProblemTest.cpp.o
-
-test/model/ProblemTest.i: test/model/ProblemTest.cpp.i
-.PHONY : test/model/ProblemTest.i
-
-# target to preprocess a source file
-test/model/ProblemTest.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/ProblemTest.cpp.i
-.PHONY : test/model/ProblemTest.cpp.i
-
-test/model/ProblemTest.s: test/model/ProblemTest.cpp.s
-.PHONY : test/model/ProblemTest.s
-
-# target to generate assembly for a file
-test/model/ProblemTest.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/ProblemTest.cpp.s
-.PHONY : test/model/ProblemTest.cpp.s
 
 test/operators/CrossoverTest.o: test/operators/CrossoverTest.cpp.o
 .PHONY : test/operators/CrossoverTest.o
@@ -515,6 +647,30 @@ test/problems/KursaweTest.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.s
 .PHONY : test/problems/KursaweTest.cpp.s
 
+test/util/paretoFront/ParetoFrontTest.o: test/util/paretoFront/ParetoFrontTest.cpp.o
+.PHONY : test/util/paretoFront/ParetoFrontTest.o
+
+# target to build an object file
+test/util/paretoFront/ParetoFrontTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o
+.PHONY : test/util/paretoFront/ParetoFrontTest.cpp.o
+
+test/util/paretoFront/ParetoFrontTest.i: test/util/paretoFront/ParetoFrontTest.cpp.i
+.PHONY : test/util/paretoFront/ParetoFrontTest.i
+
+# target to preprocess a source file
+test/util/paretoFront/ParetoFrontTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.i
+.PHONY : test/util/paretoFront/ParetoFrontTest.cpp.i
+
+test/util/paretoFront/ParetoFrontTest.s: test/util/paretoFront/ParetoFrontTest.cpp.s
+.PHONY : test/util/paretoFront/ParetoFrontTest.s
+
+# target to generate assembly for a file
+test/util/paretoFront/ParetoFrontTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.s
+.PHONY : test/util/paretoFront/ParetoFrontTest.cpp.s
+
 test/variables/RealTest.o: test/variables/RealTest.cpp.o
 .PHONY : test/variables/RealTest.o
 
@@ -570,6 +726,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... moo"
 	@echo "... rebuild_cache"
 	@echo "... tests"
@@ -577,6 +737,13 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... benchmark"
+	@echo "... basic_test"
+	@echo "... benchmark_test"
+	@echo "... cxx03_test"
+	@echo "... filter_test"
+	@echo "... fixture_test"
+	@echo "... options_test"
 	@echo "... src/util/Random.o"
 	@echo "... src/util/Random.i"
 	@echo "... src/util/Random.s"
@@ -592,6 +759,9 @@ help:
 	@echo "... test/indicator/CrowdingDistanceTest.o"
 	@echo "... test/indicator/CrowdingDistanceTest.i"
 	@echo "... test/indicator/CrowdingDistanceTest.s"
+	@echo "... test/indicator/FastNonDominatedRankTest.o"
+	@echo "... test/indicator/FastNonDominatedRankTest.i"
+	@echo "... test/indicator/FastNonDominatedRankTest.s"
 	@echo "... test/indicator/IndicatorTest.o"
 	@echo "... test/indicator/IndicatorTest.i"
 	@echo "... test/indicator/IndicatorTest.s"
@@ -604,9 +774,6 @@ help:
 	@echo "... test/model/PopulationTest.o"
 	@echo "... test/model/PopulationTest.i"
 	@echo "... test/model/PopulationTest.s"
-	@echo "... test/model/ProblemTest.o"
-	@echo "... test/model/ProblemTest.i"
-	@echo "... test/model/ProblemTest.s"
 	@echo "... test/operators/CrossoverTest.o"
 	@echo "... test/operators/CrossoverTest.i"
 	@echo "... test/operators/CrossoverTest.s"
@@ -619,6 +786,9 @@ help:
 	@echo "... test/problems/KursaweTest.o"
 	@echo "... test/problems/KursaweTest.i"
 	@echo "... test/problems/KursaweTest.s"
+	@echo "... test/util/paretoFront/ParetoFrontTest.o"
+	@echo "... test/util/paretoFront/ParetoFrontTest.i"
+	@echo "... test/util/paretoFront/ParetoFrontTest.s"
 	@echo "... test/variables/RealTest.o"
 	@echo "... test/variables/RealTest.i"
 	@echo "... test/variables/RealTest.s"

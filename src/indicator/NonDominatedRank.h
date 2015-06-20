@@ -4,6 +4,7 @@
 
 
 #include "Indicator.h"
+#include "util/paretoFrontCalculator/ContUpdatedParetoFront.h"
 #include <vector>
 
 
@@ -16,40 +17,29 @@ namespace moo {
     public:
 
         template <typename T>
-        static std::unordered_map<IndividualPtr<T>, int> calculate_(Population<T> pop) {
+        static std::unordered_map<IndividualPtr<T>, int> calculate_(Population<T> pop, int onlyForBestIndividuals = -1) {
 
+            if (onlyForBestIndividuals == -1) onlyForBestIndividuals = pop.size();
             std::unordered_map<IndividualPtr<T>, int> m;
-            int counter = 0;
+            int rank = 0;
+            int numOfObservedInds = 0;
 
-            while (!pop.empty()) {
-                for (IndividualPtr<T> entry : getParetoFront(pop, true)) {
-                    m[entry] = counter;
+            while (!pop.empty() && (numOfObservedInds < onlyForBestIndividuals)) {
+
+                auto front = ContUpdatedParetoFront::getParetoFront(pop);
+                pop.remove(front);
+
+                for (IndividualPtr<T> entry : front) {
+                    m[entry] = rank;
+                    ++numOfObservedInds;
                 }
-                ++counter;
+                ++rank;
             }
+            for (IndividualPtr<T> entry : pop) m[entry] = std::numeric_limits<int>::max();
             return m;
         }
 
 
-        template <typename T>
-        static Population<T> getParetoFront(Population<T> & population, bool removeFromPopulation = false)  {
-
-            std::vector<IndividualPtr<T>> front;
-
-            for (int i = 0; i < population.size(); ++i) {
-                IndividualPtr<T> ind = population[i];
-                if (!population.isNonDominated(ind)) front.push_back(ind);
-            }
-
-            if (removeFromPopulation) {
-                for (auto entry : front) {
-                    auto it = std::find(population.begin(), population.end(), entry);
-                    if(it != population.end()) population.erase(it);
-                }
-            }
-
-            return Population<T>(front);
-        }
     };
 
 

@@ -11,12 +11,12 @@ namespace moo {
     public:
 
 
-        template <typename Trait> IndividualPtr<Trait> static select(const Population<Trait> & population) {
-            return DerivedClass::select_(population);
+        template <typename Trait> IndividualPtr<Trait> select(const Population<Trait> & population) {
+            return static_cast<DerivedClass*>(this)->select_(population);
         }
 
-        template <typename Trait> Population<Trait> static selectMultiple(const Population<Trait> & population) {
-            return DerivedClass::selectMultiple_(population);
+        template <typename Trait> Population<Trait> selectMultiple(const Population<Trait> & population, int n) {
+            return static_cast<DerivedClass*>(this)->selectMultiple_(population, n);
         }
 
 

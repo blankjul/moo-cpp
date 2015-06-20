@@ -3,6 +3,7 @@
 #define MOO_REAL_H
 
 #include "BoundedVariable.h"
+#include "util/Random.h"
 #include <cstdlib>
 
 namespace moo {
@@ -17,8 +18,9 @@ namespace moo {
         Real(double lower, double upper) : BoundedVariable(0,lower, upper) {};
 
         Real random() const {
-            double value =  lowerBound + (double) std::rand() / RAND_MAX * (upperBound - lowerBound);
-            return Real(value,lowerBound,upperBound);
+            auto random = Random::getInstance();
+            double tmp =  random->rndDouble(lowerBound, upperBound);
+            return Real(tmp,lowerBound,upperBound);
         }
 
     };

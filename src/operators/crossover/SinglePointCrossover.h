@@ -11,10 +11,10 @@ namespace moo {
 
     public:
 
-        template <typename T> static T crossover_(const T & a, const T & b, int point = -1) {
-            if (a.size() != b.size()) throw std::runtime_error("SinglePointCrossover is only allowed on equal sized inputs!");
+        template <typename T>
+        static T crossover_(const T & a, const T & b, int point = -1) {
             T off = a;
-            if (point < 0 || point > a.size()) point = rndInt(0,b.size());
+            if (point < 0 || point > a.size()) point = Random::getInstance()->rndInt(0,b.size());
             for (int i = point; i < b.size(); ++i) {
                 off[i] = b[i];
             }

@@ -12,11 +12,11 @@ namespace moo {
     public:
 
 
-        template <typename Trait> static void mutate(IndividualPtr<Trait> & ind)
+        template <typename Trait> static IndividualPtr<Trait> mutate(IndividualPtr<Trait> & ind)
         {
             typename Trait::InputType in = ind->getInput();
             DerivedClass::mutate_(in);
-            ind->setInput(in);
+            return std::make_shared<Individual<Trait>>(in);
         }
 
 

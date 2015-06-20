@@ -6,6 +6,9 @@ public:
     moo::Real r = moo::Real(5,0,10);
 };
 
+TEST_F(RealTest, SetValueInBounds) {
+    r.setValue(2);
+}
 
 TEST_F(RealTest, SetValueOutOfBounds) {
     ASSERT_THROW(r.setValue(20), std::runtime_error);

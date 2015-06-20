@@ -3,13 +3,32 @@
 
 
 
+
 namespace moo {
 
-    double rndDouble();
-    int rndInt(int min, int max);
+
+
+    class Random
+    {
+    public:
+        static Random * getInstance() { return _singletonInst;};
+
+
+        double rndDouble();
+        double rndDouble(int min, int max);
+        int rndInt(int min, int max);
+        bool rndBool();
+
+
+    private:
+        static Random * _singletonInst ;
+        Random() { }
+        Random(Random const&);
+        void operator=(Random const&);
+    };
+
 
 
 }
-
 
 #endif //MOO_RANDOM_H

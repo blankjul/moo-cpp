@@ -25,13 +25,16 @@ public:
 
     bool operator()(moo::IndividualPtr<Trait> a, moo::IndividualPtr<Trait> b)
     {
-        if (rank->find(a) == rank->end() || rank->find(b) == rank->end() ||
-            crowded->find(a) == crowded->end() || crowded->find(b) == crowded->end() )
-            throw std::runtime_error("Please calculate the indicator first!");
+        if (rank->find(a) == rank->end() || rank->find(b) == rank->end() )
+            throw std::runtime_error("Please calculate the rank indicator first!");
 
         if ((*rank)[a] < (*rank)[b]) return true;
         else if ((*rank)[a] > (*rank)[b]) return false;
         else {
+
+            if (crowded->find(a) == crowded->end() || crowded->find(b) == crowded->end() )
+                throw std::runtime_error("Please calculate the crowding indicator first!");
+
             if ((*crowded)[a] > (*crowded)[b]) return true;
             else if ((*crowded)[a] < (*crowded)[b]) return false;
             else return std::tie((*crowded)[a]) < std::tie((*crowded)[b]);

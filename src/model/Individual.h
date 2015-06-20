@@ -9,8 +9,6 @@ namespace moo {
 
 
 
-
-
     template<typename Trait> class Individual;
     template<typename Trait> using IndividualPtr = std::shared_ptr<Individual<Trait>>;
     template<typename Trait> using IndividualComparator = std::function<bool(const IndividualPtr<Trait>&,const IndividualPtr<Trait>&)>;
@@ -19,42 +17,42 @@ namespace moo {
     class Individual
     {
 
-        // the problem could set the output variable for the evaluation!
-        template<class T> friend class Evaluator;
-
-
     private:
 
-        typename Trait::InputType input;
+        const typename Trait::InputType input;
         typename Trait::OutputType output;
-        bool evaluated;
-
 
     public:
 
         Individual() {}
-        Individual(const typename Trait::InputType& i) : input(i), evaluated(false) {};
+        Individual(const typename Trait::InputType& i, bool eval = true) : input(i) {
+            if (eval) evaluate();
+        };
 
 
-        bool isDominating(Individual& other) const{
+        bool isDominating(const Individual& other) const {
             for (unsigned int i = 0; i < getOutput().size(); ++i) {
                 if (output[i] > other.output[i]) return false;
             }
             return !isEqual(other);
         }
 
-        bool isDominatedBy(Individual& other) const{
+        bool isDominatedBy(const Individual& other) const {
             for (unsigned int i = 0; i < getOutput().size(); ++i) {
                 if (output[i] < other.output[i]) return false;
             }
             return !isEqual(other);
         }
 
-        bool isEqual(Individual& other) const{
+        bool isEqual(const Individual& other) const {
             for (unsigned int i = 0; i < getOutput().size(); ++i) {
                 if (other.output[i] != output[i]) return false;
             }
             return true;
+        }
+
+        void evaluate() {
+            output = Trait::evaluate(input);
         }
 
         /*
@@ -66,21 +64,11 @@ namespace moo {
 
          */
 
-        typename Trait::InputType getInput() const { return input; }
+        const typename Trait::InputType & getInput() const { return input; }
 
-        typename Trait::OutputType getOutput() const {
-            if (!evaluated) throw std::runtime_error("Please evaluate the individual first!");
+        const typename Trait::OutputType & getOutput() const {
             return output;
         }
-
-        bool isEvaluated() const { return evaluated;}
-
-        void setInput(const typename Trait::InputType& in) {
-            input = in;
-            evaluated = false;
-        }
-
-
 
 
     };

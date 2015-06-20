@@ -2,6 +2,7 @@
 #ifndef MOO_VARIABLE_H
 #define MOO_VARIABLE_H
 
+#include <iostream>
 
 namespace moo {
 
@@ -22,7 +23,7 @@ namespace moo {
             return value;
         }
 
-        virtual void setValue(Type value) {
+        virtual void setValue(const Type& value) {
             Variable::value = value;
         }
 
@@ -47,6 +48,11 @@ namespace moo {
 
     template <typename Type> bool operator!=(const Variable<Type>& lhs, const Variable<Type>& rhs){
         return lhs.getValue() != rhs.getValue();}
+
+    template <typename Type> std::ostream & operator<<(std::ostream &os, const Variable<Type>& rhs)
+    {
+        return os << rhs.getValue();
+    }
 }
 
 #endif //MOO_VARIABLE_H

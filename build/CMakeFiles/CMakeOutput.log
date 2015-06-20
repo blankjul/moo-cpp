@@ -291,3 +291,195 @@ Linking C executable cmTryCompileExec607552304
 make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
 
 
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_STD_CXX11 succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1082348575/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1082348575.dir/build.make CMakeFiles/cmTryCompileExec1082348575.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1082348575.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_CXX_FLAG_STD_CXX11 -std=c++11   -o CMakeFiles/cmTryCompileExec1082348575.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1082348575
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1082348575.dir/link.txt --verbose=1
+/usr/bin/c++    -DHAVE_CXX_FLAG_STD_CXX11 -std=c++11    CMakeFiles/cmTryCompileExec1082348575.dir/src.cxx.o  -o cmTryCompileExec1082348575 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WALL succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2072299299/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2072299299.dir/build.make CMakeFiles/cmTryCompileExec2072299299.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2072299299.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -DHAVE_CXX_FLAG_WALL -Wall   -o CMakeFiles/cmTryCompileExec2072299299.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2072299299
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2072299299.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -DHAVE_CXX_FLAG_WALL -Wall    CMakeFiles/cmTryCompileExec2072299299.dir/src.cxx.o  -o cmTryCompileExec2072299299 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WEXTRA succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3688683376/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3688683376.dir/build.make CMakeFiles/cmTryCompileExec3688683376.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3688683376.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -DHAVE_CXX_FLAG_WEXTRA -Wextra   -o CMakeFiles/cmTryCompileExec3688683376.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3688683376
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3688683376.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -DHAVE_CXX_FLAG_WEXTRA -Wextra    CMakeFiles/cmTryCompileExec3688683376.dir/src.cxx.o  -o cmTryCompileExec3688683376 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHADOW succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3259672508/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3259672508.dir/build.make CMakeFiles/cmTryCompileExec3259672508.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3259672508.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -DHAVE_CXX_FLAG_WSHADOW -Wshadow   -o CMakeFiles/cmTryCompileExec3259672508.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3259672508
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3259672508.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -DHAVE_CXX_FLAG_WSHADOW -Wshadow    CMakeFiles/cmTryCompileExec3259672508.dir/src.cxx.o  -o cmTryCompileExec3259672508 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WERROR succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3178339640/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3178339640.dir/build.make CMakeFiles/cmTryCompileExec3178339640.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3178339640.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_WERROR -Werror   -o CMakeFiles/cmTryCompileExec3178339640.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3178339640
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3178339640.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_WERROR -Werror    CMakeFiles/cmTryCompileExec3178339640.dir/src.cxx.o  -o cmTryCompileExec3178339640 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2164939792/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2164939792.dir/build.make CMakeFiles/cmTryCompileExec2164939792.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2164939792.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_PEDANTIC -pedantic   -o CMakeFiles/cmTryCompileExec2164939792.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2164939792
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2164939792.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_PEDANTIC -pedantic    CMakeFiles/cmTryCompileExec2164939792.dir/src.cxx.o  -o cmTryCompileExec2164939792 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC_ERRORS succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1913854477/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1913854477.dir/build.make CMakeFiles/cmTryCompileExec1913854477.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1913854477.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -DHAVE_CXX_FLAG_PEDANTIC_ERRORS -pedantic-errors   -o CMakeFiles/cmTryCompileExec1913854477.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1913854477
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1913854477.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -DHAVE_CXX_FLAG_PEDANTIC_ERRORS -pedantic-errors    CMakeFiles/cmTryCompileExec1913854477.dir/src.cxx.o  -o cmTryCompileExec1913854477 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WFLOAT_EQUAL succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec8687254/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec8687254.dir/build.make CMakeFiles/cmTryCompileExec8687254.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec8687254.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -DHAVE_CXX_FLAG_WFLOAT_EQUAL -Wfloat-equal   -o CMakeFiles/cmTryCompileExec8687254.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec8687254
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec8687254.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -DHAVE_CXX_FLAG_WFLOAT_EQUAL -Wfloat-equal    CMakeFiles/cmTryCompileExec8687254.dir/src.cxx.o  -o cmTryCompileExec8687254 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WZERO_AS_NULL_POINTER_CONSTANT succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3847719920/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3847719920.dir/build.make CMakeFiles/cmTryCompileExec3847719920.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3847719920.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -DHAVE_CXX_FLAG_WZERO_AS_NULL_POINTER_CONSTANT -Wzero-as-null-pointer-constant   -o CMakeFiles/cmTryCompileExec3847719920.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3847719920
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3847719920.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -DHAVE_CXX_FLAG_WZERO_AS_NULL_POINTER_CONSTANT -Wzero-as-null-pointer-constant    CMakeFiles/cmTryCompileExec3847719920.dir/src.cxx.o  -o cmTryCompileExec3847719920 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_FSTRICT_ALIASING succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec351434048/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec351434048.dir/build.make CMakeFiles/cmTryCompileExec351434048.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec351434048.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -Wzero-as-null-pointer-constant -DHAVE_CXX_FLAG_FSTRICT_ALIASING -fstrict-aliasing   -o CMakeFiles/cmTryCompileExec351434048.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec351434048
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec351434048.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -Wzero-as-null-pointer-constant -DHAVE_CXX_FLAG_FSTRICT_ALIASING -fstrict-aliasing    CMakeFiles/cmTryCompileExec351434048.dir/src.cxx.o  -o cmTryCompileExec351434048 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSTRICT_ALIASING succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1059596258/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1059596258.dir/build.make CMakeFiles/cmTryCompileExec1059596258.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1059596258.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -Wzero-as-null-pointer-constant -fstrict-aliasing -DHAVE_CXX_FLAG_WSTRICT_ALIASING -Wstrict-aliasing   -o CMakeFiles/cmTryCompileExec1059596258.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1059596258
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1059596258.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -Wzero-as-null-pointer-constant -fstrict-aliasing -DHAVE_CXX_FLAG_WSTRICT_ALIASING -Wstrict-aliasing    CMakeFiles/cmTryCompileExec1059596258.dir/src.cxx.o  -o cmTryCompileExec1059596258 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_COVERAGE succeded with the following output:
+Change Dir: /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2726763296/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2726763296.dir/build.make CMakeFiles/cmTryCompileExec2726763296.dir/build
+make[1]: Entering directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2726763296.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -Wzero-as-null-pointer-constant -fstrict-aliasing -Wstrict-aliasing -DHAVE_CXX_FLAG_COVERAGE --coverage   -o CMakeFiles/cmTryCompileExec2726763296.dir/src.cxx.o -c /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2726763296
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2726763296.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -Wzero-as-null-pointer-constant -fstrict-aliasing -Wstrict-aliasing -DHAVE_CXX_FLAG_COVERAGE --coverage    CMakeFiles/cmTryCompileExec2726763296.dir/src.cxx.o  -o cmTryCompileExec2726763296 -rdynamic 
+make[1]: Leaving directory `/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}

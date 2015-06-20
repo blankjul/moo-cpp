@@ -4,12 +4,22 @@
 
 #include "Individual.h"
 #include <vector>
+#include <list>
+#include <stack>
+#include <iostream>
+#include <algorithm>
+
+
 
 namespace moo {
 
 
+
+
     template<typename Trait>
     class Population : public std::vector<IndividualPtr<Trait>>  {
+
+        class ContUpdatedParetoFront;
 
     public:
 
@@ -26,14 +36,12 @@ namespace moo {
         }
 
 
-
-        bool isNonDominated(IndividualPtr<Trait> & ind) {
+        bool isNonDominated(const IndividualPtr<Trait> & ind) const {
             for (auto entry : *this) {
                 if (ind->isDominatedBy(*entry)) return true;
             }
             return false;
         }
-
 
 
         const IndividualPtr<Trait> pop_back_and_delete() {
@@ -44,7 +52,34 @@ namespace moo {
 
 
 
+
+        void remove(const Population<Trait> & pop)  {
+            for (auto entry : pop) {
+                this->erase(std::remove(this->begin(), this->end(), entry), this->end());
+            }
+        }
+
+
+        friend std::ostream & operator<<(std::ostream & s, const Population<Trait> & pop) {
+            std::cout << "---------------------------\n";
+            std::cout << "Size: " << pop.size() << std::endl;
+            std::cout << "---------------------------\n";
+            for (int i = 0; i < pop.size(); ++i) {
+                auto entry = pop[i];
+                std::cout << entry->getOutput()[0] << ", " << entry->getOutput()[1]<<std::endl;
+            }
+            std::cout << "---------------------------\n";
+            return s;
+        }
+
+
+
+
     };
+
+
+
+
 }
 
 

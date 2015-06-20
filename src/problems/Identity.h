@@ -18,8 +18,9 @@ namespace moo {
 
         Mock random() const {
             std::vector<double> v;
+            auto random = Random::getInstance();
             for (unsigned int i = 0; i < size(); ++i) {
-                v.push_back(rndDouble());
+                v.push_back(random->rndDouble());
             }
             return Mock(v);
         }

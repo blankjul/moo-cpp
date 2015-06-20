@@ -10,29 +10,47 @@ namespace moo {
     template<typename Comparator>
     class BinaryTournamentSelection : public Selection<BinaryTournamentSelection<Comparator>> {
 
+    private:
+
+        Comparator comp;
+
 
     public:
 
 
-        template<typename Trait> IndividualPtr<Trait> static select_(const Population<Trait> & population) {
+        BinaryTournamentSelection(const Comparator& comp) : comp(comp) {}
+
+        template<typename Trait> IndividualPtr<Trait> select_(const Population<Trait> & population) {
             throw std::runtime_error("BinaryTournamentSelection does not allow to select only single individuals!");
         }
 
 
-        template<typename Trait> Population<Trait> static selectMultiple_(const Population<Trait> & population) {
+        template<typename Trait> Population<Trait> selectMultiple_(const Population<Trait> & population, int n) {
+
 
             Population<Trait> result;
+            Population<Trait> pool;
 
-            Population<Trait> queue = population;
-            std::random_shuffle(queue.begin(), queue.end());
 
-            while (queue.size() >= 2) {
-                IndividualPtr<Trait> a = queue.pop_back_and_delete();
-                IndividualPtr<Trait> b = queue.pop_back_and_delete();
-                result.push_back(std::max(a, b, Comparator()));
+            while (result.size() < n) {
+
+                pool = population;
+                std::random_shuffle(pool.begin(), pool.end());
+
+                for (int i = 0; i < pool.size() -1; i += 2) {
+                    IndividualPtr<Trait> a = pool[i];
+                    IndividualPtr<Trait> b = pool[i+1];
+
+                    if (comp(a,b)) result.push_back(a);
+                    else result.push_back(b);
+
+                    if (result.size() >= n) break;
+                }
+
             }
-            if (queue.size() == 1) result.push_back(queue.pop_back_and_delete());
+
             return result;
+
         }
 
 

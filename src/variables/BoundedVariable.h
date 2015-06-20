@@ -24,9 +24,9 @@ namespace moo {
         BoundedVariable(Type v, Type lower, Type upper) : Variable<Type>(v), lowerBound(lower), upperBound(upper) {};
 
 
-        virtual void setValue(Type value) {
+        virtual void setValue(const Type& value) {
             if (value < lowerBound || value > upperBound) throw std::runtime_error("Boundary Exception.");
-            setValue(value);
+            this->value = value;
         };
 
         Type getLowerBound() const {

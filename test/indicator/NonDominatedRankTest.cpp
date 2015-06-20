@@ -11,17 +11,6 @@ public:
 };
 
 
-TEST_F(NonDominatedRankTest, Sort) {
-    auto result = moo::NonDominatedRank::getParetoFront(population);
-    EXPECT_EQ(4, result.size());
-}
-
-TEST_F(NonDominatedRankTest, SortAndErease) {
-    auto result = moo::NonDominatedRank::getParetoFront(population, true);
-    EXPECT_EQ(4, result.size());
-    EXPECT_EQ(1, population.size());
-}
-
 
 TEST_F(NonDominatedRankTest, RankOrderTest) {
     auto m = moo::NonDominatedRank::calculate(population);
@@ -30,5 +19,11 @@ TEST_F(NonDominatedRankTest, RankOrderTest) {
     EXPECT_EQ(0, m[population[2]]);
     EXPECT_EQ(0, m[population[3]]);
     EXPECT_EQ(1, m[population[4]]);
+}
+
+TEST_F(NonDominatedRankTest, RankOrderTestOnlyForSomeIndividuals) {
+    auto m = moo::NonDominatedRank::calculate_(population, 4);
+    int inf = std::numeric_limits<int>::max();
+    EXPECT_EQ(inf , m[population[4]]);
 }
 

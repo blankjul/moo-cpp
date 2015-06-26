@@ -34,16 +34,11 @@ namespace moo {
 
             while (result.size() < n) {
 
-                pool = population;
-                std::random_shuffle(pool.begin(), pool.end());
+                auto index = population.getIndex();
+                std::random_shuffle(index.begin(), index.end());
 
-                for (int i = 0; i < pool.size() -1; i += 2) {
-                    IndividualPtr<Trait> a = pool[i];
-                    IndividualPtr<Trait> b = pool[i+1];
-
-                    if (comp(a,b)) result.push_back(a);
-                    else result.push_back(b);
-
+                for (int i = 0; i < index.size() -1; i += 2) {
+                    result.push_back(std::min(population[index[i]], population[index[i+1]]));
                     if (result.size() >= n) break;
                 }
 

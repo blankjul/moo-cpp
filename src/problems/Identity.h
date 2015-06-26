@@ -3,13 +3,14 @@
 
 #include <vector>
 #include "util/Random.h"
+#include <initializer_list>
 
 namespace moo {
 
     struct Mock : public std::vector<double>  {
 
         Mock() {}
-
+        Mock (std::initializer_list<double> list) : std::vector<double>(list) {}
         Mock (const std::vector<double>& v) {
             for (unsigned int i = 0; i < v.size(); ++i) {
                 push_back(v[i]);
@@ -27,6 +28,7 @@ namespace moo {
     };
 
 
+
 class Identity
 {
 
@@ -36,8 +38,8 @@ class Identity
         typedef std::vector<double> OutputType;
 
 
-        static OutputType evaluate(const InputType& in) {
-            return in;
+        static OutputType evaluate(const InputType& input) {
+            return input;
         }
 
         static InputType getInput() {
@@ -47,8 +49,6 @@ class Identity
         static OutputType getOutput() {
             return std::vector<double>(2);
         }
-
-
 };
 
 

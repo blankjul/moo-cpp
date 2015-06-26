@@ -9,6 +9,7 @@
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
+#include <initializer_list>
 
 
 
@@ -24,6 +25,7 @@ namespace moo {
 
     public:
 
+        Population (std::initializer_list<IndividualPtr<Trait>> list) : std::vector<IndividualPtr<Trait>>(list) {}
         Population() : std::vector<IndividualPtr<Trait>>() {}
 
         Population(const std::vector<IndividualPtr<Trait>> &individuals) : std::vector<IndividualPtr<Trait>>(individuals){ }
@@ -78,13 +80,13 @@ namespace moo {
         }
 
         template <typename T>
-        std::vector<int> sortedIndexByVector(const std::vector<T> & v) const{
-            std::vector<int> index;
-            for (int k = 0; k < this->size(); ++k) index.push_back(k);
-            auto  func = [&v](const int & lhs, const int & rhs) {
-                return v[lhs] < v[rhs];
-            };
-            std::sort(index.begin(), index.end(), func);
+        std::vector<int> sortedIndexByVector(const std::vector<T> & v, bool isDescending = false) const{
+            std::vector<int> index = getIndex();
+            if (isDescending) {
+                std::sort(index.begin(), index.end(),[&v]( const int & lhs, const int & rhs)
+                {return v[lhs] > v[rhs];});
+            } else std::sort(index.begin(), index.end(),[&v]( const int & lhs, const int & rhs )
+                {return v[lhs] < v[rhs];});
             return index;
         }
 
@@ -101,6 +103,12 @@ namespace moo {
 
         void sortByObjective(int objective, bool isDescending = false) {
             sortByVector(getObjective(objective), isDescending);
+        }
+
+        std::vector<int> getIndex() const {
+            std::vector<int> index (this->size());
+            for (int k = 0; k < this->size(); ++k) index[k] = k;
+            return index;
         }
 
 

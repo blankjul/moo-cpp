@@ -1,3 +1,4 @@
+#include <indicator/NonDominatedRank.h>
 #include "IndicatorTest.h"
 #include "indicator/CrowdingDistance.h"
 
@@ -13,6 +14,9 @@ public:
 
     typedef std::unordered_map<moo::IndividualPtr<moo::Identity>, double> MapType;
 
+
+
+
 };
 
 TEST_F(CrowdingDistanceTest, ExecuteNoErrorThrown) {
@@ -27,6 +31,21 @@ TEST_F(CrowdingDistanceTest, CrowdedDistanceSmallExample) {
     EXPECT_EQ(inf, m[population[2]]);
     EXPECT_NEAR(0.12, m[population[3]], 0.1);
 }
+
+
+TEST_F(CrowdingDistanceTest, CrowdedDistanceSlideExample) {
+    moo::Population<moo::Identity> example = createPopulationFromVector(std::vector<std::vector<double>> {
+            {0.1,0.1}, {0.2, 0.15}, {0.15, 0.25}, {0.3, 0.3},
+    });
+    auto m = moo::CrowdingDistance::calculate(example);
+    auto r = moo::NonDominatedRank::calculate(example);
+    std::cout << m[example[0]] << "-> " << r[example[0]] << std::endl;
+    std::cout << m[example[1]] << "-> " << r[example[1]] << std::endl;
+    std::cout << m[example[2]] << "-> " << r[example[2]] << std::endl;
+    std::cout << m[example[3]] << "-> " << r[example[3]] << std::endl;
+}
+
+
 
 
 TEST_F(CrowdingDistanceTest, CrowdedDistanceSmallAndSort) {

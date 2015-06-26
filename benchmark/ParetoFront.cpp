@@ -1,3 +1,4 @@
+#include <model/ParetoFront.h>
 #include "AbstractBenchmark.h"
 #include "util/paretoFrontCalculator/ContUpdatedParetoFront.h"
 #include "util/paretoFrontCalculator/NaiveParetoFront.h"
@@ -18,6 +19,11 @@ BENCHMARK_F(ParetoFront, BM_getParetoFrontNaive)(benchmark::State& state) {
 
 BENCHMARK_F(ParetoFront, BM_getParetoFrontContUpdated)(benchmark::State& state) {
     while (state.KeepRunning()) moo::ContUpdatedParetoFront::getParetoFront(population);;
+}
+
+BENCHMARK_F(ParetoFront, BM_getParetoFrontContUpdatedVector)(benchmark::State& state) {
+    moo::ParetoFront<moo::Kursawe> front;
+    while (state.KeepRunning()) for (unsigned int i = 0; i < population.size(); ++i) front.add(population[i]);
 }
 
 

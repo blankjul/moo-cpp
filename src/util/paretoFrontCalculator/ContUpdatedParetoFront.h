@@ -15,26 +15,26 @@ namespace moo {
         template <typename Trait>
         static Population<Trait> getParetoFront(const Population<Trait> & pop)
         {
+
             std::list<IndividualPtr<Trait>> front;
             if (pop.empty()) return Population<Trait>();
 
-            front.push_back(pop[0]);
-            for (int i = 1; i < pop.size(); ++i) {
-                bool isNonDominated = true;
-                auto ind = pop[i];
-
+            // function for adding an element to the front
+            auto func = [&front](const IndividualPtr<Trait> & ind) {
+                // for every element of front
                 for (auto it = front.begin(); it != front.end(); ) {
-                    if ((*it)->isDominating(*ind)) {
-                        isNonDominated = false;
-                        break;
-                    }
-                    if ((*it)->isDominatedBy(*ind)){
-                        front.erase(it++);
-                    } else ++it;
+                    // of one elements dominates ind -> does not belong to front
+                    if ((*it)->isDominating(*ind)) return false;
+                    // else remove all elements that are dominated by ind
+                    if ((*it)->isDominatedBy(*ind)) front.erase(it++);
+                    else ++it;
 
                 }
-                if (isNonDominated) front.push_back(ind);
-            }
+                front.push_back(ind);
+                return true;
+            };
+
+            for (int i = 0; i < pop.size(); ++i) func(pop[i]);
 
             Population<Trait> result;
             for(auto ind : front) result.push_back(ind);

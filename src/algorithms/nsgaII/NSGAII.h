@@ -29,10 +29,6 @@ namespace moo {
 
     private:
 
-        int populationSize = 10;
-        double propMutation = 0.2;
-        int maxGeneration = 100;
-        bool verbose = false;
 
         Population<Trait> population;
         std::unordered_map<IndividualPtr<Trait>, double> indCrowding;
@@ -40,6 +36,12 @@ namespace moo {
 
 
     public:
+
+        int populationSize = 10;
+        double propMutation = 0.2;
+        int maxGeneration = 100;
+        bool verbose = false;
+
 
         void waitForKey() {
             do
@@ -73,7 +75,7 @@ namespace moo {
         }
 
 
-        virtual ParetoFront solve(Trait& p) {
+        virtual ParetoFront<Trait> solve(Trait& p) {
 
             // initialize a random population with predefined size
             population = Population<Trait> {populationSize};
@@ -118,6 +120,9 @@ namespace moo {
             for (auto entry :  ContUpdatedParetoFront::getParetoFront(population)) {
                 if (verbose) std::cout << entry->getOutput()[0] << ", " << entry->getOutput()[1] << std::endl;
             }
+
+            ParetoFront<Trait> f;
+            return f;
 
 
         }

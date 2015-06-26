@@ -57,6 +57,7 @@ TEST_F(ComparatorTest, ComparatorSameRankPreferCrowding) {
     indCrowding[b] = 999;
     RankAndCrowdedComperator<moo::Kursawe> cmp(&indRank, &indCrowding);
     EXPECT_TRUE(cmp(a,b));
+    EXPECT_EQ(a, std::min(a,b,cmp));
 }
 
 TEST_F(ComparatorTest, ComparatorPreferSecondBecauseOfRank) {
@@ -64,5 +65,6 @@ TEST_F(ComparatorTest, ComparatorPreferSecondBecauseOfRank) {
     indRank[b] = 0;
     RankAndCrowdedComperator<moo::Kursawe> cmp(&indRank, &indCrowding);
     EXPECT_FALSE(cmp(a,b));
+    EXPECT_EQ(b, std::min(a,b,cmp));
 }
 

@@ -67,8 +67,6 @@ namespace moo {
                 ++rank;
             }
 
-
-
             return m;
         }
 

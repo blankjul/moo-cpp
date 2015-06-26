@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o"
+  "CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o"
   "CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o"
   "CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o"
   "CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o"
@@ -11,6 +12,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o"
   "CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o"
   "CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o"
+  "CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o"
+  "CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o"
   "CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o"
   "CMakeFiles/tests.dir/test/variables/RealTest.cpp.o"
   "CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o"

@@ -4,3 +4,6 @@
 CMakeFiles/moo.dir/src/util/Random.cpp.o: ../src/util/Random.cpp
 CMakeFiles/moo.dir/src/util/Random.cpp.o: ../src/util/Random.h
 
+CMakeFiles/moo.dir/src/util/SortUtil.cpp.o: ../src/util/SortUtil.cpp
+CMakeFiles/moo.dir/src/util/SortUtil.cpp.o: ../src/util/SortUtil.h
+

@@ -5,12 +5,15 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/julesy/Workspace/moo-cpp_2/test/Main.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/Main.cpp.o"
+  "/home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/MOEADTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o"
+  "/home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/WeightsTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/ComparatorTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/NSGAIITest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/indicator/CrowdingDistanceTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/indicator/FastNonDominatedRankTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/indicator/NonDominatedRankTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/model/IndividualTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o"
+  "/home/julesy/Workspace/moo-cpp_2/test/model/ParetoFrontTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/model/PopulationTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/operators/CrossoverTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o"
   "/home/julesy/Workspace/moo-cpp_2/test/operators/MutationTest.cpp" "/home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o"

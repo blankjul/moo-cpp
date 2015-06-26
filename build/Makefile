@@ -348,6 +348,30 @@ benchmark/CrowdedDistance.cpp.s:
 	$(MAKE) -f CMakeFiles/benchmark_.dir/build.make CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.s
 .PHONY : benchmark/CrowdedDistance.cpp.s
 
+benchmark/NSGAII.o: benchmark/NSGAII.cpp.o
+.PHONY : benchmark/NSGAII.o
+
+# target to build an object file
+benchmark/NSGAII.cpp.o:
+	$(MAKE) -f CMakeFiles/benchmark_.dir/build.make CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
+.PHONY : benchmark/NSGAII.cpp.o
+
+benchmark/NSGAII.i: benchmark/NSGAII.cpp.i
+.PHONY : benchmark/NSGAII.i
+
+# target to preprocess a source file
+benchmark/NSGAII.cpp.i:
+	$(MAKE) -f CMakeFiles/benchmark_.dir/build.make CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.i
+.PHONY : benchmark/NSGAII.cpp.i
+
+benchmark/NSGAII.s: benchmark/NSGAII.cpp.s
+.PHONY : benchmark/NSGAII.s
+
+# target to generate assembly for a file
+benchmark/NSGAII.cpp.s:
+	$(MAKE) -f CMakeFiles/benchmark_.dir/build.make CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.s
+.PHONY : benchmark/NSGAII.cpp.s
+
 benchmark/NonDominatedSorting.o: benchmark/NonDominatedSorting.cpp.o
 .PHONY : benchmark/NonDominatedSorting.o
 
@@ -468,6 +492,30 @@ src/util/Random.cpp.s:
 	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/util/Random.cpp.s
 .PHONY : src/util/Random.cpp.s
 
+src/util/SortUtil.o: src/util/SortUtil.cpp.o
+.PHONY : src/util/SortUtil.o
+
+# target to build an object file
+src/util/SortUtil.cpp.o:
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/util/SortUtil.cpp.o
+.PHONY : src/util/SortUtil.cpp.o
+
+src/util/SortUtil.i: src/util/SortUtil.cpp.i
+.PHONY : src/util/SortUtil.i
+
+# target to preprocess a source file
+src/util/SortUtil.cpp.i:
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/util/SortUtil.cpp.i
+.PHONY : src/util/SortUtil.cpp.i
+
+src/util/SortUtil.s: src/util/SortUtil.cpp.s
+.PHONY : src/util/SortUtil.s
+
+# target to generate assembly for a file
+src/util/SortUtil.cpp.s:
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/util/SortUtil.cpp.s
+.PHONY : src/util/SortUtil.cpp.s
+
 test/Main.o: test/Main.cpp.o
 .PHONY : test/Main.o
 
@@ -491,6 +539,54 @@ test/Main.s: test/Main.cpp.s
 test/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/Main.cpp.s
 .PHONY : test/Main.cpp.s
+
+test/algorithms/moead/MOEADTest.o: test/algorithms/moead/MOEADTest.cpp.o
+.PHONY : test/algorithms/moead/MOEADTest.o
+
+# target to build an object file
+test/algorithms/moead/MOEADTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
+.PHONY : test/algorithms/moead/MOEADTest.cpp.o
+
+test/algorithms/moead/MOEADTest.i: test/algorithms/moead/MOEADTest.cpp.i
+.PHONY : test/algorithms/moead/MOEADTest.i
+
+# target to preprocess a source file
+test/algorithms/moead/MOEADTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.i
+.PHONY : test/algorithms/moead/MOEADTest.cpp.i
+
+test/algorithms/moead/MOEADTest.s: test/algorithms/moead/MOEADTest.cpp.s
+.PHONY : test/algorithms/moead/MOEADTest.s
+
+# target to generate assembly for a file
+test/algorithms/moead/MOEADTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.s
+.PHONY : test/algorithms/moead/MOEADTest.cpp.s
+
+test/algorithms/moead/WeightsTest.o: test/algorithms/moead/WeightsTest.cpp.o
+.PHONY : test/algorithms/moead/WeightsTest.o
+
+# target to build an object file
+test/algorithms/moead/WeightsTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
+.PHONY : test/algorithms/moead/WeightsTest.cpp.o
+
+test/algorithms/moead/WeightsTest.i: test/algorithms/moead/WeightsTest.cpp.i
+.PHONY : test/algorithms/moead/WeightsTest.i
+
+# target to preprocess a source file
+test/algorithms/moead/WeightsTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.i
+.PHONY : test/algorithms/moead/WeightsTest.cpp.i
+
+test/algorithms/moead/WeightsTest.s: test/algorithms/moead/WeightsTest.cpp.s
+.PHONY : test/algorithms/moead/WeightsTest.s
+
+# target to generate assembly for a file
+test/algorithms/moead/WeightsTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.s
+.PHONY : test/algorithms/moead/WeightsTest.cpp.s
 
 test/algorithms/nsgaII/ComparatorTest.o: test/algorithms/nsgaII/ComparatorTest.cpp.o
 .PHONY : test/algorithms/nsgaII/ComparatorTest.o
@@ -635,6 +731,30 @@ test/model/IndividualTest.s: test/model/IndividualTest.cpp.s
 test/model/IndividualTest.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/IndividualTest.cpp.s
 .PHONY : test/model/IndividualTest.cpp.s
+
+test/model/ParetoFrontTest.o: test/model/ParetoFrontTest.cpp.o
+.PHONY : test/model/ParetoFrontTest.o
+
+# target to build an object file
+test/model/ParetoFrontTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
+.PHONY : test/model/ParetoFrontTest.cpp.o
+
+test/model/ParetoFrontTest.i: test/model/ParetoFrontTest.cpp.i
+.PHONY : test/model/ParetoFrontTest.i
+
+# target to preprocess a source file
+test/model/ParetoFrontTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.i
+.PHONY : test/model/ParetoFrontTest.cpp.i
+
+test/model/ParetoFrontTest.s: test/model/ParetoFrontTest.cpp.s
+.PHONY : test/model/ParetoFrontTest.s
+
+# target to generate assembly for a file
+test/model/ParetoFrontTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.s
+.PHONY : test/model/ParetoFrontTest.cpp.s
 
 test/model/PopulationTest.o: test/model/PopulationTest.cpp.o
 .PHONY : test/model/PopulationTest.o
@@ -857,6 +977,9 @@ help:
 	@echo "... benchmark/CrowdedDistance.o"
 	@echo "... benchmark/CrowdedDistance.i"
 	@echo "... benchmark/CrowdedDistance.s"
+	@echo "... benchmark/NSGAII.o"
+	@echo "... benchmark/NSGAII.i"
+	@echo "... benchmark/NSGAII.s"
 	@echo "... benchmark/NonDominatedSorting.o"
 	@echo "... benchmark/NonDominatedSorting.i"
 	@echo "... benchmark/NonDominatedSorting.s"
@@ -872,9 +995,18 @@ help:
 	@echo "... src/util/Random.o"
 	@echo "... src/util/Random.i"
 	@echo "... src/util/Random.s"
+	@echo "... src/util/SortUtil.o"
+	@echo "... src/util/SortUtil.i"
+	@echo "... src/util/SortUtil.s"
 	@echo "... test/Main.o"
 	@echo "... test/Main.i"
 	@echo "... test/Main.s"
+	@echo "... test/algorithms/moead/MOEADTest.o"
+	@echo "... test/algorithms/moead/MOEADTest.i"
+	@echo "... test/algorithms/moead/MOEADTest.s"
+	@echo "... test/algorithms/moead/WeightsTest.o"
+	@echo "... test/algorithms/moead/WeightsTest.i"
+	@echo "... test/algorithms/moead/WeightsTest.s"
 	@echo "... test/algorithms/nsgaII/ComparatorTest.o"
 	@echo "... test/algorithms/nsgaII/ComparatorTest.i"
 	@echo "... test/algorithms/nsgaII/ComparatorTest.s"
@@ -893,6 +1025,9 @@ help:
 	@echo "... test/model/IndividualTest.o"
 	@echo "... test/model/IndividualTest.i"
 	@echo "... test/model/IndividualTest.s"
+	@echo "... test/model/ParetoFrontTest.o"
+	@echo "... test/model/ParetoFrontTest.i"
+	@echo "... test/model/ParetoFrontTest.s"
 	@echo "... test/model/PopulationTest.o"
 	@echo "... test/model/PopulationTest.i"
 	@echo "... test/model/PopulationTest.s"

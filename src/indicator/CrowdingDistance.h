@@ -64,7 +64,6 @@ namespace moo {
                 m[pop[index[index.size()-1]]] = std::numeric_limits<double>::infinity();
 
                 for (int j = 1; j < pop.size() - 1; ++j) {
-                    if (std::isinf(m[pop[index[j]]])) continue;
                     m[pop[index[j]]] += (pop[index[j+1]]->getOutput()[i] - pop[index[j-1]]->getOutput()[i]) / denominator;
                 }
             }

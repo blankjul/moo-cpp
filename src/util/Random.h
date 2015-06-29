@@ -1,7 +1,8 @@
 #ifndef MOO_RANDOM_H
 #define MOO_RANDOM_H
 
-
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
 
 
 namespace moo {
@@ -22,7 +23,9 @@ namespace moo {
 
     private:
         static Random * _singletonInst ;
-        Random() { }
+        Random() {
+            srand (time(NULL));
+        }
         Random(Random const&);
         void operator=(Random const&);
     };

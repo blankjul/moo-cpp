@@ -17,8 +17,10 @@ include_directories(BEFORE "benchmark/")
 # Google Mock & Test
 ###############################################################################
 add_subdirectory(vendor/gmock-1.7.0)
+add_subdirectory(vendor/jsoncpp)
 include_directories(vendor/gmock-1.7.0/include)
 include_directories(vendor/gmock-1.7.0/gtest/include)
+include_directories(vendor/jsoncpp/include)
 
 ###############################################################################
 # Benchmark
@@ -28,13 +30,25 @@ include_directories(vendor/benchmark/include)
 
 
 ###############################################################################
-# Main program library
+# moo-cpp library
 ###############################################################################
 file(GLOB_RECURSE SOURCES "src/*.cpp")
+list(REMOVE_ITEM SOURCES "src/main/nsgaII.cpp")
+list(REMOVE_ITEM SOURCES "src/main/moead.cpp")
 add_library(moo ${SOURCES})
 
 # Set link libraries
-#target_link_libraries($EXECUTABLE_NAME ...)
+target_link_libraries(moo jsoncpp_lib_static)
+
+
+###############################################################################
+# moo-cpp executable
+###############################################################################
+add_executable(nsgaII "src/main/nsgaII.cpp")
+target_link_libraries(nsgaII moo)
+
+add_executable(moead "src/main/moead.cpp")
+target_link_libraries(moead moo)
 
 
 ###############################################################################

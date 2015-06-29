@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="benchmark">
+        <in>CrowdedDistance.cpp</in>
+        <in>NSGAII.cpp</in>
+        <in>NonDominatedSorting.cpp</in>
+        <in>ParetoFront.cpp</in>
+        <in>Population.cpp</in>
+        <in>main.cpp</in>
+      </df>
+      <df name="src">
+        <df name="main">
+          <in>moead.cpp</in>
+          <in>nsgaII.cpp</in>
+        </df>
+        <df name="util">
+          <in>Random.cpp</in>
+          <in>SortUtil.cpp</in>
+        </df>
+      </df>
+      <df name="test">
+        <df name="algorithms">
+          <df name="moead">
+            <in>MOEADTest.cpp</in>
+            <in>WeightsTest.cpp</in>
+          </df>
+          <df name="nsgaII">
+            <in>ComparatorTest.cpp</in>
+            <in>NSGAIITest.cpp</in>
+          </df>
+          <in>AlgorithmTest.cpp</in>
+        </df>
+        <df name="indicator">
+          <in>CrowdingDistanceTest.cpp</in>
+          <in>FastNonDominatedRankTest.cpp</in>
+          <in>NonDominatedRankTest.cpp</in>
+        </df>
+        <df name="model">
+          <in>IndividualTest.cpp</in>
+          <in>ParetoFrontTest.cpp</in>
+          <in>PopulationTest.cpp</in>
+        </df>
+        <df name="operators">
+          <in>CrossoverTest.cpp</in>
+          <in>MutationTest.cpp</in>
+          <in>SelectionTest.cpp</in>
+        </df>
+        <df name="problems">
+          <in>KursaweTest.cpp</in>
+        </df>
+        <df name="util">
+          <df name="paretoFront">
+            <in>ParetoFrontCalcTest.cpp</in>
+          </df>
+        </df>
+        <df name="variables">
+          <in>RealTest.cpp</in>
+          <in>VariableCollectionTest.cpp</in>
+        </df>
+        <in>Main.cpp</in>
+      </df>
+      <df name="vendor">
+        <df name="benchmark">
+          <df name="src">
+            <in>benchmark.cc</in>
+            <in>colorprint.cc</in>
+            <in>commandlineflags.cc</in>
+            <in>console_reporter.cc</in>
+            <in>csv_reporter.cc</in>
+            <in>json_reporter.cc</in>
+            <in>log.cc</in>
+            <in>re_posix.cc</in>
+            <in>reporter.cc</in>
+            <in>sleep.cc</in>
+            <in>string_util.cc</in>
+            <in>sysinfo.cc</in>
+            <in>walltime.cc</in>
+          </df>
+          <df name="test">
+            <in>basic_test.cc</in>
+            <in>benchmark_test.cc</in>
+            <in>cxx03_test.cc</in>
+            <in>filter_test.cc</in>
+            <in>fixture_test.cc</in>
+            <in>options_test.cc</in>
+          </df>
+        </df>
+        <df name="gmock-1.7.0">
+          <df name="gtest">
+            <df name="src">
+              <in>gtest-all.cc</in>
+              <in>gtest_main.cc</in>
+            </df>
+          </df>
+          <df name="src">
+            <in>gmock-all.cc</in>
+            <in>gmock_main.cc</in>
+          </df>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>build/Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c++11"/>
+        <element flagsID="1" commonFlags="-std=c++11 -std=c++11"/>
+        <element flagsID="2" commonFlags="-std=c++11 -std=c++11 -std=c++03"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>build</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>build/tests</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>benchmark</pElem>
+              <pElem>test</pElem>
+              <pElem>src</pElem>
+              <pElem>.</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="benchmark/CrowdedDistance.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="benchmark/NSGAII.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="benchmark/NonDominatedSorting.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="benchmark/ParetoFront.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="benchmark/Population.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="benchmark/main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <folder path="0/benchmark">
+        <ccTool>
+          <incDir>
+            <pElem>vendor/gmock-1.7.0/include</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest/include</pElem>
+            <pElem>vendor/benchmark/include</pElem>
+            <pElem>build</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src">
+        <ccTool>
+          <incDir>
+            <pElem>vendor/gmock-1.7.0/include</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest/include</pElem>
+            <pElem>vendor/benchmark/include</pElem>
+            <pElem>build</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/test">
+        <ccTool>
+          <incDir>
+            <pElem>vendor/gmock-1.7.0/include</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest/include</pElem>
+            <pElem>vendor/benchmark/include</pElem>
+            <pElem>build</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/vendor/benchmark">
+        <ccTool>
+          <incDir>
+            <pElem>vendor/gmock-1.7.0/include</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest/include</pElem>
+            <pElem>vendor/benchmark/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>HAVE_POSIX_REGEX</Elem>
+            <Elem>HAVE_STEADY_CLOCK</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/vendor/benchmark/src">
+        <ccTool>
+          <incDir>
+            <pElem>vendor/benchmark/src</pElem>
+            <pElem>build/vendor/benchmark/src</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/vendor/benchmark/test">
+        <ccTool>
+          <incDir>
+            <pElem>build/vendor/benchmark/test</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/vendor/gmock-1.7.0">
+        <ccTool>
+          <preprocessorList>
+            <Elem>GTEST_HAS_PTHREAD=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/vendor/gmock-1.7.0/src">
+        <ccTool>
+          <incDir>
+            <pElem>vendor/gmock-1.7.0/include</pElem>
+            <pElem>vendor/gmock-1.7.0</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest/include</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest</pElem>
+            <pElem>build/vendor/gmock-1.7.0</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="src/main/moead.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/nsgaII.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/Random.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="src/util/SortUtil.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/Main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/algorithms/AlgorithmTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/algorithms/moead/MOEADTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/algorithms/moead/WeightsTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/algorithms/nsgaII/ComparatorTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/algorithms/nsgaII/NSGAIITest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/indicator/CrowdingDistanceTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/indicator/FastNonDominatedRankTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/indicator/NonDominatedRankTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/model/IndividualTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/model/ParetoFrontTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/model/PopulationTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/operators/CrossoverTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/operators/MutationTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/operators/SelectionTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/problems/KursaweTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/util/paretoFront/ParetoFrontCalcTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/variables/RealTest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/variables/VariableCollectionTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/benchmark.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/colorprint.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/commandlineflags.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/console_reporter.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/csv_reporter.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/json_reporter.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/log.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/re_posix.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/reporter.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/sleep.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/string_util.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/sysinfo.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/src/walltime.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/test/basic_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/test/benchmark_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/test/cxx03_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/test/filter_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/test/fixture_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/benchmark/test/options_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="vendor/gmock-1.7.0/gtest/src/gtest-all.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>vendor/gmock-1.7.0/include</pElem>
+            <pElem>vendor/gmock-1.7.0</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest/include</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest</pElem>
+            <pElem>build/vendor/gmock-1.7.0</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="vendor/gmock-1.7.0/gtest/src/gtest_main.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>vendor/gmock-1.7.0/gtest/include</pElem>
+            <pElem>vendor/gmock-1.7.0/gtest</pElem>
+            <pElem>build/vendor/gmock-1.7.0/gtest</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="vendor/gmock-1.7.0/src/gmock-all.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="vendor/gmock-1.7.0/src/gmock_main.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

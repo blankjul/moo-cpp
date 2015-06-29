@@ -39,10 +39,6 @@ TEST_F(CrowdingDistanceTest, CrowdedDistanceSlideExample) {
     });
     auto m = moo::CrowdingDistance::calculate(example);
     auto r = moo::NonDominatedRank::calculate(example);
-    std::cout << m[example[0]] << "-> " << r[example[0]] << std::endl;
-    std::cout << m[example[1]] << "-> " << r[example[1]] << std::endl;
-    std::cout << m[example[2]] << "-> " << r[example[2]] << std::endl;
-    std::cout << m[example[3]] << "-> " << r[example[3]] << std::endl;
 }
 
 

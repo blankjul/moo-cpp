@@ -63,6 +63,16 @@ namespace moo {
             while (index.size() > numOfNearest) index.pop_back();
             return index;
         }
+        
+        
+        static 
+        double getWeightedSum(const Weights & w, const std::vector<double>& output) {
+            double sum = 0;
+            for (unsigned int i = 0; i < w.size(); ++i) {
+                sum += w[i] * output[i];
+            }
+            return sum;
+        }
 
 
 

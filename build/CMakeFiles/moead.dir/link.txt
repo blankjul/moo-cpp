@@ -1,0 +1,1 @@
+/usr/bin/g++   -O3 -DNDEBUG    CMakeFiles/moead.dir/src/main/moead.cpp.o  -o moead -rdynamic libmoo.a vendor/jsoncpp/src/lib_json/libjsoncpp.a 

@@ -1,0 +1,4 @@
+let g:project_root_directory = '/home/julesy/Workspace/moo-cpp/build'
+let g:project_name = 'moo-cpp'
+let g:project_category = 2
+let g:project_type = 3

@@ -5,7 +5,9 @@ CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
  ../src/indicator/CrowdingDistance.h
  ../src/indicator/Indicator.h
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/variables/BoundedVariable.h
@@ -16,8 +18,16 @@ CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
  ../vendor/benchmark/include/benchmark/benchmark_api.h
  ../vendor/benchmark/include/benchmark/macros.h
  ../vendor/benchmark/include/benchmark/reporter.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/AbstractBenchmark.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/CrowdedDistance.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/benchmark/AbstractBenchmark.h
+ /home/julesy/Workspace/moo-cpp/benchmark/CrowdedDistance.cpp
 CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
  ../src/algorithms/nsgaII/Comparator.h
  ../src/algorithms/nsgaII/NSGAII.h
@@ -29,6 +39,7 @@ CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
  ../src/model/Individual.h
  ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/crossover/Crossover.h
  ../src/operators/crossover/SBXCrossover.h
  ../src/operators/crossover/SinglePointCrossover.h
@@ -40,7 +51,6 @@ CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
- ../src/util/paretoFrontCalculator/ParetoFront.h
  ../src/variables/BoundedVariable.h
  ../src/variables/Real.h
  ../src/variables/Variable.h
@@ -49,14 +59,23 @@ CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
  ../vendor/benchmark/include/benchmark/benchmark_api.h
  ../vendor/benchmark/include/benchmark/macros.h
  ../vendor/benchmark/include/benchmark/reporter.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/AbstractBenchmark.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/NSGAII.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/benchmark/AbstractBenchmark.h
+ /home/julesy/Workspace/moo-cpp/benchmark/NSGAII.cpp
 CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
  ../src/indicator/FastNonDominatedRank.h
  ../src/indicator/Indicator.h
  ../src/indicator/NonDominatedRank.h
  ../src/model/Individual.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
@@ -69,12 +88,13 @@ CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
  ../vendor/benchmark/include/benchmark/benchmark_api.h
  ../vendor/benchmark/include/benchmark/macros.h
  ../vendor/benchmark/include/benchmark/reporter.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/AbstractBenchmark.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/NonDominatedSorting.cpp
+ /home/julesy/Workspace/moo-cpp/benchmark/AbstractBenchmark.h
+ /home/julesy/Workspace/moo-cpp/benchmark/NonDominatedSorting.cpp
 CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
  ../src/model/Individual.h
  ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
@@ -89,11 +109,21 @@ CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
  ../vendor/benchmark/include/benchmark/benchmark_api.h
  ../vendor/benchmark/include/benchmark/macros.h
  ../vendor/benchmark/include/benchmark/reporter.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/AbstractBenchmark.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/ParetoFront.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/benchmark/AbstractBenchmark.h
+ /home/julesy/Workspace/moo-cpp/benchmark/ParetoFront.cpp
 CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/variables/BoundedVariable.h
@@ -104,18 +134,27 @@ CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
  ../vendor/benchmark/include/benchmark/benchmark_api.h
  ../vendor/benchmark/include/benchmark/macros.h
  ../vendor/benchmark/include/benchmark/reporter.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/AbstractBenchmark.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/Population.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/benchmark/AbstractBenchmark.h
+ /home/julesy/Workspace/moo-cpp/benchmark/Population.cpp
 CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
  ../src/indicator/FastNonDominatedRank.h
  ../src/indicator/Indicator.h
  ../src/indicator/NonDominatedRank.h
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
- ../src/util/paretoFrontCalculator/ParetoFront.h
  ../src/variables/BoundedVariable.h
  ../src/variables/Real.h
  ../src/variables/Variable.h
@@ -124,4 +163,12 @@ CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
  ../vendor/benchmark/include/benchmark/benchmark_api.h
  ../vendor/benchmark/include/benchmark/macros.h
  ../vendor/benchmark/include/benchmark/reporter.h
- /home/julesy/Workspace/moo-cpp_2/benchmark/main.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/benchmark/main.cpp

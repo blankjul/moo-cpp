@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julesy/Workspace/moo-cpp_2
+CMAKE_SOURCE_DIR = /home/julesy/Workspace/moo-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julesy/Workspace/moo-cpp_2/build
+CMAKE_BINARY_DIR = /home/julesy/Workspace/moo-cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,9 +113,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julesy/Workspace/moo-cpp/build/CMakeFiles /home/julesy/Workspace/moo-cpp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julesy/Workspace/moo-cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -156,6 +156,19 @@ benchmark_/fast:
 .PHONY : benchmark_/fast
 
 #=============================================================================
+# Target rules for targets named moead
+
+# Build rule for target.
+moead: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moead
+.PHONY : moead
+
+# fast build rule for target.
+moead/fast:
+	$(MAKE) -f CMakeFiles/moead.dir/build.make CMakeFiles/moead.dir/build
+.PHONY : moead/fast
+
+#=============================================================================
 # Target rules for targets named moo
 
 # Build rule for target.
@@ -167,6 +180,19 @@ moo: cmake_check_build_system
 moo/fast:
 	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/build
 .PHONY : moo/fast
+
+#=============================================================================
+# Target rules for targets named nsgaII
+
+# Build rule for target.
+nsgaII: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nsgaII
+.PHONY : nsgaII
+
+# fast build rule for target.
+nsgaII/fast:
+	$(MAKE) -f CMakeFiles/nsgaII.dir/build.make CMakeFiles/nsgaII.dir/build
+.PHONY : nsgaII/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -232,6 +258,71 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) -f vendor/gmock-1.7.0/gtest/CMakeFiles/gtest_main.dir/build.make vendor/gmock-1.7.0/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_lib_static
+
+# Build rule for target.
+jsoncpp_lib_static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_lib_static
+.PHONY : jsoncpp_lib_static
+
+# fast build rule for target.
+jsoncpp_lib_static/fast:
+	$(MAKE) -f vendor/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/build.make vendor/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/build
+.PHONY : jsoncpp_lib_static/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_check
+
+# Build rule for target.
+jsoncpp_check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_check
+.PHONY : jsoncpp_check
+
+# fast build rule for target.
+jsoncpp_check/fast:
+	$(MAKE) -f vendor/jsoncpp/src/jsontestrunner/CMakeFiles/jsoncpp_check.dir/build.make vendor/jsoncpp/src/jsontestrunner/CMakeFiles/jsoncpp_check.dir/build
+.PHONY : jsoncpp_check/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_readerwriter_tests
+
+# Build rule for target.
+jsoncpp_readerwriter_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_readerwriter_tests
+.PHONY : jsoncpp_readerwriter_tests
+
+# fast build rule for target.
+jsoncpp_readerwriter_tests/fast:
+	$(MAKE) -f vendor/jsoncpp/src/jsontestrunner/CMakeFiles/jsoncpp_readerwriter_tests.dir/build.make vendor/jsoncpp/src/jsontestrunner/CMakeFiles/jsoncpp_readerwriter_tests.dir/build
+.PHONY : jsoncpp_readerwriter_tests/fast
+
+#=============================================================================
+# Target rules for targets named jsontestrunner_exe
+
+# Build rule for target.
+jsontestrunner_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsontestrunner_exe
+.PHONY : jsontestrunner_exe
+
+# fast build rule for target.
+jsontestrunner_exe/fast:
+	$(MAKE) -f vendor/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/build.make vendor/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/build
+.PHONY : jsontestrunner_exe/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_test
+
+# Build rule for target.
+jsoncpp_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_test
+.PHONY : jsoncpp_test
+
+# fast build rule for target.
+jsoncpp_test/fast:
+	$(MAKE) -f vendor/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/build.make vendor/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/build
+.PHONY : jsoncpp_test/fast
 
 #=============================================================================
 # Target rules for targets named benchmark
@@ -468,6 +559,60 @@ benchmark/main.cpp.s:
 	$(MAKE) -f CMakeFiles/benchmark_.dir/build.make CMakeFiles/benchmark_.dir/benchmark/main.cpp.s
 .PHONY : benchmark/main.cpp.s
 
+src/main/moead.o: src/main/moead.cpp.o
+.PHONY : src/main/moead.o
+
+# target to build an object file
+src/main/moead.cpp.o:
+	$(MAKE) -f CMakeFiles/moead.dir/build.make CMakeFiles/moead.dir/src/main/moead.cpp.o
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/main/moead.cpp.o
+.PHONY : src/main/moead.cpp.o
+
+src/main/moead.i: src/main/moead.cpp.i
+.PHONY : src/main/moead.i
+
+# target to preprocess a source file
+src/main/moead.cpp.i:
+	$(MAKE) -f CMakeFiles/moead.dir/build.make CMakeFiles/moead.dir/src/main/moead.cpp.i
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/main/moead.cpp.i
+.PHONY : src/main/moead.cpp.i
+
+src/main/moead.s: src/main/moead.cpp.s
+.PHONY : src/main/moead.s
+
+# target to generate assembly for a file
+src/main/moead.cpp.s:
+	$(MAKE) -f CMakeFiles/moead.dir/build.make CMakeFiles/moead.dir/src/main/moead.cpp.s
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/main/moead.cpp.s
+.PHONY : src/main/moead.cpp.s
+
+src/main/nsgaII.o: src/main/nsgaII.cpp.o
+.PHONY : src/main/nsgaII.o
+
+# target to build an object file
+src/main/nsgaII.cpp.o:
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/main/nsgaII.cpp.o
+	$(MAKE) -f CMakeFiles/nsgaII.dir/build.make CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.o
+.PHONY : src/main/nsgaII.cpp.o
+
+src/main/nsgaII.i: src/main/nsgaII.cpp.i
+.PHONY : src/main/nsgaII.i
+
+# target to preprocess a source file
+src/main/nsgaII.cpp.i:
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/main/nsgaII.cpp.i
+	$(MAKE) -f CMakeFiles/nsgaII.dir/build.make CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.i
+.PHONY : src/main/nsgaII.cpp.i
+
+src/main/nsgaII.s: src/main/nsgaII.cpp.s
+.PHONY : src/main/nsgaII.s
+
+# target to generate assembly for a file
+src/main/nsgaII.cpp.s:
+	$(MAKE) -f CMakeFiles/moo.dir/build.make CMakeFiles/moo.dir/src/main/nsgaII.cpp.s
+	$(MAKE) -f CMakeFiles/nsgaII.dir/build.make CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.s
+.PHONY : src/main/nsgaII.cpp.s
+
 src/util/Random.o: src/util/Random.cpp.o
 .PHONY : src/util/Random.o
 
@@ -539,6 +684,30 @@ test/Main.s: test/Main.cpp.s
 test/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/Main.cpp.s
 .PHONY : test/Main.cpp.s
+
+test/algorithms/AlgorithmTest.o: test/algorithms/AlgorithmTest.cpp.o
+.PHONY : test/algorithms/AlgorithmTest.o
+
+# target to build an object file
+test/algorithms/AlgorithmTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
+.PHONY : test/algorithms/AlgorithmTest.cpp.o
+
+test/algorithms/AlgorithmTest.i: test/algorithms/AlgorithmTest.cpp.i
+.PHONY : test/algorithms/AlgorithmTest.i
+
+# target to preprocess a source file
+test/algorithms/AlgorithmTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.i
+.PHONY : test/algorithms/AlgorithmTest.cpp.i
+
+test/algorithms/AlgorithmTest.s: test/algorithms/AlgorithmTest.cpp.s
+.PHONY : test/algorithms/AlgorithmTest.s
+
+# target to generate assembly for a file
+test/algorithms/AlgorithmTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.s
+.PHONY : test/algorithms/AlgorithmTest.cpp.s
 
 test/algorithms/moead/MOEADTest.o: test/algorithms/moead/MOEADTest.cpp.o
 .PHONY : test/algorithms/moead/MOEADTest.o
@@ -876,29 +1045,29 @@ test/problems/KursaweTest.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.s
 .PHONY : test/problems/KursaweTest.cpp.s
 
-test/util/paretoFront/ParetoFrontTest.o: test/util/paretoFront/ParetoFrontTest.cpp.o
-.PHONY : test/util/paretoFront/ParetoFrontTest.o
+test/util/paretoFront/ParetoFrontCalcTest.o: test/util/paretoFront/ParetoFrontCalcTest.cpp.o
+.PHONY : test/util/paretoFront/ParetoFrontCalcTest.o
 
 # target to build an object file
-test/util/paretoFront/ParetoFrontTest.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o
-.PHONY : test/util/paretoFront/ParetoFrontTest.cpp.o
+test/util/paretoFront/ParetoFrontCalcTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
+.PHONY : test/util/paretoFront/ParetoFrontCalcTest.cpp.o
 
-test/util/paretoFront/ParetoFrontTest.i: test/util/paretoFront/ParetoFrontTest.cpp.i
-.PHONY : test/util/paretoFront/ParetoFrontTest.i
+test/util/paretoFront/ParetoFrontCalcTest.i: test/util/paretoFront/ParetoFrontCalcTest.cpp.i
+.PHONY : test/util/paretoFront/ParetoFrontCalcTest.i
 
 # target to preprocess a source file
-test/util/paretoFront/ParetoFrontTest.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.i
-.PHONY : test/util/paretoFront/ParetoFrontTest.cpp.i
+test/util/paretoFront/ParetoFrontCalcTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.i
+.PHONY : test/util/paretoFront/ParetoFrontCalcTest.cpp.i
 
-test/util/paretoFront/ParetoFrontTest.s: test/util/paretoFront/ParetoFrontTest.cpp.s
-.PHONY : test/util/paretoFront/ParetoFrontTest.s
+test/util/paretoFront/ParetoFrontCalcTest.s: test/util/paretoFront/ParetoFrontCalcTest.cpp.s
+.PHONY : test/util/paretoFront/ParetoFrontCalcTest.s
 
 # target to generate assembly for a file
-test/util/paretoFront/ParetoFrontTest.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.s
-.PHONY : test/util/paretoFront/ParetoFrontTest.cpp.s
+test/util/paretoFront/ParetoFrontCalcTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.s
+.PHONY : test/util/paretoFront/ParetoFrontCalcTest.cpp.s
 
 test/variables/RealTest.o: test/variables/RealTest.cpp.o
 .PHONY : test/variables/RealTest.o
@@ -960,13 +1129,20 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... moead"
 	@echo "... moo"
+	@echo "... nsgaII"
 	@echo "... rebuild_cache"
 	@echo "... tests"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... jsoncpp_lib_static"
+	@echo "... jsoncpp_check"
+	@echo "... jsoncpp_readerwriter_tests"
+	@echo "... jsontestrunner_exe"
+	@echo "... jsoncpp_test"
 	@echo "... benchmark"
 	@echo "... basic_test"
 	@echo "... benchmark_test"
@@ -992,6 +1168,12 @@ help:
 	@echo "... benchmark/main.o"
 	@echo "... benchmark/main.i"
 	@echo "... benchmark/main.s"
+	@echo "... src/main/moead.o"
+	@echo "... src/main/moead.i"
+	@echo "... src/main/moead.s"
+	@echo "... src/main/nsgaII.o"
+	@echo "... src/main/nsgaII.i"
+	@echo "... src/main/nsgaII.s"
 	@echo "... src/util/Random.o"
 	@echo "... src/util/Random.i"
 	@echo "... src/util/Random.s"
@@ -1001,6 +1183,9 @@ help:
 	@echo "... test/Main.o"
 	@echo "... test/Main.i"
 	@echo "... test/Main.s"
+	@echo "... test/algorithms/AlgorithmTest.o"
+	@echo "... test/algorithms/AlgorithmTest.i"
+	@echo "... test/algorithms/AlgorithmTest.s"
 	@echo "... test/algorithms/moead/MOEADTest.o"
 	@echo "... test/algorithms/moead/MOEADTest.i"
 	@echo "... test/algorithms/moead/MOEADTest.s"
@@ -1043,9 +1228,9 @@ help:
 	@echo "... test/problems/KursaweTest.o"
 	@echo "... test/problems/KursaweTest.i"
 	@echo "... test/problems/KursaweTest.s"
-	@echo "... test/util/paretoFront/ParetoFrontTest.o"
-	@echo "... test/util/paretoFront/ParetoFrontTest.i"
-	@echo "... test/util/paretoFront/ParetoFrontTest.s"
+	@echo "... test/util/paretoFront/ParetoFrontCalcTest.o"
+	@echo "... test/util/paretoFront/ParetoFrontCalcTest.i"
+	@echo "... test/util/paretoFront/ParetoFrontCalcTest.s"
 	@echo "... test/variables/RealTest.o"
 	@echo "... test/variables/RealTest.i"
 	@echo "... test/variables/RealTest.s"

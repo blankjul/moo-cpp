@@ -2,6 +2,7 @@
 #define MOO_KURSAWE_H
 
 #include <utility>
+#include "model/Problem.h"
 #include "variables/VariableCollection.h"
 #include "variables/Real.h"
 #include <cmath>
@@ -9,7 +10,7 @@
 namespace moo {
 
 
-    class Kursawe {
+    class Kursawe : public Problem<Kursawe> {
 
     public:
 
@@ -19,7 +20,7 @@ namespace moo {
 
 
         static OutputType evaluate(const InputType& input) {
-
+                        
             std::vector<double> x;
             for(auto entry : input) x.push_back(entry.getValue());
 

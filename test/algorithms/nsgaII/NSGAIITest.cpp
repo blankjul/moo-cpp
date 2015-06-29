@@ -12,10 +12,11 @@ TEST_F(NSGAIITest, SolveWithoutThrow) {
     double duration;
 
     start = std::clock();
-    moo::NSGAII<moo::Kursawe> nsga;
     moo::Kursawe p;
 
-    nsga.solve(p);
+    moo::NSGAII<moo::Kursawe> nsga(p);
+
+    nsga.solve();
 
     duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
 

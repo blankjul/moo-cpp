@@ -2,6 +2,7 @@
 #define MOO_IDENTITY_H
 
 #include <vector>
+#include "model/Problem.h"
 #include "util/Random.h"
 #include <initializer_list>
 
@@ -29,7 +30,7 @@ namespace moo {
 
 
 
-class Identity
+class Identity : public Problem<Identity>
 {
 
     public:

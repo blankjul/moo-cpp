@@ -6,7 +6,7 @@
 
 class MOEADTest : public AbstractTest {
 public:
-
+    moo::Kursawe p;
     moo::Population<moo::Identity > pop{
               std::make_shared<moo::Individual<moo::Identity>>(moo::Mock{5,4})
             , std::make_shared<moo::Individual<moo::Identity>>(moo::Mock{6,1})
@@ -14,12 +14,12 @@ public:
     };
 };
 
-TEST_F(MOEADTest, SolveWithoutThrow) {
-    moo::MOEAD<moo::Kursawe> moead;
-    moo::Kursawe p;
-    moead.solve(p);
-}
 
+TEST_F(MOEADTest, SolveWithoutThrow) {
+    moo::MOEAD<moo::Kursawe> moead(p);
+    moead.solve();
+}
+/*
 
 TEST_F(MOEADTest, CalculateReferencePoint) {
     auto ref = getReferencePoint(pop);
@@ -33,8 +33,9 @@ TEST_F(MOEADTest, UpdateReferencePoint) {
     std::vector<double> ex {1,2};
     EXPECT_EQ( ex, ref);
 }
+*/
 
 TEST_F(MOEADTest, WeightetSum) {
-    auto d = moo::getWeightedSum(moo::Weights{0.5,0.5},std::vector<double> {2,2} );
+    auto d = moo::Weights::getWeightedSum(moo::Weights{0.5,0.5},std::vector<double> {2,2} );
     EXPECT_EQ(2 , d);
 }

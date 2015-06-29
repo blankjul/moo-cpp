@@ -35,7 +35,78 @@ CMakeFiles/tests.dir/test/Main.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/Main.cpp
+ /home/julesy/Workspace/moo-cpp/test/Main.cpp
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
+ ../src/algorithms/nsgaII/Comparator.h
+ ../src/algorithms/nsgaII/NSGAII.h
+ ../src/indicator/CrowdingDistance.h
+ ../src/indicator/FastNonDominatedRank.h
+ ../src/indicator/Indicator.h
+ ../src/indicator/NonDominatedRank.h
+ ../src/model/Algorithm.h
+ ../src/model/Individual.h
+ ../src/model/ParetoFront.h
+ ../src/model/Population.h
+ ../src/model/Problem.h
+ ../src/operators/crossover/Crossover.h
+ ../src/operators/crossover/SBXCrossover.h
+ ../src/operators/crossover/SinglePointCrossover.h
+ ../src/operators/mutation/Mutation.h
+ ../src/operators/mutation/PolynomialMutation.h
+ ../src/operators/selection/BinaryTournamentSelection.h
+ ../src/operators/selection/RandomSelection.h
+ ../src/operators/selection/Selection.h
+ ../src/problems/Identity.h
+ ../src/problems/Kursawe.h
+ ../src/util/Random.h
+ ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
+ ../src/variables/BoundedVariable.h
+ ../src/variables/Real.h
+ ../src/variables/Variable.h
+ ../src/variables/VariableCollection.h
+ ../test/AbstractTest.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-death-test.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-message.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-param-test.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-printers.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-test-part.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest-typed-test.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest_pred_impl.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/gtest_prod.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-death-test-internal.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-filepath.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-internal.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-linked_ptr.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-param-util-generated.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-param-util.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-port.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-string.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-tuple.h
+ ../vendor/gmock-1.7.0/gtest/include/gtest/internal/gtest-type-util.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-actions.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-cardinalities.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-generated-actions.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-generated-function-mockers.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-generated-matchers.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-generated-nice-strict.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-matchers.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-more-actions.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-more-matchers.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock-spec-builders.h
+ ../vendor/gmock-1.7.0/include/gmock/gmock.h
+ ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
+ ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
+ ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp
 CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
  ../src/algorithms/moead/MOEAD.h
  ../src/algorithms/moead/Weights.h
@@ -43,6 +114,7 @@ CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
  ../src/model/Individual.h
  ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/crossover/Crossover.h
  ../src/operators/crossover/SBXCrossover.h
  ../src/operators/mutation/Mutation.h
@@ -91,7 +163,15 @@ CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/MOEADTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp
 CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
  ../src/algorithms/moead/MOEAD.h
  ../src/algorithms/moead/Weights.h
@@ -99,6 +179,7 @@ CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
  ../src/model/Individual.h
  ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/crossover/Crossover.h
  ../src/operators/crossover/SBXCrossover.h
  ../src/operators/mutation/Mutation.h
@@ -146,21 +227,30 @@ CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/WeightsTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/algorithms/moead/WeightsTest.cpp
 CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
  ../src/algorithms/nsgaII/Comparator.h
  ../src/indicator/CrowdingDistance.h
  ../src/indicator/Indicator.h
  ../src/indicator/NonDominatedRank.h
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/selection/BinaryTournamentSelection.h
  ../src/operators/selection/Selection.h
  ../src/problems/Identity.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
- ../src/util/paretoFrontCalculator/ParetoFront.h
  ../src/variables/BoundedVariable.h
  ../src/variables/Real.h
  ../src/variables/Variable.h
@@ -199,7 +289,15 @@ CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/ComparatorTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp
 CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
  ../src/algorithms/nsgaII/Comparator.h
  ../src/algorithms/nsgaII/NSGAII.h
@@ -211,6 +309,7 @@ CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
  ../src/model/Individual.h
  ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/crossover/Crossover.h
  ../src/operators/crossover/SBXCrossover.h
  ../src/operators/crossover/SinglePointCrossover.h
@@ -222,7 +321,6 @@ CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
- ../src/util/paretoFrontCalculator/ParetoFront.h
  ../src/variables/BoundedVariable.h
  ../src/variables/Real.h
  ../src/variables/Variable.h
@@ -261,13 +359,22 @@ CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/NSGAIITest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp
 CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
  ../src/indicator/CrowdingDistance.h
  ../src/indicator/Indicator.h
  ../src/indicator/NonDominatedRank.h
  ../src/model/Individual.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Identity.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
@@ -306,14 +413,15 @@ CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/indicator/CrowdingDistanceTest.cpp
- /home/julesy/Workspace/moo-cpp_2/test/indicator/IndicatorTest.h
+ /home/julesy/Workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp
+ /home/julesy/Workspace/moo-cpp/test/indicator/IndicatorTest.h
 CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
  ../src/indicator/FastNonDominatedRank.h
  ../src/indicator/Indicator.h
  ../src/indicator/NonDominatedRank.h
  ../src/model/Individual.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Identity.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
@@ -352,13 +460,14 @@ CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/indicator/FastNonDominatedRankTest.cpp
- /home/julesy/Workspace/moo-cpp_2/test/indicator/IndicatorTest.h
+ /home/julesy/Workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp
+ /home/julesy/Workspace/moo-cpp/test/indicator/IndicatorTest.h
 CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
  ../src/indicator/Indicator.h
  ../src/indicator/NonDominatedRank.h
  ../src/model/Individual.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Identity.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
@@ -397,10 +506,13 @@ CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/indicator/IndicatorTest.h
- /home/julesy/Workspace/moo-cpp_2/test/indicator/NonDominatedRankTest.cpp
+ /home/julesy/Workspace/moo-cpp/test/indicator/IndicatorTest.h
+ /home/julesy/Workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp
 CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
+ ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Identity.h
  ../src/util/Random.h
  ../test/AbstractTest.h
@@ -437,11 +549,20 @@ CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/model/IndividualTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/model/IndividualTest.cpp
 CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
  ../src/model/Individual.h
  ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Identity.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
@@ -486,10 +607,19 @@ CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/model/ParetoFrontTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/model/ParetoFrontTest.cpp
 CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
  ../src/model/Individual.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Identity.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
@@ -534,9 +664,12 @@ CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/model/PopulationTest.cpp
+ /home/julesy/Workspace/moo-cpp/test/model/PopulationTest.cpp
 CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
+ ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/crossover/Crossover.h
  ../src/operators/crossover/SBXCrossover.h
  ../src/operators/crossover/SinglePointCrossover.h
@@ -580,9 +713,20 @@ CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/operators/CrossoverTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/operators/CrossoverTest.cpp
 CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
+ ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/mutation/Mutation.h
  ../src/operators/mutation/PolynomialMutation.h
  ../src/problems/Kursawe.h
@@ -625,10 +769,20 @@ CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/operators/MutationTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/operators/MutationTest.cpp
 CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/operators/selection/BinaryTournamentSelection.h
  ../src/operators/selection/Selection.h
  ../src/problems/Kursawe.h
@@ -671,9 +825,20 @@ CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/operators/SelectionTest.cpp
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/operators/SelectionTest.cpp
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
  ../src/model/Individual.h
+ ../src/model/ParetoFront.h
+ ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/variables/BoundedVariable.h
@@ -714,10 +879,19 @@ CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/problems/KursaweTest.cpp
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o
+ ../vendor/jsoncpp/include/json/autolink.h
+ ../vendor/jsoncpp/include/json/config.h
+ ../vendor/jsoncpp/include/json/features.h
+ ../vendor/jsoncpp/include/json/forwards.h
+ ../vendor/jsoncpp/include/json/json.h
+ ../vendor/jsoncpp/include/json/reader.h
+ ../vendor/jsoncpp/include/json/value.h
+ ../vendor/jsoncpp/include/json/writer.h
+ /home/julesy/Workspace/moo-cpp/test/problems/KursaweTest.cpp
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
  ../src/model/Individual.h
  ../src/model/Population.h
+ ../src/model/Problem.h
  ../src/problems/Kursawe.h
  ../src/util/Random.h
  ../src/util/paretoFrontCalculator/ContUpdatedParetoFront.h
@@ -762,7 +936,7 @@ CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/util/paretoFront/ParetoFrontTest.cpp
+ /home/julesy/Workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp
 CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
  ../src/util/Random.h
  ../src/variables/BoundedVariable.h
@@ -802,7 +976,7 @@ CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/variables/RealTest.cpp
+ /home/julesy/Workspace/moo-cpp/test/variables/RealTest.cpp
 CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
  ../src/util/Random.h
  ../src/variables/BoundedVariable.h
@@ -843,4 +1017,4 @@ CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-generated-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h
  ../vendor/gmock-1.7.0/include/gmock/internal/gmock-port.h
- /home/julesy/Workspace/moo-cpp_2/test/variables/VariableCollectionTest.cpp
+ /home/julesy/Workspace/moo-cpp/test/variables/VariableCollectionTest.cpp

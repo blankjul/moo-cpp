@@ -12,111 +12,94 @@
 
 namespace moo {
 
-
-
     template <typename Trait>
-    class MOEAD : public Algorithm<Trait> {
-
-
+    class MOEAD : public Algorithm<MOEAD<Trait>, Trait> {
     private:
 
-        ParetoFront<Trait> front;
         std::vector<Weights> weights;
         std::vector<std::vector<int>> nearest;
         std::vector<double> refPoint;
+        int populationSize = 1000;
+        Population<Trait> pop;
+        std::vector<double> fitness;
+        
+        ParetoFront<Trait> f;
 
 
-        int T = 5;
-        int maxGeneration = 10;
+        int T = 20;
         double propMutation = 0.2;
         RandomSelection selection;
 
-
     public:
 
+        MOEAD(Trait problem) : Algorithm<MOEAD<Trait>, Trait>(problem) {}
 
-        virtual ParetoFront<Trait> solve(Trait& p) {
-
-            weights = Weights::getWeights(100);
-            int populationSize = weights.size();
-
-
-            std::vector<double> fitness (populationSize, std::numeric_limits<double>::max());
-
-            for (auto w: weights) nearest.push_back(w.getNearestNeighborByIndex(weights,T));
-
-            Population<Trait> pop {populationSize};
+        void init_() {
+            weights = Weights::getWeights(populationSize);
+            fitness = std::vector<double>(populationSize, std::numeric_limits<double>::max());
+            for (auto w : weights) nearest.push_back(w.getNearestNeighborByIndex(weights, T));
+            for (int i = 0; i < pop.size(); ++i) fitness[i] = Weights::getWeightedSum(weights[i], pop[i]->getOutput());
+            pop = Population<Trait>{populationSize};
             refPoint = getReferencePoint(pop);
+        }
 
-            int generation = 0;
-            while (generation++ <= maxGeneration) {
+        void next_() {
+            
+            for (int i = 0; i < pop.size(); ++i) {
+                
+                auto a = pop[nearest[i][Random::getInstance()->rndInt(0,nearest[i].size())]];
+                auto b = pop[nearest[i][Random::getInstance()->rndInt(0,nearest[i].size())]];
+                IndividualPtr<Trait> off = SBXCrossover::crossover(a, b);
+                if (Random::getInstance()->rndDouble() < propMutation) off = PolynomialMutation::mutate(off);
 
-                for (int i = 0; i < populationSize; ++i) {
-                    auto a = selection.select(pop);
-                    auto b = selection.select(pop);
-                    IndividualPtr<Trait> off = SBXCrossover::crossover(a,b);
-                    if (Random::getInstance()->rndDouble() < propMutation) off = PolynomialMutation::mutate(off);
+                updateReferencePoint(refPoint, off);
 
-                    updateReferencePoint(refPoint, off);
+                for (auto nearestWeightIndex : nearest[i]) {
 
-                    for(auto nearestWeightIndex : nearest[i]) {
+                    double value = Weights::getWeightedSum(weights[nearestWeightIndex], pop[i]->getOutput());
 
-                        double value = getWeightedSum(weights[nearestWeightIndex], pop[i]->getOutput());
-
-                        if (value < fitness[i]) {
-                            pop[i] = off;
-                            fitness[i] = value;
-                        }
-                        front.add(off);
+                    if (value < fitness[i]) {
+                        pop[i] = off;
+                        fitness[i] = value;
                     }
+                    f.add(off);
                 }
             }
-
-            std::cout << front.getPopulation();
-
-
-
-
-            return front;
         }
 
+        void info_(std::ostream& os) {
+        }
 
+   
+        
+        ParetoFront<Trait> front_() {
+            return f;
+        }
 
+   
+        static 
+        void updateReferencePoint(std::vector<double>& ref, const IndividualPtr<Trait> & ind) {
+            int numOfObjectives = Trait::getOutput().size();
+            auto v = ind->getOutput();
+            for (int i = 0; i < numOfObjectives; ++i) {
+                ref[i] = std::min(ref[i], v[i]);
+            }
+        }
 
-
+     
+        static 
+        std::vector<double> getReferencePoint(const Population<Trait> & pop) {
+            int numOfObjectives = Trait::getOutput().size();
+            std::vector<double> ref(numOfObjectives);
+            for (int i = 0; i < numOfObjectives; ++i) {
+                auto v = pop.getObjective(i);
+                ref[i] = *(std::min_element(v.begin(), v.end()));
+            }
+            return ref;
+        }
 
     };
-
-
-    static double getWeightedSum(const Weights & w, const std::vector<double>& output) {
-        double sum = 0;
-        for (unsigned int i = 0; i < w.size(); ++i) {
-            sum += w[i] * output[i];
-        }
-        return sum;
-    }
-
-    template <typename Trait>
-    static void updateReferencePoint(std::vector<double>& ref, const IndividualPtr<Trait> & ind) {
-        int numOfObjectives = Trait::getOutput().size();
-        auto v = ind->getOutput();
-        for (int i = 0; i < numOfObjectives; ++i) {
-            ref[i] = std::min(ref[i], v[i]);
-        }
-    }
-
-    template <typename Trait>
-    static std::vector<double> getReferencePoint(const Population<Trait> & pop) {
-        int numOfObjectives = Trait::getOutput().size();
-        std::vector<double> ref (numOfObjectives);
-        for (int i = 0; i < numOfObjectives; ++i) {
-            auto v = pop.getObjective(i);
-            ref[i] = *(std::min_element(v.begin(), v.end()));
-        }
-        return ref;
-
-    }
-
+    
 }
 
 #endif //MOO_MOEAD_H

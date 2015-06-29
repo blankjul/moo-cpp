@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julesy/Workspace/moo-cpp_2
+CMAKE_SOURCE_DIR = /home/julesy/Workspace/moo-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julesy/Workspace/moo-cpp_2/build
+CMAKE_BINARY_DIR = /home/julesy/Workspace/moo-cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tests.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/tests.dir/flags.make
 
 CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o: ../test/model/PopulationTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/model/PopulationTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/model/PopulationTest.cpp
 
 CMakeFiles/tests.dir/test/model/PopulationTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/model/PopulationTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/model/PopulationTest.cpp > CMakeFiles/tests.dir/test/model/PopulationTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/model/PopulationTest.cpp > CMakeFiles/tests.dir/test/model/PopulationTest.cpp.i
 
 CMakeFiles/tests.dir/test/model/PopulationTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/model/PopulationTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/model/PopulationTest.cpp -o CMakeFiles/tests.dir/test/model/PopulationTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/model/PopulationTest.cpp -o CMakeFiles/tests.dir/test/model/PopulationTest.cpp.s
 
 CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o.requires
@@ -77,17 +77,17 @@ CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o: ../test/model/ParetoFrontTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/model/ParetoFrontTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/model/ParetoFrontTest.cpp
 
 CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/model/ParetoFrontTest.cpp > CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/model/ParetoFrontTest.cpp > CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.i
 
 CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/model/ParetoFrontTest.cpp -o CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/model/ParetoFrontTest.cpp -o CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.s
 
 CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o.requires
@@ -100,17 +100,17 @@ CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o: ../test/model/IndividualTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/model/IndividualTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/model/IndividualTest.cpp
 
 CMakeFiles/tests.dir/test/model/IndividualTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/model/IndividualTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/model/IndividualTest.cpp > CMakeFiles/tests.dir/test/model/IndividualTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/model/IndividualTest.cpp > CMakeFiles/tests.dir/test/model/IndividualTest.cpp.i
 
 CMakeFiles/tests.dir/test/model/IndividualTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/model/IndividualTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/model/IndividualTest.cpp -o CMakeFiles/tests.dir/test/model/IndividualTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/model/IndividualTest.cpp -o CMakeFiles/tests.dir/test/model/IndividualTest.cpp.s
 
 CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o.requires
@@ -121,42 +121,42 @@ CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o.provides: CMakeFiles/tests.
 
 CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
 
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o: ../test/util/paretoFront/ParetoFrontTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/util/paretoFront/ParetoFrontTest.cpp
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o: ../test/util/paretoFront/ParetoFrontCalcTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp
 
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/util/paretoFront/ParetoFrontTest.cpp > CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.i
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp > CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.i
 
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/util/paretoFront/ParetoFrontTest.cpp -o CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.s
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp -o CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.s
 
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.requires:
-.PHONY : CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.requires
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.requires:
+.PHONY : CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.requires
 
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.provides: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.requires
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.provides.build
-.PHONY : CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.provides
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.provides: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.provides.build
+.PHONY : CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.provides
 
-CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o
+CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
 
 CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o: ../test/operators/MutationTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/operators/MutationTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/operators/MutationTest.cpp
 
 CMakeFiles/tests.dir/test/operators/MutationTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/operators/MutationTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/operators/MutationTest.cpp > CMakeFiles/tests.dir/test/operators/MutationTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/operators/MutationTest.cpp > CMakeFiles/tests.dir/test/operators/MutationTest.cpp.i
 
 CMakeFiles/tests.dir/test/operators/MutationTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/operators/MutationTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/operators/MutationTest.cpp -o CMakeFiles/tests.dir/test/operators/MutationTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/operators/MutationTest.cpp -o CMakeFiles/tests.dir/test/operators/MutationTest.cpp.s
 
 CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o.requires
@@ -169,17 +169,17 @@ CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o: ../test/operators/CrossoverTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/operators/CrossoverTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/operators/CrossoverTest.cpp
 
 CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/operators/CrossoverTest.cpp > CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/operators/CrossoverTest.cpp > CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.i
 
 CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/operators/CrossoverTest.cpp -o CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/operators/CrossoverTest.cpp -o CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.s
 
 CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o.requires
@@ -192,17 +192,17 @@ CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o: ../test/operators/SelectionTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/operators/SelectionTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/operators/SelectionTest.cpp
 
 CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/operators/SelectionTest.cpp > CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/operators/SelectionTest.cpp > CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.i
 
 CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/operators/SelectionTest.cpp -o CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/operators/SelectionTest.cpp -o CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.s
 
 CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o.requires
@@ -215,17 +215,17 @@ CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/tests.dir/test/Main.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/Main.cpp.o: ../test/Main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/Main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/Main.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/Main.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/Main.cpp.o -c /home/julesy/Workspace/moo-cpp/test/Main.cpp
 
 CMakeFiles/tests.dir/test/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/Main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/Main.cpp > CMakeFiles/tests.dir/test/Main.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/Main.cpp > CMakeFiles/tests.dir/test/Main.cpp.i
 
 CMakeFiles/tests.dir/test/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/Main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/Main.cpp -o CMakeFiles/tests.dir/test/Main.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/Main.cpp -o CMakeFiles/tests.dir/test/Main.cpp.s
 
 CMakeFiles/tests.dir/test/Main.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/Main.cpp.o.requires
@@ -238,17 +238,17 @@ CMakeFiles/tests.dir/test/Main.cpp.o.provides.build: CMakeFiles/tests.dir/test/M
 
 CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o: ../test/indicator/FastNonDominatedRankTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/indicator/FastNonDominatedRankTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp
 
 CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/indicator/FastNonDominatedRankTest.cpp > CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp > CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.i
 
 CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/indicator/FastNonDominatedRankTest.cpp -o CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp -o CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.s
 
 CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o.requires
@@ -261,17 +261,17 @@ CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o.provides.buil
 
 CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o: ../test/indicator/NonDominatedRankTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/indicator/NonDominatedRankTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp
 
 CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/indicator/NonDominatedRankTest.cpp > CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp > CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.i
 
 CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/indicator/NonDominatedRankTest.cpp -o CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp -o CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.s
 
 CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o.requires
@@ -284,17 +284,17 @@ CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o.provides.build: C
 
 CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o: ../test/indicator/CrowdingDistanceTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/indicator/CrowdingDistanceTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp
 
 CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/indicator/CrowdingDistanceTest.cpp > CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp > CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.i
 
 CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/indicator/CrowdingDistanceTest.cpp -o CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp -o CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.s
 
 CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o.requires
@@ -307,17 +307,17 @@ CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o.provides.build: C
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o: ../test/algorithms/nsgaII/NSGAIITest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/NSGAIITest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/NSGAIITest.cpp > CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp > CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.i
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/NSGAIITest.cpp -o CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp -o CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.s
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o.requires
@@ -330,17 +330,17 @@ CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o.provides.build: CMa
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o: ../test/algorithms/nsgaII/ComparatorTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/ComparatorTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/ComparatorTest.cpp > CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp > CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.i
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/algorithms/nsgaII/ComparatorTest.cpp -o CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp -o CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.s
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o.requires
@@ -351,19 +351,42 @@ CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o.provides: CMake
 
 CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
 
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o: ../test/algorithms/AlgorithmTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp
+
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp > CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.i
+
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp -o CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.s
+
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.requires:
+.PHONY : CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.requires
+
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.provides: CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.provides.build
+.PHONY : CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.provides
+
+CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.provides.build: CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
+
 CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o: ../test/algorithms/moead/MOEADTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/MOEADTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp
 
 CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/MOEADTest.cpp > CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp > CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.i
 
 CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/MOEADTest.cpp -o CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp -o CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.s
 
 CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o.requires
@@ -376,17 +399,17 @@ CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o.provides.build: CMake
 
 CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o: ../test/algorithms/moead/WeightsTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/WeightsTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/algorithms/moead/WeightsTest.cpp
 
 CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/WeightsTest.cpp > CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/algorithms/moead/WeightsTest.cpp > CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.i
 
 CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/algorithms/moead/WeightsTest.cpp -o CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/algorithms/moead/WeightsTest.cpp -o CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.s
 
 CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o.requires
@@ -399,17 +422,17 @@ CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o.provides.build: CMa
 
 CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o: ../test/variables/VariableCollectionTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/variables/VariableCollectionTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/variables/VariableCollectionTest.cpp
 
 CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/variables/VariableCollectionTest.cpp > CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/variables/VariableCollectionTest.cpp > CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.i
 
 CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/variables/VariableCollectionTest.cpp -o CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/variables/VariableCollectionTest.cpp -o CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.s
 
 CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o.requires
@@ -422,17 +445,17 @@ CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o.provides.build:
 
 CMakeFiles/tests.dir/test/variables/RealTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/variables/RealTest.cpp.o: ../test/variables/RealTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/variables/RealTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/variables/RealTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/variables/RealTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/variables/RealTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/variables/RealTest.cpp
 
 CMakeFiles/tests.dir/test/variables/RealTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/variables/RealTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/variables/RealTest.cpp > CMakeFiles/tests.dir/test/variables/RealTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/variables/RealTest.cpp > CMakeFiles/tests.dir/test/variables/RealTest.cpp.i
 
 CMakeFiles/tests.dir/test/variables/RealTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/variables/RealTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/variables/RealTest.cpp -o CMakeFiles/tests.dir/test/variables/RealTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/variables/RealTest.cpp -o CMakeFiles/tests.dir/test/variables/RealTest.cpp.s
 
 CMakeFiles/tests.dir/test/variables/RealTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/variables/RealTest.cpp.o.requires
@@ -445,17 +468,17 @@ CMakeFiles/tests.dir/test/variables/RealTest.cpp.o.provides.build: CMakeFiles/te
 
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o: ../test/problems/KursaweTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/julesy/Workspace/moo-cpp/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o -c /home/julesy/Workspace/moo-cpp_2/test/problems/KursaweTest.cpp
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o -c /home/julesy/Workspace/moo-cpp/test/problems/KursaweTest.cpp
 
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp_2/test/problems/KursaweTest.cpp > CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.i
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/julesy/Workspace/moo-cpp/test/problems/KursaweTest.cpp > CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.i
 
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp_2/test/problems/KursaweTest.cpp -o CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.s
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/julesy/Workspace/moo-cpp/test/problems/KursaweTest.cpp -o CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.s
 
 CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o.requires:
 .PHONY : CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o.requires
@@ -471,7 +494,7 @@ tests_OBJECTS = \
 "CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o" \
 "CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o" \
 "CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o" \
-"CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o" \
+"CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o" \
 "CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o" \
 "CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o" \
 "CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o" \
@@ -481,6 +504,7 @@ tests_OBJECTS = \
 "CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o" \
 "CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o" \
 "CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o" \
+"CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o" \
 "CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o" \
 "CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o" \
 "CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o" \
@@ -493,7 +517,7 @@ tests_EXTERNAL_OBJECTS =
 tests: CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
 tests: CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
 tests: CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
-tests: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o
+tests: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
 tests: CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
 tests: CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
 tests: CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
@@ -503,6 +527,7 @@ tests: CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
 tests: CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
 tests: CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
 tests: CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
+tests: CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
 tests: CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
 tests: CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
 tests: CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
@@ -513,6 +538,7 @@ tests: vendor/gmock-1.7.0/libgmock.a
 tests: vendor/gmock-1.7.0/gtest/libgtest.a
 tests: vendor/benchmark/src/libbenchmark.a
 tests: libmoo.a
+tests: vendor/jsoncpp/src/lib_json/libjsoncpp.a
 tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
@@ -524,7 +550,7 @@ CMakeFiles/tests.dir/build: tests
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o.requires
-CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontTest.cpp.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o.requires
@@ -534,6 +560,7 @@ CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/indicator/NonDominatedR
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o.requires
@@ -546,6 +573,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/julesy/Workspace/moo-cpp_2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julesy/Workspace/moo-cpp_2 /home/julesy/Workspace/moo-cpp_2 /home/julesy/Workspace/moo-cpp_2/build /home/julesy/Workspace/moo-cpp_2/build /home/julesy/Workspace/moo-cpp_2/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/julesy/Workspace/moo-cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julesy/Workspace/moo-cpp /home/julesy/Workspace/moo-cpp /home/julesy/Workspace/moo-cpp/build /home/julesy/Workspace/moo-cpp/build /home/julesy/Workspace/moo-cpp/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

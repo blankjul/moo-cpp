@@ -16,16 +16,15 @@
 #include <operators/crossover/SinglePointCrossover.h>
 #include <operators/crossover/SBXCrossover.h>
 #include <operators/mutation/PolynomialMutation.h>
+#include "util/paretoFrontCalculator/ContUpdatedParetoFront.h"
 #include "Comparator.h"
 
 
 namespace moo {
 
 
-
     template <typename Trait>
-    class NSGAII : public Algorithm<Trait> {
-
+    class NSGAII : public Algorithm<NSGAII<Trait>, Trait> {
 
     private:
 
@@ -36,96 +35,70 @@ namespace moo {
 
 
     public:
-
-        int populationSize = 10;
+        
+        NSGAII(Trait problem) : Algorithm<NSGAII<Trait>, Trait>(problem) {}
+        int populationSize = 1000;
         double propMutation = 0.2;
-        int maxGeneration = 100;
-        bool verbose = false;
 
 
-        void waitForKey() {
-            do
-            {
-                std::cout << '\n' <<"Press a key to continue...";
-            } while (std::cin.get() != '\n');
-        }
-
-
-        void print(Population<Trait> & population, bool alsoRankAndCrowding = false, bool onlyParetoFront = false) {
-            std::cout << "---------------------------\n";
-            std::cout << "size: " << population.size() << std::endl;
-            std::cout << "---------------------------\n";
-            auto pool = (onlyParetoFront) ? ContUpdatedParetoFront::getParetoFront(population) : population;
-            for (int i = 0; i < pool.size(); ++i) {
-                auto entry = pool[i];
-                if (alsoRankAndCrowding) std::cout << " [rank:" << indRank[entry]<< ",crowded:" << indCrowding[entry] << "]";
-                std::cout << entry->getOutput()[0] << ", " << entry->getOutput()[1]<<std::endl;
-            }
-            std::cout << "---------------------------\n";
-        }
-
-
-        void truncate(Population<Trait>& pop, int n) {
-            auto it = pop.begin();
-            for (int l = 0; l < n; ++l) {
-                if (it == pop.end()) return;
-                ++it;
-            }
-            if (it != pop.end()) pop.erase(it, pop.end());
-        }
-
-
-        virtual ParetoFront<Trait> solve(Trait& p) {
-
-            // initialize a random population with predefined size
+        void init_() {
             population = Population<Trait> {populationSize};
             indCrowding = CrowdingDistance::calculate(population);
             indRank = NonDominatedRank::calculate(population);
-
-            int generation = 0;
-            while (generation++ < maxGeneration) {
-
-                // create the mating pool using BinaryTournamentSelection
-                RankAndCrowdedComperator<Trait> cmp(&indRank, &indCrowding);
-                BinaryTournamentSelection<RankAndCrowdedComperator<Trait>> selector(cmp);
-                Population<Trait> matingPool = selector.selectMultiple(population, populationSize * 2);
-
-
-                // create all the offsprings
-                for (int j = 0; j < matingPool.size() - 1; j += 2) {
-                    IndividualPtr<Trait> off = SBXCrossover::crossover(matingPool[j], matingPool[j+1]);
-                    if (Random::getInstance()->rndDouble() < propMutation) off = PolynomialMutation::mutate(off);
-                    population.push_back(off);
-                }
-
-
-                // Only save the best population with the best ranks (save time by ignoring worse fronts!)
-                indRank = NonDominatedRank::calculate_(population, populationSize);
-                population.sortByMap(indRank);
-                truncate(population, populationSize);
-
-
-                // now for the last front use the crowding distance to ensure that the best individuals remains
-                indCrowding = CrowdingDistance::calculate(population);
-                RankAndCrowdedComperator<Trait>  comp(&indRank, &indCrowding);
-                std::sort(population.begin(), population.end(), comp);
-                truncate(population, populationSize);
-
-            }
-
-            if (verbose) print(population, true, true);
-            if (verbose) print(population);
-
-
-            for (auto entry :  ContUpdatedParetoFront::getParetoFront(population)) {
-                if (verbose) std::cout << entry->getOutput()[0] << ", " << entry->getOutput()[1] << std::endl;
-            }
-
-            ParetoFront<Trait> f;
-            return f;
-
-
         }
+
+        void next_() {
+            // create the mating pool using BinaryTournamentSelection
+            RankAndCrowdedComperator<Trait> cmp(&indRank, &indCrowding);
+            BinaryTournamentSelection<RankAndCrowdedComperator<Trait>> selector(cmp);
+            Population<Trait> matingPool = selector.selectMultiple(population, populationSize * 2);
+
+
+            // create all the offsprings
+            for (int j = 0; j < matingPool.size() - 1; j += 2) {
+                IndividualPtr<Trait> off = SBXCrossover::crossover(matingPool[j], matingPool[j+1]);
+                if (Random::getInstance()->rndDouble() < propMutation) off = PolynomialMutation::mutate(off);
+                population.push_back(off);
+            }
+
+
+            // now for the last front use the crowding distance to ensure that the best individuals remains
+            indRank = NonDominatedRank::calculate_(population, populationSize);
+            indCrowding = CrowdingDistance::calculate(population);
+            RankAndCrowdedComperator<Trait>  comp(&indRank, &indCrowding);
+            std::sort(population.begin(), population.end(), comp);
+
+
+            // truncate the population
+            Population<Trait> next;
+            for (int l = 0; l < populationSize; ++l) next.push_back(population[l]);
+            population = next;
+        }
+        
+        
+        void info_(std::ostream& os) {
+            auto last = population[population.size()-1];
+            os << "maximal rank: " << indRank[last];
+            /*
+            os << "---------------------------\n";
+            os << "size: " << population.size() << std::endl;
+            os << "---------------------------\n";
+            for (int i = 0; i < population.size(); ++i) {
+                auto entry = population[i];
+                os << " [rank:" << indRank[entry]<< ",crowded:" << indCrowding[entry] << "]";
+                os << entry->getOutput()[0] << ", " << entry->getOutput()[1]<<std::endl;
+            }
+            os << "---------------------------\n";
+             * */
+        }
+
+        
+        ParetoFront<Trait> front_() {
+            ParetoFront<Trait> f;
+            for(unsigned int i = 0; i < population.size(); ++i) f.add(population[i]);
+            return f;
+        }
+
 
 
 

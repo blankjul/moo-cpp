@@ -8,24 +8,24 @@
 
 
 
-class ParetoFrontTest : public AbstractTest {
+class ParetoFrontCalcTest : public AbstractTest {
 public:
     moo::Population<moo::Kursawe> pop {100};
 };
 
 
 
-TEST_F(ParetoFrontTest, CheckIfFunctionIsWorkingCorrectly) {
+TEST_F(ParetoFrontCalcTest, CheckIfFunctionIsWorkingCorrectly) {
     moo::ContUpdatedParetoFront::getParetoFront(pop);
 }
 
-TEST_F(ParetoFrontTest, GetParetoFrontFastCorrectness) {
+TEST_F(ParetoFrontCalcTest, GetParetoFrontFastCorrectness) {
     auto m = moo::NaiveParetoFront::getParetoFront(pop);
     auto mfast = moo::ContUpdatedParetoFront::getParetoFront(pop);
     EXPECT_EQ(m, mfast);
 }
 
-TEST_F(ParetoFrontTest, GetParetoFrontKungCorrectness) {
+TEST_F(ParetoFrontCalcTest, GetParetoFrontKungCorrectness) {
     auto m = moo::NaiveParetoFront::getParetoFront(pop);
     auto mkung = moo::KungParetoFront::getParetoFront(pop);
 

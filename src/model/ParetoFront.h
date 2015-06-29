@@ -3,6 +3,7 @@
 
 #include "model/Population.h"
 #include <unordered_set>
+#include "json/json.h"
 
 namespace moo {
 
@@ -33,8 +34,36 @@ namespace moo {
             front.push_back(ind);
             return true;
         }
+        
+        
+
+     Json::Value json() {
+        Json::Value root;
+        auto f = getPopulation();
+        if (f.size() == 0) {
+            Json::Value obj;
+            Json::Value tmp;
+            obj.append(tmp);
+            root.append(obj);
+            root.append(obj);
+        } else {
+            for (int k = 0; k < Trait::getNumOfObjectives(); ++k) {
+                auto v = f.getObjective(k);
+                Json::Value obj;
+                for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                    obj.append(v[i]);
+                }
+                root.append(obj);
+            }
+            return root;
+        }
+    }
+
+
 
     };
+    
+
 
 }
 

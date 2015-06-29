@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/julesy/Workspace/moo-cpp_2/vendor/benchmark/test/filter_test.cc" "/home/julesy/Workspace/moo-cpp_2/build/vendor/benchmark/test/CMakeFiles/filter_test.dir/filter_test.cc.o"
+  "/home/julesy/Workspace/moo-cpp/vendor/benchmark/test/filter_test.cc" "/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test/CMakeFiles/filter_test.dir/filter_test.cc.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/julesy/Workspace/moo-cpp_2/build/vendor/benchmark/src/CMakeFiles/benchmark.dir/DependInfo.cmake"
+  "/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src/CMakeFiles/benchmark.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -27,6 +27,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
   "../vendor/gmock-1.7.0/include"
   "../vendor/gmock-1.7.0/gtest/include"
+  "../vendor/jsoncpp/include"
   "../vendor/benchmark/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

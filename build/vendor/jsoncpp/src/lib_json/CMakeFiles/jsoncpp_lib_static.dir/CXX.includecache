@@ -68,7 +68,7 @@ string
 ostream
 -
 
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_reader.cpp
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_reader.cpp
 json/assertions.h
 -
 json/reader.h
@@ -76,7 +76,7 @@ json/reader.h
 json/value.h
 -
 json_tool.h
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_tool.h
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_tool.h
 utility
 -
 cstdio
@@ -94,9 +94,9 @@ memory
 set
 -
 
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_tool.h
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_tool.h
 
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_value.cpp
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_value.cpp
 json/assertions.h
 -
 json/value.h
@@ -120,15 +120,15 @@ cstddef
 algorithm
 -
 json_valueiterator.inl
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_valueiterator.inl
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_valueiterator.inl
 
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_valueiterator.inl
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_valueiterator.inl
 
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_writer.cpp
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_writer.cpp
 json/writer.h
 -
 json_tool.h
-/home/julesy/Workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_tool.h
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_tool.h
 iomanip
 -
 memory

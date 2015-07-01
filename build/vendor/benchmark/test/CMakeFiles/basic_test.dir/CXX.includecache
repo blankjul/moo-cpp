@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../vendor/benchmark/include/benchmark/benchmark_api.h
+assert.h
+-
+stddef.h
+-
+stdint.h
+-
+macros.h
+../vendor/benchmark/include/benchmark/macros.h
+
+../vendor/benchmark/include/benchmark/macros.h
+
+/home/julesy/workspace/moo-cpp/vendor/benchmark/test/basic_test.cc
+cstddef
+-
+benchmark/benchmark_api.h
+/home/julesy/workspace/moo-cpp/vendor/benchmark/test/benchmark/benchmark_api.h
+

@@ -1,1 +1,1 @@
-/usr/bin/g++    -std=c++0x -Wall -Wextra -pedantic -O3 -DNDEBUG    CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o CMakeFiles/jsoncpp_test.dir/main.cpp.o  -o jsoncpp_test -rdynamic ../lib_json/libjsoncpp.a 
+/usr/bin/g++    -std=c++0x -Wall -Wextra -pedantic -g3 -gdwarf-2    CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o CMakeFiles/jsoncpp_test.dir/main.cpp.o  -o jsoncpp_test -rdynamic ../lib_json/libjsoncpp.a 

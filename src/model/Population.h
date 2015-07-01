@@ -62,7 +62,7 @@ namespace moo {
 
         typename Trait::OutputType getObjective (int objective) const {
             typename Trait::OutputType v;
-            for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+            for (unsigned int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
             return v;
         }
 
@@ -107,7 +107,7 @@ namespace moo {
 
         std::vector<int> getIndex() const {
             std::vector<int> index (this->size());
-            for (int k = 0; k < this->size(); ++k) index[k] = k;
+            for (unsigned int k = 0; k < this->size(); ++k) index[k] = k;
             return index;
         }
 

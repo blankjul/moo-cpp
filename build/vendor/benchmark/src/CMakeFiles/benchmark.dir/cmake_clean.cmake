@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/benchmark.dir/benchmark.cc.o"
   "CMakeFiles/benchmark.dir/colorprint.cc.o"
   "CMakeFiles/benchmark.dir/commandlineflags.cc.o"
@@ -11,12 +11,12 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/benchmark.dir/string_util.cc.o"
   "CMakeFiles/benchmark.dir/sysinfo.cc.o"
   "CMakeFiles/benchmark.dir/walltime.cc.o"
-  "CMakeFiles/benchmark.dir/re_posix.cc.o"
+  "CMakeFiles/benchmark.dir/re_std.cc.o"
   "libbenchmark.pdb"
   "libbenchmark.a"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/benchmark.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/benchmark.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

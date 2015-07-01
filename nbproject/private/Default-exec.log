@@ -1,49 +1,8 @@
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/moo.dir/src/util/Random.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/src/util/Random.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/moo.dir/src/util/SortUtil.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/src/util/SortUtil.cpp
-
-called: /usr/bin/ar
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/ar
-	cr
-	libmoo.a
-	CMakeFiles/moo.dir/src/util/Random.cpp.o
-	CMakeFiles/moo.dir/src/util/SortUtil.cpp.o
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -55,25 +14,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/benchmark.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/benchmark.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/benchmark.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -85,25 +48,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/colorprint.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/colorprint.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/colorprint.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -115,25 +82,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/commandlineflags.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/commandlineflags.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/commandlineflags.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -145,25 +116,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/console_reporter.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/console_reporter.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/console_reporter.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -175,25 +150,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/csv_reporter.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/csv_reporter.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/csv_reporter.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -205,25 +184,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/json_reporter.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/json_reporter.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/json_reporter.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -235,25 +218,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/log.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/log.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/log.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -265,25 +252,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/reporter.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/reporter.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/reporter.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -295,25 +286,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/sleep.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/sleep.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/sleep.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -325,25 +320,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/string_util.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/string_util.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/string_util.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -355,25 +354,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/sysinfo.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/sysinfo.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/sysinfo.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -385,25 +388,29 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark.dir/walltime.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/walltime.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/walltime.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -415,23 +422,26 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/src
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/src
 	-std=c++11
 	-Wextra
 	-o
-	CMakeFiles/benchmark.dir/re_posix.cc.o
+	CMakeFiles/benchmark.dir/re_std.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/src/re_posix.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/src/re_std.cc
 
 called: /usr/bin/ar
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/src
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/src
 	/usr/bin/ar
 	cr
 	libbenchmark.a
@@ -447,129 +457,337 @@ called: /usr/bin/ar
 	CMakeFiles/benchmark.dir/string_util.cc.o
 	CMakeFiles/benchmark.dir/sysinfo.cc.o
 	CMakeFiles/benchmark.dir/walltime.cc.o
-	CMakeFiles/benchmark.dir/re_posix.cc.o
+	CMakeFiles/benchmark.dir/re_std.cc.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/lib_json
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-Werror=strict-aliasing
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
-	CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
+	CMakeFiles/jsoncpp_lib_static.dir/json_reader.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/benchmark/main.cpp
+	/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_reader.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/lib_json
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-Werror=strict-aliasing
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
-	CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
+	CMakeFiles/jsoncpp_lib_static.dir/json_value.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/benchmark/ParetoFront.cpp
+	/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_value.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/lib_json
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-Werror=strict-aliasing
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
-	CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
+	CMakeFiles/jsoncpp_lib_static.dir/json_writer.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/benchmark/Population.cpp
+	/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_writer.cpp
+
+called: /usr/bin/ar
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/lib_json
+	/usr/bin/ar
+	cr
+	libjsoncpp.a
+	CMakeFiles/jsoncpp_lib_static.dir/json_reader.cpp.o
+	CMakeFiles/jsoncpp_lib_static.dir/json_value.cpp.o
+	CMakeFiles/jsoncpp_lib_static.dir/json_writer.cpp.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
-	CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
+	CMakeFiles/moo.dir/src/util/Random.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/benchmark/NSGAII.cpp
+	/home/julesy/workspace/moo-cpp/src/util/Random.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
-	CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
+	CMakeFiles/moo.dir/src/util/SortUtil.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/benchmark/CrowdedDistance.cpp
+	/home/julesy/workspace/moo-cpp/src/util/SortUtil.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/moo.dir/src/main/nsgaII.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/moo.dir/src/main/moead.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/src/main/moead.cpp
+
+called: /usr/bin/ar
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/ar
+	cr
+	libmoo.a
+	CMakeFiles/moo.dir/src/util/Random.cpp.o
+	CMakeFiles/moo.dir/src/util/SortUtil.cpp.o
+	CMakeFiles/moo.dir/src/main/nsgaII.cpp.o
+	CMakeFiles/moo.dir/src/main/moead.cpp.o
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/benchmark/NonDominatedSorting.cpp
+	/home/julesy/workspace/moo-cpp/benchmark/NonDominatedSorting.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/benchmark/Population.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/benchmark/main.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
+	CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
+	CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
 	CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
 	CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
-	CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
 	CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
-	CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
-	CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
 	-o
 	benchmark_
 	-rdynamic
 	vendor/benchmark/src/libbenchmark.a
 	libmoo.a
 	-lpthread
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccgj8fl5.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -584,26 +802,27 @@ called: /usr/bin/ld
 	relro
 	-o
 	benchmark_
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
+	CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
+	CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
+	CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
 	CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
 	CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
-	CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
 	CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
-	CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
-	CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
 	vendor/benchmark/src/libbenchmark.a
 	libmoo.a
 	-lpthread
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
 	-lstdc++
 	-lm
 	-lgcc_s
@@ -611,20 +830,188 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/moead.dir/src/main/moead.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/src/main/moead.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	CMakeFiles/moead.dir/src/main/moead.cpp.o
+	-o
+	moead
+	-rdynamic
+	libmoo.a
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
+
+called: /usr/bin/ld
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/cc2osroe.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_x86_64
+	--hash-style=gnu
+	--as-needed
+	-export-dynamic
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-z
+	relro
+	-o
+	moead
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
+	-L/lib/x86_64-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/x86_64-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
+	CMakeFiles/moead.dir/src/main/moead.cpp.o
+	libmoo.a
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
+	-lstdc++
+	-lm
+	-lgcc_s
+	-lgcc
+	-lc
+	-lgcc_s
+	-lgcc
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.o
+	-o
+	nsgaII
+	-rdynamic
+	libmoo.a
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
+
+called: /usr/bin/ld
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccMq2PzA.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_x86_64
+	--hash-style=gnu
+	--as-needed
+	-export-dynamic
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-z
+	relro
+	-o
+	nsgaII
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
+	-L/lib/x86_64-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/x86_64-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
+	CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.o
+	libmoo.a
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
+	-lstdc++
+	-lm
+	-lgcc_s
+	-lgcc
+	-lc
+	-lgcc_s
+	-lgcc
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest
 	-std=c++11
 	-Wextra
 	-Wall
@@ -637,19 +1024,21 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/gmock.dir/gtest/src/gtest-all.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest-all.cc
+	/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest-all.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest
 	-std=c++11
 	-Wextra
 	-Wall
@@ -662,10 +1051,10 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/gmock.dir/src/gmock-all.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/src/gmock-all.cc
+	/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/src/gmock-all.cc
 
 called: /usr/bin/ar
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0
 	/usr/bin/ar
 	cr
 	libgmock.a
@@ -673,14 +1062,16 @@ called: /usr/bin/ar
 	CMakeFiles/gmock.dir/src/gmock-all.cc.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest
 	-std=c++11
 	-Wextra
 	-Wall
@@ -693,342 +1084,438 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/gtest.dir/src/gtest-all.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest-all.cc
+	/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest-all.cc
 
 called: /usr/bin/ar
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
 	/usr/bin/ar
 	cr
 	libgtest.a
 	CMakeFiles/gtest.dir/src/gtest-all.cc.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/model/PopulationTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/model/ParetoFrontTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/model/IndividualTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/operators/MutationTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/operators/CrossoverTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/operators/SelectionTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/tests.dir/test/Main.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/test/Main.cpp
+	/home/julesy/workspace/moo-cpp/test/Main.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
-	CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
+	CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp
+	/home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/algorithms/moead/WeightsTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/variables/VariableCollectionTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
-	-std=c++11
-	-Wextra
-	-o
-	CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
-	-c
-	/home/julesy/Workspace/moo-cpp/test/variables/RealTest.cpp
-
-called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
-	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
 	-c
-	/home/julesy/Workspace/moo-cpp/test/problems/KursaweTest.cpp
+	/home/julesy/workspace/moo-cpp/test/problems/KursaweTest.cpp
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/g++
-	CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
 	CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/model/ParetoFrontTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
 	CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/model/IndividualTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/operators/SelectionTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/operators/MutationTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/operators/CrossoverTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/variables/RealTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/variables/VariableCollectionTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/algorithms/moead/WeightsTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build
+	/usr/bin/g++
+	-g3
+	-gdwarf-2
+	CMakeFiles/tests.dir/test/Main.cpp.o
 	CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
+	CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
+	CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
+	CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
+	CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
+	CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
+	CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
+	CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
+	CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
 	CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
 	CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
-	CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
-	CMakeFiles/tests.dir/test/Main.cpp.o
-	CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
-	CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
-	CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
-	CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
-	CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
+	CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
+	CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
 	CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
 	CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
-	CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
-	CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
-	CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
+	CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
+	CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
+	CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
 	-o
 	tests
 	-rdynamic
@@ -1038,10 +1525,20 @@ called: /usr/bin/g++
 	vendor/benchmark/src/libbenchmark.a
 	libmoo.a
 	-lpthread
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build
+	/home/julesy/workspace/moo-cpp/build
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccl1v11I.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -1056,41 +1553,43 @@ called: /usr/bin/ld
 	relro
 	-o
 	tests
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
-	CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
-	CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
-	CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
-	CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
-	CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
-	CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
-	CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
 	CMakeFiles/tests.dir/test/Main.cpp.o
+	CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
+	CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
+	CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
+	CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
+	CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
+	CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
 	CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
 	CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
-	CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
-	CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
-	CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
+	CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
+	CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
+	CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
+	CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
+	CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
 	CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
 	CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
-	CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
-	CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
-	CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
+	CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
+	CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
+	CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
 	vendor/gmock-1.7.0/libgmock.a
 	vendor/gmock-1.7.0/gtest/libgtest.a
 	-lpthread
 	vendor/benchmark/src/libbenchmark.a
 	libmoo.a
 	-lpthread
+	vendor/jsoncpp/src/lib_json/libjsoncpp.a
 	-lstdc++
 	-lm
 	-lgcc_s
@@ -1098,20 +1597,22 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest
 	-std=c++11
 	-Wextra
 	-Wall
@@ -1124,19 +1625,21 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/gmock_main.dir/gtest/src/gtest-all.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest-all.cc
+	/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest-all.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest
 	-std=c++11
 	-Wextra
 	-Wall
@@ -1149,19 +1652,21 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/gmock_main.dir/src/gmock-all.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/src/gmock-all.cc
+	/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/src/gmock-all.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest
 	-std=c++11
 	-Wextra
 	-Wall
@@ -1174,10 +1679,10 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/src/gmock_main.cc
+	/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/src/gmock_main.cc
 
 called: /usr/bin/ar
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0
 	/usr/bin/ar
 	cr
 	libgmock_main.a
@@ -1186,14 +1691,16 @@ called: /usr/bin/ar
 	CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
 	/usr/bin/g++
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest
 	-std=c++11
 	-Wextra
 	-Wall
@@ -1206,19 +1713,216 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest_main.cc
+	/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest_main.cc
 
 called: /usr/bin/ar
-	/home/julesy/Workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
+	/home/julesy/workspace/moo-cpp/build/vendor/gmock-1.7.0/gtest
 	/usr/bin/ar
 	cr
 	libgtest_main.a
 	CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/jsontestrunner
+	/usr/bin/g++
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/jsontestrunner_exe.dir/main.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/jsontestrunner/main.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/jsontestrunner
+	/usr/bin/g++
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-g3
+	-gdwarf-2
+	CMakeFiles/jsontestrunner_exe.dir/main.cpp.o
+	-o
+	jsontestrunner_exe
+	-rdynamic
+	../lib_json/libjsoncpp.a
+
+called: /usr/bin/ld
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/jsontestrunner
+	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/cchf8cdr.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_x86_64
+	--hash-style=gnu
+	--as-needed
+	-export-dynamic
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-z
+	relro
+	-o
+	jsontestrunner_exe
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
+	-L/lib/x86_64-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/x86_64-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
+	CMakeFiles/jsontestrunner_exe.dir/main.cpp.o
+	../lib_json/libjsoncpp.a
+	-lstdc++
+	-lm
+	-lgcc_s
+	-lgcc
+	-lc
+	-lgcc_s
+	-lgcc
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/test_lib_json
+	/usr/bin/g++
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/test_lib_json/jsontest.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/test_lib_json
+	/usr/bin/g++
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/../../include
+	-std=c++11
+	-Wextra
+	-o
+	CMakeFiles/jsoncpp_test.dir/main.cpp.o
+	-c
+	/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/test_lib_json/main.cpp
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/test_lib_json
+	/usr/bin/g++
+	-std=c++0x
+	-Wall
+	-Wextra
+	-pedantic
+	-g3
+	-gdwarf-2
+	CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o
+	CMakeFiles/jsoncpp_test.dir/main.cpp.o
+	-o
+	jsoncpp_test
+	-rdynamic
+	../lib_json/libjsoncpp.a
+
+called: /usr/bin/ld
+	/home/julesy/workspace/moo-cpp/build/vendor/jsoncpp/src/test_lib_json
+	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccwh5DlX.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_x86_64
+	--hash-style=gnu
+	--as-needed
+	-export-dynamic
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-z
+	relro
+	-o
+	jsoncpp_test
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
+	-L/lib/x86_64-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/x86_64-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
+	CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o
+	CMakeFiles/jsoncpp_test.dir/main.cpp.o
+	../lib_json/libjsoncpp.a
+	-lstdc++
+	-lm
+	-lgcc_s
+	-lgcc
+	-lc
+	-lgcc_s
+	-lgcc
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+
+called: /usr/bin/g++
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -1230,22 +1934,25 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/basic_test.dir/basic_test.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/test/basic_test.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/test/basic_test.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-std=c++11
 	-Wall
@@ -1257,6 +1964,8 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
+	-g3
+	-gdwarf-2
 	CMakeFiles/basic_test.dir/basic_test.cc.o
 	-o
 	basic_test
@@ -1265,8 +1974,17 @@ called: /usr/bin/g++
 	-lpthread
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccFBUrKh.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -1281,17 +1999,17 @@ called: /usr/bin/ld
 	relro
 	-o
 	basic_test
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
 	CMakeFiles/basic_test.dir/basic_test.cc.o
 	../src/libbenchmark.a
 	-lpthread
@@ -1302,13 +2020,14 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -1320,22 +2039,25 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/benchmark_test.dir/benchmark_test.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/test/benchmark_test.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/test/benchmark_test.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-std=c++11
 	-Wall
@@ -1347,6 +2069,8 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
+	-g3
+	-gdwarf-2
 	CMakeFiles/benchmark_test.dir/benchmark_test.cc.o
 	-o
 	benchmark_test
@@ -1355,8 +2079,17 @@ called: /usr/bin/g++
 	-lpthread
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccTv8Wvd.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -1371,17 +2104,17 @@ called: /usr/bin/ld
 	relro
 	-o
 	benchmark_test
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
 	CMakeFiles/benchmark_test.dir/benchmark_test.cc.o
 	../src/libbenchmark.a
 	-lpthread
@@ -1392,13 +2125,14 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -1410,13 +2144,16 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
 	-std=c++11
 	-Wextra
 	-std=c++03
@@ -1432,10 +2169,10 @@ called: /usr/bin/g++
 	-o
 	CMakeFiles/cxx03_test.dir/cxx03_test.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/test/cxx03_test.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/test/cxx03_test.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-std=c++11
 	-Wall
@@ -1447,6 +2184,8 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
+	-g3
+	-gdwarf-2
 	CMakeFiles/cxx03_test.dir/cxx03_test.cc.o
 	-o
 	cxx03_test
@@ -1455,8 +2194,17 @@ called: /usr/bin/g++
 	-lpthread
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccKkhl3C.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -1471,17 +2219,17 @@ called: /usr/bin/ld
 	relro
 	-o
 	cxx03_test
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
 	CMakeFiles/cxx03_test.dir/cxx03_test.cc.o
 	../src/libbenchmark.a
 	-lpthread
@@ -1492,13 +2240,14 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -1510,22 +2259,25 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/filter_test.dir/filter_test.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/test/filter_test.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/test/filter_test.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-std=c++11
 	-Wall
@@ -1537,6 +2289,8 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
+	-g3
+	-gdwarf-2
 	CMakeFiles/filter_test.dir/filter_test.cc.o
 	-o
 	filter_test
@@ -1545,8 +2299,17 @@ called: /usr/bin/g++
 	-lpthread
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccxurkFp.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -1561,17 +2324,17 @@ called: /usr/bin/ld
 	relro
 	-o
 	filter_test
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
 	CMakeFiles/filter_test.dir/filter_test.cc.o
 	../src/libbenchmark.a
 	-lpthread
@@ -1582,13 +2345,14 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -1600,22 +2364,25 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/fixture_test.dir/fixture_test.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/test/fixture_test.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/test/fixture_test.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-std=c++11
 	-Wall
@@ -1627,6 +2394,8 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
+	-g3
+	-gdwarf-2
 	CMakeFiles/fixture_test.dir/fixture_test.cc.o
 	-o
 	fixture_test
@@ -1635,8 +2404,17 @@ called: /usr/bin/g++
 	-lpthread
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccSPuOdZ.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -1651,17 +2429,17 @@ called: /usr/bin/ld
 	relro
 	-o
 	fixture_test
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
 	CMakeFiles/fixture_test.dir/fixture_test.cc.o
 	../src/libbenchmark.a
 	-lpthread
@@ -1672,13 +2450,14 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-DHAVE_POSIX_REGEX
+	-DHAVE_STD_REGEX
 	-DHAVE_STEADY_CLOCK
 	-std=c++11
 	-Wall
@@ -1690,22 +2469,25 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
-	-I/home/julesy/Workspace/moo-cpp/benchmark
-	-I/home/julesy/Workspace/moo-cpp/test
-	-I/home/julesy/Workspace/moo-cpp/src
-	-I/home/julesy/Workspace/moo-cpp/.
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
-	-I/home/julesy/Workspace/moo-cpp/vendor/benchmark/include
+	-g3
+	-gdwarf-2
+	-I/home/julesy/workspace/moo-cpp/benchmark
+	-I/home/julesy/workspace/moo-cpp/test
+	-I/home/julesy/workspace/moo-cpp/src
+	-I/home/julesy/workspace/moo-cpp/.
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include
+	-I/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include
+	-I/home/julesy/workspace/moo-cpp/vendor/jsoncpp/include
+	-I/home/julesy/workspace/moo-cpp/vendor/benchmark/include
 	-std=c++11
 	-Wextra
 	-o
 	CMakeFiles/options_test.dir/options_test.cc.o
 	-c
-	/home/julesy/Workspace/moo-cpp/vendor/benchmark/test/options_test.cc
+	/home/julesy/workspace/moo-cpp/vendor/benchmark/test/options_test.cc
 
 called: /usr/bin/g++
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/g++
 	-std=c++11
 	-Wall
@@ -1717,6 +2499,8 @@ called: /usr/bin/g++
 	-Wzero-as-null-pointer-constant
 	-fstrict-aliasing
 	-Wstrict-aliasing
+	-g3
+	-gdwarf-2
 	CMakeFiles/options_test.dir/options_test.cc.o
 	-o
 	options_test
@@ -1725,8 +2509,17 @@ called: /usr/bin/g++
 	-lpthread
 
 called: /usr/bin/ld
-	/home/julesy/Workspace/moo-cpp/build/vendor/benchmark/test
+	/home/julesy/workspace/moo-cpp/build/vendor/benchmark/test
 	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/ccYTYs8q.res
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lgcc
 	--sysroot=/
 	--build-id
 	--eh-frame-hdr
@@ -1741,17 +2534,17 @@ called: /usr/bin/ld
 	relro
 	-o
 	options_test
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib
 	-L/lib/x86_64-linux-gnu
 	-L/lib/../lib
 	-L/usr/lib/x86_64-linux-gnu
 	-L/usr/lib/../lib
-	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..
 	CMakeFiles/options_test.dir/options_test.cc.o
 	../src/libbenchmark.a
 	-lpthread
@@ -1762,6 +2555,6 @@ called: /usr/bin/ld
 	-lc
 	-lgcc_s
 	-lgcc
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
-	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 

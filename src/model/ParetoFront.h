@@ -37,26 +37,20 @@ namespace moo {
         
         
 
-     Json::Value json() {
+      void json(Json::Value& json) {
         Json::Value root;
         auto f = getPopulation();
-        if (f.size() == 0) {
+        if (f.size() == 0) return;
+        
+        for (int k = 0; k < Trait::getNumOfObjectives(); ++k) {
+            auto v = f.getObjective(k);
             Json::Value obj;
-            Json::Value tmp;
-            obj.append(tmp);
-            root.append(obj);
-            root.append(obj);
-        } else {
-            for (int k = 0; k < Trait::getNumOfObjectives(); ++k) {
-                auto v = f.getObjective(k);
-                Json::Value obj;
-                for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
-                    obj.append(v[i]);
-                }
-                root.append(obj);
+            for (unsigned int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                obj.append(v[i]);
             }
-            return root;
+            root.append(obj);
         }
+        json.append(root);
     }
 
 

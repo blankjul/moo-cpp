@@ -5,7 +5,7 @@ project(MOO CXX)
 # General
 ###############################################################################
 add_definitions(-std=c++11)
-add_definitions(-Wextra)
+#add_definitions(-Wextra)
 
 include_directories(BEFORE ".")
 include_directories(BEFORE "src/")

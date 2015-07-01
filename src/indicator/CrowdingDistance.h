@@ -32,7 +32,7 @@ namespace moo {
 
         template <typename T>
         static void bounds_(const Population<T> & pop, std::vector<double>& min, std::vector<double>& max ) {
-            for (int j = 0; j < T::getOutput().size(); ++j) {
+            for (unsigned int j = 0; j < T::getOutput().size(); ++j) {
                 auto v = pop.getObjective(j);
                 min.push_back(*std::min_element(v.begin(), v.end()));
                 max.push_back(*std::max_element(v.begin(), v.end()));
@@ -63,7 +63,7 @@ namespace moo {
                 m[pop[index[0]]] = std::numeric_limits<double>::infinity();
                 m[pop[index[index.size()-1]]] = std::numeric_limits<double>::infinity();
 
-                for (int j = 1; j < pop.size() - 1; ++j) {
+                for (unsigned int j = 1; j < pop.size() - 1; ++j) {
                     m[pop[index[j]]] += (pop[index[j+1]]->getOutput()[i] - pop[index[j-1]]->getOutput()[i]) / denominator;
                 }
             }

@@ -17,6 +17,10 @@ TEST_F(WeightsTest, CalculateDistanceToOtherVectorIsZero) {
     EXPECT_EQ(0,w1.getDistance(w2) );
 }
 
+TEST_F(WeightsTest, GetWeightsNoError) {
+    moo::Weights::getWeights(33);
+}
+
 
 TEST_F(WeightsTest, CalculateDistanceToOtherVectorNotEqual) {
     EXPECT_EQ(std::sqrt(2),w1.getDistance(w3) );

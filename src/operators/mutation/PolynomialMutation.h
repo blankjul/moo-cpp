@@ -14,7 +14,7 @@ namespace moo {
         template <typename T> static void mutate_(T & in, double prob = -1) {
             if (prob == -1) prob = 1 / (double) in.size();
             auto random = Random::getInstance();
-            for (int i = 0; i < in.size(); ++i) {
+            for (unsigned int i = 0; i < in.size(); ++i) {
                 if (random->rndDouble() < prob) in[i] = in[i].random();
             }
         }

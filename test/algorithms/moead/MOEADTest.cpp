@@ -14,12 +14,12 @@ public:
     };
 };
 
-
+/*
 TEST_F(MOEADTest, SolveWithoutThrow) {
     moo::MOEAD<moo::Kursawe> moead(p);
     moead.solve();
 }
-/*
+
 
 TEST_F(MOEADTest, CalculateReferencePoint) {
     auto ref = getReferencePoint(pop);

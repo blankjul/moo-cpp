@@ -1,1 +1,1 @@
-/usr/bin/g++   -O3 -DNDEBUG    CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.o  -o nsgaII -rdynamic libmoo.a vendor/jsoncpp/src/lib_json/libjsoncpp.a 
+/usr/bin/g++   -g3 -gdwarf-2    CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.o  -o nsgaII -rdynamic libmoo.a vendor/jsoncpp/src/lib_json/libjsoncpp.a 

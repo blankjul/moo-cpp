@@ -37,7 +37,7 @@ namespace moo {
                 auto index = population.getIndex();
                 std::random_shuffle(index.begin(), index.end());
 
-                for (int i = 0; i < index.size() -1; i += 2) {
+                for (unsigned int i = 0; i < index.size() -1; i += 2) {
                     result.push_back(std::min(population[index[i]], population[index[i+1]]));
                     if (result.size() >= n) break;
                 }

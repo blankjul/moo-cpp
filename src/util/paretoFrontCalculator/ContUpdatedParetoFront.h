@@ -34,7 +34,7 @@ namespace moo {
                 return true;
             };
 
-            for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+            for (unsigned int i = 0; i < pop.size(); ++i) func(pop[i]);
 
             Population<Trait> result;
             for(auto ind : front) result.push_back(ind);

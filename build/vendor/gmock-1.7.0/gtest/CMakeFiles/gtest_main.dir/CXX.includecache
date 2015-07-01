@@ -246,9 +246,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest_main.cc
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest_main.cc
 stdio.h
 -
 gtest/gtest.h
-/home/julesy/Workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest/gtest.h
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/src/gtest/gtest.h
 

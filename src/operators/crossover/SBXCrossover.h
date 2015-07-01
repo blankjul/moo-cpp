@@ -23,7 +23,7 @@ namespace moo {
             auto offa = ra;
             auto offb = rb;
 
-            for (int i = 0; i < offa.size(); ++i) {
+            for (unsigned int i = 0; i < offa.size(); ++i) {
                 SBXCrossover::evolve_(offa[i],offb[i], 0.5);
             }
 

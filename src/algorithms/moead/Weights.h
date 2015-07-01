@@ -29,14 +29,34 @@ namespace moo {
             auto rndWeight = []() {
                 auto r = Random::getInstance();
                 std::vector<double> v = {r->rndDouble(),r->rndDouble(),r->rndDouble()};
-                double sum = std::accumulate(v.begin(), v.end(), 0);
+                double sum = 0;
+                for(auto it = v.begin(); it != v.end(); ++it) sum += *it;
                 for (unsigned int i = 0; i < v.size(); ++i) v[i] /= sum;
+             
                 return Weights{v[0], v[1], v[2]};
             };
+            
 
             std::vector<Weights> weights;
+            for (int i = 0; i <= n; i++) {
+                for (int j = 0; j <= n; j++) {
+                    if (i + j <= n) {
+                            int k = n - i - j;
+                            std::vector<double> v(3);
+                            v[0] = i / (double) n;
+                            v[1] = j / (double) n;
+                            v[2] = k / (double) n;
+                            Weights w{v[0], v[1], v[2]};
+                            //std::cout << v[0]<< ", " << v[1]<< ", " << v[2] << std::endl;
+                            weights.push_back(w);
+                    }
+                }
+            }
+          
+            
+            
 
-            for (int i = 0; i < n; ++i) weights.push_back(rndWeight());
+            //for (int i = 0; i < n; ++i) weights.push_back(rndWeight());
             return weights;
 
         }

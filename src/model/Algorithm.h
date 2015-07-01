@@ -13,26 +13,27 @@ namespace moo {
     private:
             
         Trait problem;
-        Json::Value fronts;
+        Json::Value jsonFront;
         
 
     public:
         
-        bool verbose = false;
-        bool json = false;
         int maxGeneration = 100;
         
         
         Algorithm(Trait problem) : problem(problem) {}
         
-        virtual ParetoFront<Trait> solve() {
+        virtual ParetoFront<Trait> solve(std::ostream * sInfo = nullptr, std::ostream * sOut = nullptr) {
             initialize();
             for(int i = 0; i < maxGeneration; ++i) {
-                if (json && i % 100 == 0) fronts.append(front().json());
+                if (sOut != nullptr) front().json(jsonFront);
                 next();
-                if (verbose) info(std::cout);
+                if (sInfo != nullptr) {
+                    *sInfo << "generation: " << i << " -> ";
+                    info(*sInfo);
+                }
             }
-            if (json) std::cout << fronts;
+            if (sOut != nullptr) *sOut << jsonFront;
             return front();
         }
 

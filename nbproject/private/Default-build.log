@@ -1,83 +1,1319 @@
-Scanning dependencies of target moo
-[  1%] Building CXX object CMakeFiles/moo.dir/src/util/Random.cpp.o
-[  3%] Building CXX object CMakeFiles/moo.dir/src/util/SortUtil.cpp.o
-Linking CXX static library libmoo.a
-[  3%] Built target moo
-[  5%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/benchmark.cc.o
-[  7%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/colorprint.cc.o
-[  9%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/commandlineflags.cc.o
-[ 11%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/console_reporter.cc.o
-[ 13%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/csv_reporter.cc.o
-[ 15%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/json_reporter.cc.o
-[ 17%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/log.cc.o
-[ 19%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/reporter.cc.o
-[ 21%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/sleep.cc.o
-[ 23%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/string_util.cc.o
-[ 25%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/sysinfo.cc.o
-[ 26%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/walltime.cc.o
-[ 28%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/re_posix.cc.o
+Scanning dependencies of target benchmark
+[  1%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/benchmark.cc.o
+[  3%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/colorprint.cc.o
+[  4%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/commandlineflags.cc.o
+[  6%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/console_reporter.cc.o
+[  7%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/csv_reporter.cc.o
+[  9%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/json_reporter.cc.o
+[ 11%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/log.cc.o
+[ 12%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/reporter.cc.o
+[ 14%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/sleep.cc.o
+[ 15%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/string_util.cc.o
+[ 17%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/sysinfo.cc.o
+[ 19%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/walltime.cc.o
+[ 20%] Building CXX object vendor/benchmark/src/CMakeFiles/benchmark.dir/re_std.cc.o
 Linking CXX static library libbenchmark.a
-[ 28%] Built target benchmark
+[ 20%] Built target benchmark
+Scanning dependencies of target jsoncpp_lib_static
+[ 22%] Building CXX object vendor/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_reader.cpp.o
+[ 23%] Building CXX object vendor/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_value.cpp.o
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_value.cpp: In copy constructor ‘Json::Value::CZString::CZString(const Json::Value::CZString&)’:
+/home/julesy/workspace/moo-cpp/vendor/jsoncpp/src/lib_json/json_value.cpp:251:18: warning: enumeral and non-enumeral type in conditional expression
+                  ? (other.storage_.policy_ == noDuplication
+                  ^
+[ 25%] Building CXX object vendor/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_writer.cpp.o
+Linking CXX static library libjsoncpp.a
+[ 25%] Built target jsoncpp_lib_static
+Scanning dependencies of target moo
+[ 26%] Building CXX object CMakeFiles/moo.dir/src/util/Random.cpp.o
+[ 28%] Building CXX object CMakeFiles/moo.dir/src/util/SortUtil.cpp.o
+[ 30%] Building CXX object CMakeFiles/moo.dir/src/main/nsgaII.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h: In instantiation of ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:58:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < matingPool.size() - 1; j += 2) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:14:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h: In instantiation of ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:35:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (result.size() < n) {
+                                  ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:40:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < index.size() -1; i += 2) {
+                                   ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:42:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                     if (result.size() >= n) break;
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:17:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:59:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:18:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:60:108:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:7,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:66:78:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:29:33:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:30:44:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:37:50:   required from ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+[ 31%] Building CXX object CMakeFiles/moo.dir/src/main/moead.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h: In instantiation of ‘void moo::MOEAD<Trait>::init_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:41:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) fitness[i] = Weights::getWeightedSum(weights[i], pop[i]->getOutput());
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h: In instantiation of ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:48:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:10:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:52:72:   required from ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:11:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:53:108:   required from ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+Linking CXX static library libmoo.a
+[ 31%] Built target moo
 Scanning dependencies of target benchmark_
-[ 30%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
-[ 32%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
-[ 34%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
-[ 36%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
-[ 38%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
-[ 40%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
+[ 33%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/NonDominatedSorting.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/benchmark/NonDominatedSorting.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/indicator/FastNonDominatedRank.h: In instantiation of ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::FastNonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/benchmark/NonDominatedSorting.cpp:17:81:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/FastNonDominatedRank.h:33:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/FastNonDominatedRank.h:34:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = i + 1; j < pop.size(); ++j) {
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NonDominatedSorting.cpp:2:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NonDominatedSorting.cpp:12:77:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+[ 34%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/CrowdedDistance.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:13:56:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’:
+/home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:15:63:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/AbstractBenchmark.h:3:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:36:44:   required from ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:13:56:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/AbstractBenchmark.h:3:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Population.h:84:47:   required from ‘std::vector<int> moo::Population<Trait>::sortedIndexByVector(const std::vector<T>&, bool) const [with T = double; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:57:57:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/benchmark/CrowdedDistance.cpp:15:63:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+[ 36%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/Population.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/benchmark/AbstractBenchmark.h:3:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/Population.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/benchmark/Population.cpp:36:39:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/AbstractBenchmark.h:3:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/Population.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Population.h:84:47:   required from ‘std::vector<int> moo::Population<Trait>::sortedIndexByVector(const std::vector<T>&, bool) const [with T = double; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/Population.cpp:37:65:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+[ 38%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/main.cpp.o
+[ 39%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/ParetoFront.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp:4:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/NaiveParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::NaiveParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp:17:81:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/NaiveParetoFront.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp:21:87:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp:5:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h: In instantiation of ‘static std::pair<moo::Population<Trait>, moo::Population<Trait> > moo::KungParetoFront::split(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:35:34:   required from ‘static moo::Population<Trait> moo::KungParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp:31:80:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:83:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = point; i < population.size(); ++i) B.push_back(population[i]);
+                                   ^
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::KungParetoFront::merge(const moo::Population<Trait>&, const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:46:34:   required from ‘static moo::Population<Trait> moo::KungParetoFront::kung(const moo::Population<Trait>&, const moo::Population<Trait>&) [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:37:46:   required from ‘static moo::Population<Trait> moo::KungParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/ParetoFront.cpp:31:80:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:63:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < B.size(); ++i) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:65:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 0; j < T.size(); ++j) {
+                                   ^
+[ 41%] Building CXX object CMakeFiles/benchmark_.dir/benchmark/NSGAII.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Problem.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/problems/Kursawe.h:5,
+                 from /home/julesy/workspace/moo-cpp/benchmark/AbstractBenchmark.h:4,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/AbstractBenchmark.h:3:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:2:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h: In instantiation of ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:58:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < matingPool.size() - 1; j += 2) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:14:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h: In instantiation of ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:35:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (result.size() < n) {
+                                  ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:40:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < index.size() -1; i += 2) {
+                                   ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:42:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                     if (result.size() >= n) break;
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:17:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:59:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:18:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:60:108:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:7,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:2:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:66:78:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:2:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:29:33:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:30:44:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:2:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/benchmark/AbstractBenchmark.h:3:0,
+                 from /home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:37:50:   required from ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/benchmark/NSGAII.cpp:14:45:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
 Linking CXX executable benchmark_
-[ 40%] Built target benchmark_
-[ 42%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock.dir/gtest/src/gtest-all.cc.o
-[ 44%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 41%] Built target benchmark_
+Scanning dependencies of target moead
+[ 42%] Building CXX object CMakeFiles/moead.dir/src/main/moead.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h: In instantiation of ‘void moo::MOEAD<Trait>::init_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:41:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) fitness[i] = Weights::getWeightedSum(weights[i], pop[i]->getOutput());
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h: In instantiation of ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:48:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:10:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:52:72:   required from ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:11:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/moead.cpp:1:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:53:108:   required from ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp:11:17:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+Linking CXX executable moead
+[ 42%] Built target moead
+Scanning dependencies of target nsgaII
+[ 44%] Building CXX object CMakeFiles/nsgaII.dir/src/main/nsgaII.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h: In instantiation of ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:58:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < matingPool.size() - 1; j += 2) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:14:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h: In instantiation of ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:35:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (result.size() < n) {
+                                  ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:40:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < index.size() -1; i += 2) {
+                                   ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:42:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                     if (result.size() >= n) break;
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:17:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:59:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:18:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:60:108:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:7,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:66:78:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:29:33:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:30:44:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:37:50:   required from ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/main/nsgaII.cpp:14:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+Linking CXX executable nsgaII
+[ 44%] Built target nsgaII
+Scanning dependencies of target gmock
+[ 46%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock.dir/gtest/src/gtest-all.cc.o
+[ 47%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock.dir/src/gmock-all.cc.o
 Linking CXX static library libgmock.a
-[ 44%] Built target gmock
-[ 46%] Building CXX object vendor/gmock-1.7.0/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 47%] Built target gmock
+Scanning dependencies of target gtest
+[ 49%] Building CXX object vendor/gmock-1.7.0/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 Linking CXX static library libgtest.a
-[ 46%] Built target gtest
+[ 49%] Built target gtest
 Scanning dependencies of target tests
-[ 48%] Building CXX object CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
-[ 50%] Building CXX object CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
-[ 51%] Building CXX object CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
-[ 53%] Building CXX object CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
-[ 55%] Building CXX object CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
-[ 57%] Building CXX object CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
-[ 59%] Building CXX object CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
-[ 61%] Building CXX object CMakeFiles/tests.dir/test/Main.cpp.o
-[ 63%] Building CXX object CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
-[ 65%] Building CXX object CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
-[ 67%] Building CXX object CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
-[ 69%] Building CXX object CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
-[ 71%] Building CXX object CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
+[ 50%] Building CXX object CMakeFiles/tests.dir/test/Main.cpp.o
+[ 52%] Building CXX object CMakeFiles/tests.dir/test/util/paretoFront/ParetoFrontCalcTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp:4:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp:19:52:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp:5:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/NaiveParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::NaiveParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp:23:55:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/NaiveParetoFront.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp:6:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h: In instantiation of ‘static std::pair<moo::Population<Trait>, moo::Population<Trait> > moo::KungParetoFront::split(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:35:34:   required from ‘static moo::Population<Trait> moo::KungParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp:30:58:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:83:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = point; i < population.size(); ++i) B.push_back(population[i]);
+                                   ^
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::KungParetoFront::merge(const moo::Population<Trait>&, const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:46:34:   required from ‘static moo::Population<Trait> moo::KungParetoFront::kung(const moo::Population<Trait>&, const moo::Population<Trait>&) [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:37:46:   required from ‘static moo::Population<Trait> moo::KungParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/util/paretoFront/ParetoFrontCalcTest.cpp:30:58:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:63:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < B.size(); ++i) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/KungParetoFront.h:65:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 0; j < T.size(); ++j) {
+                                   ^
+[ 53%] Building CXX object CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
+[ 55%] Building CXX object CMakeFiles/tests.dir/test/model/ParetoFrontTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/model/ParetoFrontTest.cpp:7:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/test/model/ParetoFrontTest.cpp:28:73:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+[ 57%] Building CXX object CMakeFiles/tests.dir/test/model/PopulationTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:7:0:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:24:73:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Problem.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/problems/Identity.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘void moo::Population<Trait>::sortByVector(const std::vector<T>&, bool) [with T = int; Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:54:23:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:78:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < this->size(); ++i) m[(*this)[i]] = v[i];
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h:47:0,
+                 from /home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include/gmock/gmock-actions.h:46,
+                 from /home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include/gmock/gmock.h:58,
+                 from /home/julesy/workspace/moo-cpp/test/AbstractTest.h:6,
+                 from /home/julesy/workspace/moo-cpp/test/indicator/IndicatorTest.h:1,
+                 from /home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:2:
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include/gtest/gtest.h: In instantiation of ‘testing::AssertionResult testing::internal::CmpHelperEQ(const char*, const char*, const T1&, const T2&) [with T1 = int; T2 = long unsigned int]’:
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include/gtest/gtest.h:1485:30:   required from ‘static testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare(const char*, const char*, const T1&, const T2&) [with T1 = int; T2 = long unsigned int; bool lhs_is_null_literal = false]’
+/home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:25:5:   required from here
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include/gtest/gtest.h:1448:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (expected == actual) {
+                ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Problem.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/problems/Identity.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Identity; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/Population.h:105:48:   required from ‘void moo::Population<Trait>::sortByObjective(int, bool) [with Trait = moo::Identity]’
+/home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:68:34:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘void moo::Population<Trait>::sortByVector(const std::vector<T>&, bool) [with T = double; Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/model/Population.h:105:63:   required from ‘void moo::Population<Trait>::sortByObjective(int, bool) [with Trait = moo::Identity]’
+/home/julesy/workspace/moo-cpp/test/model/PopulationTest.cpp:68:34:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:78:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < this->size(); ++i) m[(*this)[i]] = v[i];
+                               ^
+[ 58%] Building CXX object CMakeFiles/tests.dir/test/model/IndividualTest.cpp.o
+[ 60%] Building CXX object CMakeFiles/tests.dir/test/indicator/CrowdingDistanceTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double>]’:
+/home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:28:71:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:65:52:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:6,
+                 from /home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Identity; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:73:41:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:6,
+                 from /home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/model/Population.h:84:47:   required from ‘std::vector<int> moo::Population<Trait>::sortedIndexByVector(const std::vector<T>&, bool) const [with T = double; Trait = moo::Identity]’
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:57:57:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double>]’
+/home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:28:71:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:1:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Identity]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Identity; DerivedClass = moo::NonDominatedRank; IndicatorType = int]’
+/home/julesy/workspace/moo-cpp/test/indicator/CrowdingDistanceTest.cpp:41:54:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+[ 61%] Building CXX object CMakeFiles/tests.dir/test/indicator/FastNonDominatedRankTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/indicator/FastNonDominatedRank.h: In instantiation of ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::FastNonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp:23:69:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/FastNonDominatedRank.h:33:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/FastNonDominatedRank.h:34:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = i + 1; j < pop.size(); ++j) {
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Identity]’
+/home/julesy/workspace/moo-cpp/test/indicator/FastNonDominatedRankTest.cpp:22:61:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+[ 63%] Building CXX object CMakeFiles/tests.dir/test/indicator/NonDominatedRankTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Identity]’
+/home/julesy/workspace/moo-cpp/test/indicator/NonDominatedRankTest.cpp:25:61:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+[ 65%] Building CXX object CMakeFiles/tests.dir/test/operators/SelectionTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/operators/SelectionTest.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h: In instantiation of ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = cmp]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<cmp>]’
+/home/julesy/workspace/moo-cpp/test/operators/SelectionTest.cpp:32:43:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:35:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (result.size() < n) {
+                                  ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:40:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < index.size() -1; i += 2) {
+                                   ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:42:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                     if (result.size() >= n) break;
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include/gmock/internal/gmock-internal-utils.h:47:0,
+                 from /home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include/gmock/gmock-actions.h:46,
+                 from /home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/include/gmock/gmock.h:58,
+                 from /home/julesy/workspace/moo-cpp/test/AbstractTest.h:6,
+                 from /home/julesy/workspace/moo-cpp/test/operators/SelectionTest.cpp:2:
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include/gtest/gtest.h: In instantiation of ‘testing::AssertionResult testing::internal::CmpHelperEQ(const char*, const char*, const T1&, const T2&) [with T1 = int; T2 = long unsigned int]’:
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include/gtest/gtest.h:1485:30:   required from ‘static testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare(const char*, const char*, const T1&, const T2&) [with T1 = int; T2 = long unsigned int; bool lhs_is_null_literal = false]’
+/home/julesy/workspace/moo-cpp/test/operators/SelectionTest.cpp:33:5:   required from here
+/home/julesy/workspace/moo-cpp/vendor/gmock-1.7.0/gtest/include/gtest/gtest.h:1448:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (expected == actual) {
+                ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Problem.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/problems/Kursawe.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/operators/SelectionTest.cpp:1:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:37:50:   required from ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = cmp]’
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<cmp>]’
+/home/julesy/workspace/moo-cpp/test/operators/SelectionTest.cpp:32:43:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+[ 66%] Building CXX object CMakeFiles/tests.dir/test/operators/MutationTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/operators/MutationTest.cpp:4:0:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/test/operators/MutationTest.cpp:24:45:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+[ 68%] Building CXX object CMakeFiles/tests.dir/test/operators/CrossoverTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/test/operators/CrossoverTest.cpp:3:0:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SinglePointCrossover.h: In instantiation of ‘static T moo::SinglePointCrossover::crossover_(const T&, const T&, int) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/test/operators/CrossoverTest.cpp:30:85:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SinglePointCrossover.h:17:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (point < 0 || point > a.size()) point = Random::getInstance()->rndInt(0,b.size());
+                                    ^
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SinglePointCrossover.h:18:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = point; i < b.size(); ++i) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/test/operators/CrossoverTest.cpp:4:0:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/test/operators/CrossoverTest.cpp:19:5:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+[ 69%] Building CXX object CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
+[ 71%] Building CXX object CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
 [ 73%] Building CXX object CMakeFiles/tests.dir/test/algorithms/moead/MOEADTest.cpp.o
-[ 75%] Building CXX object CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
-[ 76%] Building CXX object CMakeFiles/tests.dir/test/variables/VariableCollectionTest.cpp.o
-[ 78%] Building CXX object CMakeFiles/tests.dir/test/variables/RealTest.cpp.o
-[ 80%] Building CXX object CMakeFiles/tests.dir/test/problems/KursaweTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:20:17:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:2:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h: In instantiation of ‘void moo::MOEAD<Trait>::init_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:20:17:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:41:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) fitness[i] = Weights::getWeightedSum(weights[i], pop[i]->getOutput());
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:20:17:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:2:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h: In instantiation of ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:20:17:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:48:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:10:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:52:72:   required from ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:20:17:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:11:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/moead/MOEAD.h:53:108:   required from ‘void moo::MOEAD<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::MOEAD<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/moead/MOEADTest.cpp:20:17:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+[ 74%] Building CXX object CMakeFiles/tests.dir/test/algorithms/moead/WeightsTest.cpp.o
+[ 76%] Building CXX object CMakeFiles/tests.dir/test/algorithms/AlgorithmTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h: In instantiation of ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:58:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < matingPool.size() - 1; j += 2) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:14:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h: In instantiation of ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:35:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (result.size() < n) {
+                                  ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:40:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < index.size() -1; i += 2) {
+                                   ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:42:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                     if (result.size() >= n) break;
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:17:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:59:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:18:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:60:108:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:7,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:66:78:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:29:33:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:30:44:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:37:50:   required from ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/AlgorithmTest.cpp:14:18:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+[ 77%] Building CXX object CMakeFiles/tests.dir/test/algorithms/nsgaII/NSGAIITest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h: In instantiation of ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:53:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; v.size() != 0 &&  i < v.size(); ++i) {
+                                                     ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Kursawe; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:51:42:   required from ‘Json::Value moo::ParetoFront<Trait>::json() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:31:43:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:0:
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h: In instantiation of ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:58:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < matingPool.size() - 1; j += 2) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:14:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h: In instantiation of ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:35:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             while (result.size() < n) {
+                                  ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:40:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < index.size() -1; i += 2) {
+                                   ^
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:42:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                     if (result.size() >= n) break;
+                                       ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:17:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h: In instantiation of ‘static T moo::SBXCrossover::crossover_(const T&, const T&) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/crossover/Crossover.h:20:96:   required from ‘static moo::IndividualPtr<Trait> moo::Crossover<DerivedClass>::crossover(moo::IndividualPtr<Trait>&, moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::SBXCrossover; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:59:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/crossover/SBXCrossover.h:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < offa.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:18:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h: In instantiation of ‘static void moo::PolynomialMutation::mutate_(T&, double) [with T = moo::VariableCollection<moo::Real>]’:
+/home/julesy/workspace/moo-cpp/src/operators/mutation/Mutation.h:18:37:   required from ‘static moo::IndividualPtr<Trait> moo::Mutation<DerivedClass>::mutate(moo::IndividualPtr<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::PolynomialMutation; moo::IndividualPtr<Trait> = std::shared_ptr<moo::Individual<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:60:108:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/operators/mutation/PolynomialMutation.h:17:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < in.size(); ++i) {
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:7,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int, std::hash<std::shared_ptr<moo::Individual<Trait> > >, std::equal_to<std::shared_ptr<moo::Individual<Trait> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<Trait> >, int> > > moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:66:78:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:29:33:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:30:44:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Kursawe; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Kursawe> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Kursawe> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Kursawe> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Kursawe; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:46:65:   required from ‘void moo::NSGAII<Trait>::init_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:66:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::initialize() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:29:24:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:9:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/src/model/ParetoFront.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/model/Algorithm.h:5,
+                 from /home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:2:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Kursawe]’:
+/home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:37:50:   required from ‘moo::Population<Trait> moo::BinaryTournamentSelection<Comparator>::selectMultiple_(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; Comparator = RankAndCrowdedComperator<moo::Kursawe>]’
+/home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:19:83:   required from ‘moo::Population<Trait> moo::Selection<DerivedClass>::selectMultiple(const moo::Population<Trait>&, int) [with Trait = moo::Kursawe; DerivedClass = moo::BinaryTournamentSelection<RankAndCrowdedComperator<moo::Kursawe> >]’
+/home/julesy/workspace/moo-cpp/src/algorithms/nsgaII/NSGAII.h:54:98:   required from ‘void moo::NSGAII<Trait>::next_() [with Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:62:60:   required from ‘void moo::Algorithm<DerivedClass, Trait>::next() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/src/model/Algorithm.h:32:22:   required from ‘moo::ParetoFront<Trait> moo::Algorithm<DerivedClass, Trait>::solve() [with DerivedClass = moo::NSGAII<moo::Kursawe>; Trait = moo::Kursawe]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/NSGAIITest.cpp:19:16:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
+[ 79%] Building CXX object CMakeFiles/tests.dir/test/algorithms/nsgaII/ComparatorTest.cpp.o
+In file included from /home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:7:0,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:5:
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h: In instantiation of ‘static moo::Population<Trait> moo::ContUpdatedParetoFront::getParetoFront(const moo::Population<Trait>&) [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/indicator/NonDominatedRank.h:29:72:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, int> moo::NonDominatedRank::calculate_(moo::Population<Trait>, int) [with T = moo::Identity]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Identity; DerivedClass = moo::NonDominatedRank; IndicatorType = int]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:30:59:   required from here
+/home/julesy/workspace/moo-cpp/src/util/paretoFrontCalculator/ContUpdatedParetoFront.h:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < pop.size(); ++i) func(pop[i]);
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:6:0:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:29:33:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Identity> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Identity> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Identity> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Identity; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:31:63:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:35:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < T::getOutput().size(); ++j) {
+                               ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h: In instantiation of ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Identity> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Identity> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Identity> >, double> > >]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:30:44:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Identity> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Identity> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Identity> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Identity; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:31:63:   required from here
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                                                             ^
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min.size() != numOfObjectives || max.size() != numOfObjectives) throw std::runtime_error("The boundary size and objective size does not match!");
+                            ^
+In file included from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:6:0:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:66:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int j = 1; j < pop.size() - 1; ++j) {
+                                   ^
+In file included from /home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘typename Trait::OutputType moo::Population<Trait>::getObjective(int) const [with Trait = moo::Identity; typename Trait::OutputType = std::vector<double>]’:
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:36:44:   required from ‘static void moo::CrowdingDistance::bounds_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Identity]’
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:29:33:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Identity> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Identity> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Identity> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Identity; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:31:63:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < this->size(); ++j) v.push_back(getValue(j, objective));
+                               ^
+In file included from /home/julesy/workspace/moo-cpp/src/operators/selection/Selection.h:4:0,
+                 from /home/julesy/workspace/moo-cpp/src/operators/selection/BinaryTournamentSelection.h:5,
+                 from /home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:3:
+/home/julesy/workspace/moo-cpp/src/model/Population.h: In instantiation of ‘std::vector<int> moo::Population<Trait>::getIndex() const [with Trait = moo::Identity]’:
+/home/julesy/workspace/moo-cpp/src/model/Population.h:84:47:   required from ‘std::vector<int> moo::Population<Trait>::sortedIndexByVector(const std::vector<T>&, bool) const [with T = double; Trait = moo::Identity]’
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:57:57:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&, std::vector<double>&, std::vector<double>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Identity> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Identity> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Identity> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/CrowdingDistance.h:30:44:   required from ‘static moo::CrowdingDistance::Map<T> moo::CrowdingDistance::calculate_(const moo::Population<Trait>&) [with T = moo::Identity; moo::CrowdingDistance::Map<T> = std::unordered_map<std::shared_ptr<moo::Individual<moo::Identity> >, double, std::hash<std::shared_ptr<moo::Individual<moo::Identity> > >, std::equal_to<std::shared_ptr<moo::Individual<moo::Identity> > >, std::allocator<std::pair<const std::shared_ptr<moo::Individual<moo::Identity> >, double> > >]’
+/home/julesy/workspace/moo-cpp/src/indicator/Indicator.h:18:55:   required from ‘static std::unordered_map<std::shared_ptr<moo::Individual<Trait> >, IndicatorType> moo::Indicator<DerivedClass, IndicatorType>::calculate(const moo::Population<Trait>&) [with Trait = moo::Identity; DerivedClass = moo::CrowdingDistance; IndicatorType = double]’
+/home/julesy/workspace/moo-cpp/test/algorithms/nsgaII/ComparatorTest.cpp:31:63:   required from here
+/home/julesy/workspace/moo-cpp/src/model/Population.h:110:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int k = 0; k < this->size(); ++k) index[k] = k;
+                               ^
 Linking CXX executable tests
-[ 80%] Built target tests
-[ 82%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock_main.dir/gtest/src/gtest-all.cc.o
-[ 84%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o
-[ 86%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[ 79%] Built target tests
+Scanning dependencies of target gmock_main
+[ 80%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock_main.dir/gtest/src/gtest-all.cc.o
+[ 82%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o
+[ 84%] Building CXX object vendor/gmock-1.7.0/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 Linking CXX static library libgmock_main.a
-[ 86%] Built target gmock_main
-[ 88%] Building CXX object vendor/gmock-1.7.0/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 84%] Built target gmock_main
+Scanning dependencies of target gtest_main
+[ 85%] Building CXX object vendor/gmock-1.7.0/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 Linking CXX static library libgtest_main.a
-[ 88%] Built target gtest_main
-[ 90%] Building CXX object vendor/benchmark/test/CMakeFiles/basic_test.dir/basic_test.cc.o
+[ 85%] Built target gtest_main
+Scanning dependencies of target jsontestrunner_exe
+[ 87%] Building CXX object vendor/jsoncpp/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/main.cpp.o
+Linking CXX executable jsontestrunner_exe
+[ 87%] Built target jsontestrunner_exe
+Scanning dependencies of target jsoncpp_test
+[ 88%] Building CXX object vendor/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o
+[ 90%] Building CXX object vendor/jsoncpp/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/main.cpp.o
+Linking CXX executable jsoncpp_test
+Testing ValueTest/checkNormalizeFloatingPointStr: OK
+Testing ValueTest/memberCount: OK
+Testing ValueTest/objects: OK
+Testing ValueTest/arrays: OK
+Testing ValueTest/arrayIssue252: OK
+Testing ValueTest/null: OK
+Testing ValueTest/strings: OK
+Testing ValueTest/bools: OK
+Testing ValueTest/integers: OK
+Testing ValueTest/nonIntegers: OK
+Testing ValueTest/compareNull: OK
+Testing ValueTest/compareInt: OK
+Testing ValueTest/compareUInt: OK
+Testing ValueTest/compareDouble: OK
+Testing ValueTest/compareString: OK
+Testing ValueTest/compareBoolean: OK
+Testing ValueTest/compareArray: OK
+Testing ValueTest/compareObject: OK
+Testing ValueTest/compareType: OK
+Testing ValueTest/offsetAccessors: OK
+Testing ValueTest/typeChecksThrowExceptions: OK
+Testing ValueTest/StaticString: OK
+Testing ValueTest/CommentBefore: OK
+Testing ValueTest/zeroes: OK
+Testing ValueTest/zeroesInKeys: OK
+Testing WriterTest/dropNullPlaceholders: OK
+Testing StreamWriterTest/dropNullPlaceholders: OK
+Testing StreamWriterTest/writeZeroes: OK
+Testing ReaderTest/parseWithNoErrors: OK
+Testing ReaderTest/parseWithNoErrorsTestingOffsets: OK
+Testing ReaderTest/parseWithOneError: OK
+Testing ReaderTest/parseChineseWithOneError: OK
+Testing ReaderTest/parseWithDetailError: OK
+Testing CharReaderTest/parseWithNoErrors: OK
+Testing CharReaderTest/parseWithNoErrorsTestingOffsets: OK
+Testing CharReaderTest/parseWithOneError: OK
+Testing CharReaderTest/parseChineseWithOneError: OK
+Testing CharReaderTest/parseWithDetailError: OK
+Testing CharReaderTest/parseWithStackLimit: OK
+Testing CharReaderStrictModeTest/dupKeys: OK
+Testing CharReaderFailIfExtraTest/issue164: OK
+Testing CharReaderFailIfExtraTest/issue107: OK
+Testing CharReaderFailIfExtraTest/commentAfterObject: OK
+Testing CharReaderFailIfExtraTest/commentAfterArray: OK
+Testing CharReaderFailIfExtraTest/commentAfterBool: OK
+Testing CharReaderAllowDropNullTest/issue178: OK
+Testing CharReaderAllowSingleQuotesTest/issue182: OK
+Testing CharReaderAllowZeroesTest/issue176: OK
+Testing BuilderTest/settings: OK
+Testing IteratorTest/distance: OK
+Testing IteratorTest/names: OK
+Testing IteratorTest/indexes: OK
+All 52 tests passed
+[ 90%] Built target jsoncpp_test
+Scanning dependencies of target basic_test
+[ 92%] Building CXX object vendor/benchmark/test/CMakeFiles/basic_test.dir/basic_test.cc.o
 Linking CXX executable basic_test
-[ 90%] Built target basic_test
-[ 92%] Building CXX object vendor/benchmark/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.o
+[ 92%] Built target basic_test
+Scanning dependencies of target benchmark_test
+[ 93%] Building CXX object vendor/benchmark/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.o
 Linking CXX executable benchmark_test
-[ 92%] Built target benchmark_test
-[ 94%] Building CXX object vendor/benchmark/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.o
+[ 93%] Built target benchmark_test
+Scanning dependencies of target cxx03_test
+[ 95%] Building CXX object vendor/benchmark/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.o
 Linking CXX executable cxx03_test
-[ 94%] Built target cxx03_test
+[ 95%] Built target cxx03_test
+Scanning dependencies of target filter_test
 [ 96%] Building CXX object vendor/benchmark/test/CMakeFiles/filter_test.dir/filter_test.cc.o
 Linking CXX executable filter_test
 [ 96%] Built target filter_test
+Scanning dependencies of target fixture_test
 [ 98%] Building CXX object vendor/benchmark/test/CMakeFiles/fixture_test.dir/fixture_test.cc.o
 Linking CXX executable fixture_test
 [ 98%] Built target fixture_test
+Scanning dependencies of target options_test
 [100%] Building CXX object vendor/benchmark/test/CMakeFiles/options_test.dir/options_test.cc.o
 Linking CXX executable options_test
 [100%] Built target options_test

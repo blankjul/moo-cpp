@@ -8,9 +8,3 @@ class AlgorithmTest : public AbstractTest {
 public:
 };
 
-TEST_F(AlgorithmTest, SolveWithoutThrow) {
-    moo::Kursawe p;
-    moo::NSGAII<moo::Kursawe> solver(p);
-    solver.solve();
-}
-

@@ -48,6 +48,7 @@ namespace moo {
         }
 
         void next_() {
+            
             // create the mating pool using BinaryTournamentSelection
             RankAndCrowdedComperator<Trait> cmp(&indRank, &indCrowding);
             BinaryTournamentSelection<RankAndCrowdedComperator<Trait>> selector(cmp);
@@ -55,7 +56,7 @@ namespace moo {
 
 
             // create all the offsprings
-            for (int j = 0; j < matingPool.size() - 1; j += 2) {
+            for (unsigned int j = 0; j < matingPool.size() - 1; j += 2) {
                 IndividualPtr<Trait> off = SBXCrossover::crossover(matingPool[j], matingPool[j+1]);
                 if (Random::getInstance()->rndDouble() < propMutation) off = PolynomialMutation::mutate(off);
                 population.push_back(off);
@@ -63,11 +64,20 @@ namespace moo {
 
 
             // now for the last front use the crowding distance to ensure that the best individuals remains
-            indRank = NonDominatedRank::calculate_(population, populationSize);
+            indRank = NonDominatedRank::calculate(population);
             indCrowding = CrowdingDistance::calculate(population);
             RankAndCrowdedComperator<Trait>  comp(&indRank, &indCrowding);
             std::sort(population.begin(), population.end(), comp);
 
+            /*
+            std::cout << "---------------------------\n";
+            for(auto entry : population) {
+                std::cout << entry->getOutput()[0] << ", " << entry->getOutput()[1] << " | rank: " << indRank[entry] << " | crowding: " ;
+                std::cout << indCrowding[entry] << std::endl;
+            }
+            std::cout << "---------------------------\n";
+            Algorithm<NSGAII<Trait>, Trait>::waitForKey();
+             */
 
             // truncate the population
             Population<Trait> next;
@@ -78,19 +88,11 @@ namespace moo {
         
         void info_(std::ostream& os) {
             auto last = population[population.size()-1];
-            os << "maximal rank: " << indRank[last];
-            /*
-            os << "---------------------------\n";
-            os << "size: " << population.size() << std::endl;
-            os << "---------------------------\n";
-            for (int i = 0; i < population.size(); ++i) {
-                auto entry = population[i];
-                os << " [rank:" << indRank[entry]<< ",crowded:" << indCrowding[entry] << "]";
-                os << entry->getOutput()[0] << ", " << entry->getOutput()[1]<<std::endl;
-            }
-            os << "---------------------------\n";
-             * */
+            os << "pareto front: " << indRank[last] << " | worst crowding: " ;
+            os << indCrowding[last] << std::endl;
         }
+        
+        
 
         
         ParetoFront<Trait> front_() {

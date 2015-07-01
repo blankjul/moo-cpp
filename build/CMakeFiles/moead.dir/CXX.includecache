@@ -244,9 +244,17 @@ string
 ostream
 -
 
-/home/julesy/Workspace/moo-cpp/src/main/moead.cpp
+/home/julesy/workspace/moo-cpp/src/main/moead.cpp
 algorithms/moead/MOEAD.h
-/home/julesy/Workspace/moo-cpp/src/main/algorithms/moead/MOEAD.h
+/home/julesy/workspace/moo-cpp/src/main/algorithms/moead/MOEAD.h
 problems/Kursawe.h
-/home/julesy/Workspace/moo-cpp/src/main/problems/Kursawe.h
+/home/julesy/workspace/moo-cpp/src/main/problems/Kursawe.h
+iostream
+-
+cstdlib
+-
+fstream
+-
+ctime
+-
 
